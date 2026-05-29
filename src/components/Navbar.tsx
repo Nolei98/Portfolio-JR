@@ -66,7 +66,7 @@ export function Navbar() {
                </li>
             ))}
           </ol>
-          <div className="flex items-center gap-4">
+          <div className="flex items-center gap-4 print-hide">
             <button 
               onClick={toggleLang} 
               className="px-3 py-1 font-mono text-sm font-bold border-2 border-brand-dark shadow-[2px_2px_0_#111] hover:shadow-[4px_4px_0_#111] transition-all bg-brand-white rounded-lg flex items-center gap-2 focus:outline-none outline-none"
@@ -81,7 +81,7 @@ export function Navbar() {
         </nav>
         
         {/* Mobile Menu Toggle */}
-        <div className="flex items-center gap-4 lg:hidden">
+        <div className="flex items-center gap-4 lg:hidden print-hide">
             <button 
               onClick={toggleLang} 
               className="px-2 py-1 font-mono text-xs font-bold border-2 border-brand-dark bg-brand-white rounded-lg focus:outline-none outline-none"

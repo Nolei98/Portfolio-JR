@@ -24,10 +24,29 @@ export function About() {
         <SectionHeading subtitle={text.subtitle} title={text.title} />
       </FadeIn>
       
-      <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start mt-8">
+      <div className="flex flex-col lg:flex-row gap-12 items-start mt-8">
         
+        {/* Image */}
+        <div className="w-full lg:w-5/12 order-1 lg:order-2 mb-4 lg:mb-0">
+          <FadeIn delay={0.4} direction="left">
+            <div className="relative group p-4 bg-brand-white border-2 border-brand-dark shadow-brutal transform rotate-2 hover:rotate-0 transition-transform rounded-[2rem]">
+              <div className="aspect-square w-full max-w-md mx-auto relative z-10 overflow-hidden border-2 border-brand-dark bg-brand-dark rounded-[1.5rem]">
+                <img 
+                  src="https://i.imgur.com/81SP9An.jpeg" 
+                  alt="João Rodrigues" 
+                  className="object-cover w-full h-full transition-all duration-500 hover:scale-105"
+                />
+              </div>
+              
+              <div className="absolute -bottom-4 -right-4 w-16 h-16 bg-brand-yellow border-2 border-brand-dark rounded-full shadow-brutal z-20 flex items-center justify-center">
+                 <span className="text-3xl font-display font-bold text-transparent bg-clip-text bg-gradient-to-tr from-[#f9ce34] via-[#ee2a7b] to-[#6228d7]">@</span>
+              </div>
+            </div>
+          </FadeIn>
+        </div>
+
         {/* Text Content */}
-        <div className="order-2 lg:order-1 lg:col-span-7 space-y-6">
+        <div className="w-full lg:w-7/12 order-2 lg:order-1 space-y-6">
           <FadeIn delay={0.1}>
             <div className="space-y-6 text-brand-dark font-medium text-lg leading-relaxed bg-brand-white p-8 border-2 border-brand-dark shadow-brutal rounded-3xl">
               <p dangerouslySetInnerHTML={{ __html: text.p1 }} />
@@ -52,25 +71,6 @@ export function About() {
               </div>
             </FadeIn>
           </div>
-        </div>
-
-        {/* Image */}
-        <div className="order-1 lg:order-2 lg:col-span-5 mb-4 lg:mb-0">
-          <FadeIn delay={0.4} direction="left">
-            <div className="relative group p-4 bg-brand-white border-2 border-brand-dark shadow-brutal transform rotate-2 hover:rotate-0 transition-transform rounded-[2rem]">
-              <div className="aspect-square w-full max-w-md mx-auto relative z-10 overflow-hidden border-2 border-brand-dark bg-brand-dark rounded-[1.5rem]">
-                <img 
-                  src="https://i.imgur.com/81SP9An.jpeg" 
-                  alt="João Rodrigues" 
-                  className="object-cover w-full h-full transition-all duration-500 hover:scale-105"
-                />
-              </div>
-              
-              <div className="absolute -bottom-4 -right-4 w-16 h-16 bg-brand-yellow border-2 border-brand-dark rounded-full shadow-brutal z-20 flex items-center justify-center">
-                 <span className="text-3xl font-display font-bold text-transparent bg-clip-text bg-gradient-to-tr from-[#f9ce34] via-[#ee2a7b] to-[#6228d7]">@</span>
-              </div>
-            </div>
-          </FadeIn>
         </div>
 
       </div>

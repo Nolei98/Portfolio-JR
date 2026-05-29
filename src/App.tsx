@@ -32,7 +32,7 @@ function AppContent() {
           <Projects />
           <Contact />
         </main>
-        <footer className="py-12 px-6 border-t-4 border-brand-dark mt-12 bg-brand-dark text-brand-white text-center font-mono rounded-t-3xl">
+        <footer className="print-hide py-12 px-6 border-t-4 border-brand-dark mt-12 bg-brand-dark text-brand-white text-center font-mono rounded-t-3xl">
         <div className="flex flex-col items-center justify-center gap-4">
           <p className="text-[12px] uppercase tracking-[0.2em] opacity-90 font-bold italic">
             João Rodrigues <br className="hidden md:block"/>

@@ -54,7 +54,7 @@ export default function LeftScrollbar() {
 
   return (
     <div 
-      className="fixed top-0 left-0 w-[14px] h-[100vh] bg-brand-light border-r-2 border-brand-dark z-[60] hidden sm:block cursor-pointer"
+      className="fixed top-0 left-0 w-[14px] h-[100vh] bg-brand-light border-r-2 border-brand-dark z-[60] hidden sm:block cursor-pointer print-hide"
       onMouseEnter={() => {
         document.documentElement.classList.add('is-scrollbar-active');
         setIsHovered(true);

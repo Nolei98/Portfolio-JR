@@ -102,20 +102,61 @@ html.is-scrollbar-active::-webkit-scrollbar-thumb {
     -webkit-print-color-adjust: exact !important;
     print-color-adjust: exact !important;
     background-color: var(--color-brand-light) !important;
+    font-size: 12px; /* Reduce base font size to fit more content */
   }
   
   #portfolio-main {
     width: 100%;
   }
 
-  nav, .fixed, .hidden.sm\:block, button[aria-label="Toggle language"], footer {
+  /* Make sure header stays but remains printable. Let's make it static so it doesn't overlap pages */
+  header.fixed {
+    position: static !important;
+    background: transparent !important;
+    border-bottom: 0 !important;
+    padding: 10px 0 !important;
+    margin-bottom: 1rem !important;
+  }
+
+  .print-hide {
     display: none !important;
   }
   
   section {
-    page-break-inside: auto;
-    break-inside: auto;
-    margin-bottom: 2rem;
-    min-height: auto !important;
+    page-break-inside: avoid;
+    break-inside: avoid;
+    page-break-after: always;
+    break-after: page;
+    padding: 20px 0 !important;
+    margin: 0 !important;
+    max-height: 100vh; /* Limits length */
+    height: auto;
+    overflow: hidden; /* Prevent spill over to next page */
+  }
+  
+  /* Zoom out large sections to fit them on one page */
+  section#projects, section#experience, section#about, section#skills {
+    transform: scale(0.9);
+    transform-origin: center center;
+  }
+
+  section:last-of-type {
+    page-break-after: auto;
+    break-after: auto;
+  }
+  
+  /* Extra compacting for print */
+  .mt-16, .space-y-16 > :not([hidden]) ~ :not([hidden]) {
+    margin-top: 1rem !important;
+  }
+  .py-20 {
+    padding-top: 1rem !important;
+    padding-bottom: 1rem !important;
+  }
+  .mb-6 {
+    margin-bottom: 0.5rem !important;
+  }
+  .gap-12 {
+    gap: 1rem !important;
   }
 }
