@@ -32,7 +32,7 @@ function AppContent() {
             {text.text1} <br className="hidden md:block"/>
             {'<dev>'} {text.text2}
           </p>
-          <div className="w-12 h-12 rounded-2xl bg-brand-green border-2 border-brand-dark shadow-brutal flex items-center justify-center -rotate-12 mt-4 hover:rotate-12 transition-transform">
+          <div className="w-12 h-12 rounded-2xl bg-brand-pink border-2 border-brand-dark shadow-brutal flex items-center justify-center -rotate-12 mt-4 hover:rotate-12 transition-transform">
             <span className="text-brand-dark text-2xl font-bold font-display">!</span>
           </div>
         </div>

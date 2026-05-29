@@ -16,7 +16,7 @@ export function Contact() {
         <div className="w-8 h-8 bg-brand-dark -mt-px ml-8"></div>
       </div>
 
-      <FadeIn className="text-center max-w-3xl mx-auto bg-brand-green p-12 lg:p-20 border-4 border-brand-dark shadow-brutal relative rounded-[3rem]">
+      <FadeIn className="text-center max-w-3xl mx-auto bg-brand-yellow p-12 lg:p-20 border-4 border-brand-dark shadow-brutal relative rounded-[3rem]">
         <div className="absolute -top-6 -right-6 w-16 h-16 bg-brand-white border-4 border-brand-dark rounded-full flex items-center justify-center font-bold text-2xl rotate-12">
           !
         </div>

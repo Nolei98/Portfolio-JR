@@ -38,14 +38,14 @@ export function About() {
           
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mt-6">
             <FadeIn delay={0.2}>
-              <div className="bg-brand-green p-6 border-2 border-brand-dark shadow-brutal rounded-3xl h-full transform hover:-translate-y-1 transition-transform">
+              <div className="bg-brand-blue p-6 border-2 border-brand-dark shadow-brutal rounded-3xl h-full transform hover:-translate-y-1 transition-transform">
                 <Music className="w-8 h-8 mb-4 opacity-80" />
                 <h3 className="font-display font-bold text-xl uppercase tracking-wider mb-2">{text.musicTitle}</h3>
                 <p className="font-mono text-sm leading-relaxed font-bold opacity-90">{text.musicDesc}</p>
               </div>
             </FadeIn>
             <FadeIn delay={0.3}>
-              <div className="bg-[#EAEAEA] p-6 border-2 border-brand-dark shadow-brutal rounded-3xl h-full transform hover:-translate-y-1 transition-transform">
+              <div className="bg-brand-pink p-6 border-2 border-brand-dark shadow-brutal rounded-3xl h-full transform hover:-translate-y-1 transition-transform">
                 <HeartHandshake className="w-8 h-8 mb-4 opacity-80" />
                 <h3 className="font-display font-bold text-xl uppercase tracking-wider mb-2">{text.softTitle}</h3>
                 <p className="font-mono text-sm leading-relaxed font-bold opacity-90">{text.softDesc}</p>
@@ -66,7 +66,7 @@ export function About() {
                 />
               </div>
               
-              <div className="absolute -bottom-4 -right-4 w-16 h-16 bg-brand-green border-2 border-brand-dark rounded-full shadow-brutal z-20 flex items-center justify-center">
+              <div className="absolute -bottom-4 -right-4 w-16 h-16 bg-brand-yellow border-2 border-brand-dark rounded-full shadow-brutal z-20 flex items-center justify-center">
                  <span className="text-3xl text-brand-dark font-display font-bold">@</span>
               </div>
             </div>

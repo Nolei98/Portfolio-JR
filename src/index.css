@@ -3,7 +3,11 @@
 @theme {
   --color-brand-light: #F4F4F0;
   --color-brand-dark: #111111;
-  --color-brand-green: #A8FF35;
+  --color-brand-green: #DCD3FF;
+  --color-brand-pink: #FFD1DC;
+  --color-brand-blue: #C4E1F6;
+  --color-brand-yellow: #FEF0B5;
+  --color-brand-peach: #FFDAB9;
   --color-brand-white: #FFFFFF;
   --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
   --font-display: "Syne", ui-sans-serif, system-ui, sans-serif;

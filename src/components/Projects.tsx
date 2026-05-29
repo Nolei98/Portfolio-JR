@@ -28,7 +28,7 @@ export function Projects() {
               
               {/* Project Image */}
               <div className="w-full md:w-3/5 group relative border-4 border-brand-dark overflow-hidden bg-brand-dark shadow-brutal transform hover:rotate-1 transition-transform rounded-[2.5rem]">
-                <div className="aspect-[16/10] sm:aspect-video w-full relative bg-brand-green">
+                <div className="aspect-[16/10] sm:aspect-video w-full relative bg-brand-pink">
                   <a href={project.link} target="_blank" rel="noreferrer" className="absolute inset-0 z-10">
                     <span className="sr-only">{project.title[lang]}</span>
                   </a>
@@ -42,10 +42,10 @@ export function Projects() {
 
               {/* Project Details */}
               <div className={`w-full md:w-2/5 flex flex-col ${index % 2 !== 0 ? 'md:items-start text-left' : 'md:items-end md:text-right'} relative z-20`}>
-                <span className="text-[12px] uppercase tracking-widest font-bold text-brand-dark font-mono mb-4 block bg-brand-green px-3 py-1 border-2 border-brand-dark shadow-[2px_2px_0_#111] rounded-xl">{text.projectLabel} / {project.id}</span>
+                <span className="text-[12px] uppercase tracking-widest font-bold text-brand-dark font-mono mb-4 block bg-brand-peach px-3 py-1 border-2 border-brand-dark shadow-[2px_2px_0_#111] rounded-xl">{text.projectLabel} / {project.id}</span>
                 <h3 className="text-3xl md:text-5xl font-display font-bold uppercase mb-6 text-brand-dark bg-brand-light inline-block relative">
                   {project.title[lang]}
-                  <div className="absolute -bottom-2 -left-2 w-full h-full bg-brand-green -z-10 border-2 border-brand-dark hidden md:block rounded-xl"></div>
+                  <div className="absolute -bottom-2 -left-2 w-full h-full bg-brand-blue -z-10 border-2 border-brand-dark hidden md:block rounded-xl"></div>
                 </h3>
                 
                 <div className={`border-4 border-brand-dark bg-brand-white p-6 mb-6 font-bold text-brand-dark shadow-brutal md:-ml-12 ${index % 2 !== 0 ? 'md:ml-0 md:-mr-12' : ''} max-w-lg z-10 rounded-[2rem]`}>
@@ -63,7 +63,7 @@ export function Projects() {
                     <Gitlab className="w-6 h-6" />
                     <span className="sr-only">GitLab</span>
                   </a>
-                  <a href={project.link} target="_blank" rel="noreferrer" className="text-brand-dark p-3 border-2 border-brand-dark bg-brand-green shadow-brutal-hover rounded-2xl">
+                  <a href={project.link} target="_blank" rel="noreferrer" className="text-brand-dark p-3 border-2 border-brand-dark bg-brand-yellow shadow-brutal-hover rounded-2xl">
                     <ExternalLink className="w-6 h-6" />
                     <span className="sr-only">Live Demo</span>
                   </a>

@@ -22,7 +22,7 @@ export function Experience() {
       <div className="space-y-8 mt-12">
         {experienceData.map((exp, index) => (
           <FadeIn key={index} delay={index * 0.1}>
-            <div className="flex flex-col md:flex-row md:items-baseline gap-4 md:gap-8 relative group bg-brand-white p-8 border-4 border-brand-dark shadow-brutal hover:bg-brand-green transition-colors rounded-[2rem]">
+            <div className="flex flex-col md:flex-row md:items-baseline gap-4 md:gap-8 relative group bg-brand-white p-8 border-4 border-brand-dark shadow-brutal hover:bg-brand-peach transition-colors rounded-[2rem]">
               
               <div className="md:w-1/4 shrink-0 flex items-center gap-3">
                 <div className="p-3 bg-brand-light border-2 border-brand-dark rounded-xl shadow-brutal text-brand-dark group-hover:bg-brand-white group-hover:-translate-y-1 transition-all">
