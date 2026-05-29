@@ -60,9 +60,9 @@ export function About() {
             <div className="relative group p-4 bg-brand-white border-2 border-brand-dark shadow-brutal transform rotate-2 hover:rotate-0 transition-transform rounded-[2rem]">
               <div className="aspect-square w-full max-w-md mx-auto relative z-10 overflow-hidden border-2 border-brand-dark bg-brand-dark rounded-[1.5rem]">
                 <img 
-                  src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?q=80&w=800&auto=format&fit=crop" 
-                  alt="Profile photo" 
-                  className="object-cover w-full h-full grayscale group-hover:grayscale-0 transition-all duration-500 hover:scale-105"
+                  src="https://i.imgur.com/81SP9An.jpeg" 
+                  alt="João Rodrigues" 
+                  className="object-cover w-full h-full transition-all duration-500 hover:scale-105"
                 />
               </div>
               
