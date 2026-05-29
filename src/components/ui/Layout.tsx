@@ -41,11 +41,6 @@ export function SectionHeading({ title, subtitle }: { title: string; subtitle?: 
       <h2 className="text-4xl md:text-6xl font-display font-bold tracking-tighter uppercase text-brand-dark">
         {title}
       </h2>
-      <div className="absolute top-0 right-0 p-4 opacity-10">
-        <svg width="40" height="40" viewBox="0 0 40 40" fill="currentColor">
-          <path d="M20 0L24 16L40 20L24 24L20 40L16 24L0 20L16 16L20 0Z" />
-        </svg>
-      </div>
     </div>
   );
 }
