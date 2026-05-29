@@ -27,7 +27,7 @@ export function About() {
       <div className="flex flex-col lg:flex-row gap-12 items-start mt-8">
         
         {/* Image */}
-        <div className="w-full lg:w-5/12 order-1 lg:order-2 mb-4 lg:mb-0">
+        <div className="w-full lg:w-5/12 order-1 lg:order-2 mb-4 lg:mb-0 print:order-1 print:w-full print:mb-8">
           <FadeIn delay={0.4} direction="left">
             <div className="relative group p-4 bg-brand-white border-2 border-brand-dark shadow-brutal transform rotate-2 hover:rotate-0 transition-transform rounded-[2rem]">
               <div className="aspect-square w-full max-w-md mx-auto relative z-10 overflow-hidden border-2 border-brand-dark bg-brand-dark rounded-[1.5rem]">
@@ -46,7 +46,7 @@ export function About() {
         </div>
 
         {/* Text Content */}
-        <div className="w-full lg:w-7/12 order-2 lg:order-1 space-y-6">
+        <div className="w-full lg:w-7/12 order-2 lg:order-1 space-y-6 print:order-2 print:w-full">
           <FadeIn delay={0.1}>
             <div className="space-y-6 text-brand-dark font-medium text-lg leading-relaxed bg-brand-white p-8 border-2 border-brand-dark shadow-brutal rounded-3xl">
               <p dangerouslySetInnerHTML={{ __html: text.p1 }} />

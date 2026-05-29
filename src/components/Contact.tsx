@@ -27,15 +27,17 @@ export function Contact() {
         <p className="font-bold text-brand-dark text-lg md:text-xl mb-10 leading-relaxed max-w-2xl mx-auto">
           {text.p}
         </p>
-        <a 
-          href={personalInfo.whatsapp}
-          target="_blank"
-          rel="noreferrer"
-          className="inline-flex items-center justify-center gap-3 px-10 py-5 bg-brand-white text-brand-dark border-4 border-brand-dark font-bold font-mono hover:bg-brand-dark hover:text-brand-white transition-colors text-sm uppercase tracking-widest shadow-[4px_4px_0_#111] hover:shadow-none hover:translate-x-1 hover:translate-y-1 rounded-2xl"
-        >
-          <Phone className="w-5 h-5" />
-          {text.btn}
-        </a>
+        {personalInfo.whatsapp && (
+          <a 
+            href={personalInfo.whatsapp}
+            target="_blank"
+            rel="noreferrer"
+            className="inline-flex items-center justify-center gap-3 px-10 py-5 bg-brand-white text-brand-dark border-4 border-brand-dark font-bold font-mono hover:bg-brand-dark hover:text-brand-white transition-colors text-sm uppercase tracking-widest shadow-[4px_4px_0_#111] hover:shadow-none hover:translate-x-1 hover:translate-y-1 rounded-2xl"
+          >
+            <Phone className="w-5 h-5" />
+            {text.btn}
+          </a>
+        )}
       </FadeIn>
     </section>
   );

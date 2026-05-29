@@ -76,26 +76,36 @@ export function Hero() {
           </a>
           
           <div className="flex flex-wrap items-center gap-4 md:gap-6 mt-4 md:mt-0">
-            <a href={personalInfo.gitlab} target="_blank" rel="noreferrer" className="p-3 bg-brand-white border-2 border-brand-dark text-brand-dark shadow-brutal-hover rounded-2xl">
-              <Gitlab className="w-6 h-6" />
-              <span className="sr-only">GitLab</span>
-            </a>
-            <a href={personalInfo.github} target="_blank" rel="noreferrer" className="p-3 bg-brand-white border-2 border-brand-dark text-brand-dark shadow-brutal-hover rounded-2xl">
-              <Github className="w-6 h-6" />
-              <span className="sr-only">GitHub</span>
-            </a>
-            <a href={personalInfo.linkedin} target="_blank" rel="noreferrer" className="p-3 bg-brand-white border-2 border-brand-dark text-brand-dark shadow-brutal-hover rounded-2xl">
-              <Linkedin className="w-6 h-6" />
-              <span className="sr-only">LinkedIn</span>
-            </a>
-            <a href={personalInfo.instagram} target="_blank" rel="noreferrer" className="p-3 bg-brand-white border-2 border-brand-dark text-brand-dark shadow-brutal-hover rounded-2xl">
-              <Instagram className="w-6 h-6" />
-              <span className="sr-only">Instagram</span>
-            </a>
-            <a href={`mailto:${personalInfo.email}`} className="p-3 bg-brand-white border-2 border-brand-dark text-brand-dark shadow-brutal-hover rounded-2xl">
-              <Mail className="w-6 h-6" />
-              <span className="sr-only">Email</span>
-            </a>
+            {personalInfo.gitlab && (
+              <a href={personalInfo.gitlab} target="_blank" rel="noreferrer" className="p-3 bg-brand-white border-2 border-brand-dark text-brand-dark shadow-brutal-hover rounded-2xl">
+                <Gitlab className="w-6 h-6" />
+                <span className="sr-only">GitLab</span>
+              </a>
+            )}
+            {personalInfo.github && (
+              <a href={personalInfo.github} target="_blank" rel="noreferrer" className="p-3 bg-brand-white border-2 border-brand-dark text-brand-dark shadow-brutal-hover rounded-2xl">
+                <Github className="w-6 h-6" />
+                <span className="sr-only">GitHub</span>
+              </a>
+            )}
+            {personalInfo.linkedin && (
+              <a href={personalInfo.linkedin} target="_blank" rel="noreferrer" className="p-3 bg-brand-white border-2 border-brand-dark text-brand-dark shadow-brutal-hover rounded-2xl">
+                <Linkedin className="w-6 h-6" />
+                <span className="sr-only">LinkedIn</span>
+              </a>
+            )}
+            {personalInfo.instagram && (
+              <a href={personalInfo.instagram} target="_blank" rel="noreferrer" className="p-3 bg-brand-white border-2 border-brand-dark text-brand-dark shadow-brutal-hover rounded-2xl">
+                <Instagram className="w-6 h-6" />
+                <span className="sr-only">Instagram</span>
+              </a>
+            )}
+            {personalInfo.email && (
+              <a href={`mailto:${personalInfo.email}`} className="p-3 bg-brand-white border-2 border-brand-dark text-brand-dark shadow-brutal-hover rounded-2xl">
+                <Mail className="w-6 h-6" />
+                <span className="sr-only">Email</span>
+              </a>
+            )}
           </div>
         </FadeIn>
       </div>

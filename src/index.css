@@ -98,11 +98,15 @@ html.is-scrollbar-active::-webkit-scrollbar-thumb {
 }
 
 @media print {
-  body {
+  @page { margin: 0.5cm; }
+
+  html, body, #root, #portfolio-main {
+    height: auto !important;
+    max-height: none !important;
+    overflow: visible !important;
     -webkit-print-color-adjust: exact !important;
     print-color-adjust: exact !important;
     background-color: var(--color-brand-light) !important;
-    font-size: 12px; /* Reduce base font size to fit more content */
   }
   
   #portfolio-main {
@@ -118,6 +122,13 @@ html.is-scrollbar-active::-webkit-scrollbar-thumb {
     margin-bottom: 1rem !important;
   }
 
+  /* Fix framer-motion elements being invisible on print because they are scrolled out of view */
+  div[style*="opacity"] {
+    opacity: 1 !important;
+    transform: none !important;
+    scale: 1 !important;
+  }
+
   .print-hide {
     display: none !important;
   }
@@ -127,17 +138,16 @@ html.is-scrollbar-active::-webkit-scrollbar-thumb {
     break-inside: avoid;
     page-break-after: always;
     break-after: page;
-    padding: 20px 0 !important;
+    padding: 10px 0 !important;
     margin: 0 !important;
-    max-height: 100vh; /* Limits length */
+    min-height: auto;
     height: auto;
-    overflow: hidden; /* Prevent spill over to next page */
+    display: block;
   }
   
   /* Zoom out large sections to fit them on one page */
   section#projects, section#experience, section#about, section#skills {
-    transform: scale(0.9);
-    transform-origin: center center;
+    zoom: 0.8;
   }
 
   section:last-of-type {
@@ -160,3 +170,4 @@ html.is-scrollbar-active::-webkit-scrollbar-thumb {
     gap: 1rem !important;
   }
 }
+
