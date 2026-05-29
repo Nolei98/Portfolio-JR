@@ -92,9 +92,9 @@ export function Hero() {
               <Instagram className="w-6 h-6" />
               <span className="sr-only">Instagram</span>
             </a>
-            <a href={personalInfo.whatsapp} target="_blank" rel="noreferrer" className="p-3 bg-brand-white border-2 border-brand-dark text-brand-dark shadow-brutal-hover rounded-2xl">
-              <Phone className="w-6 h-6" />
-              <span className="sr-only">WhatsApp</span>
+            <a href={`mailto:${personalInfo.email}`} className="p-3 bg-brand-white border-2 border-brand-dark text-brand-dark shadow-brutal-hover rounded-2xl">
+              <Mail className="w-6 h-6" />
+              <span className="sr-only">Email</span>
             </a>
           </div>
         </FadeIn>

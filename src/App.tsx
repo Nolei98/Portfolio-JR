@@ -1,12 +1,12 @@
 import React from 'react';
 import { Navbar } from './components/Navbar';
+import LeftScrollbar from './components/LeftScrollbar';
 import { Hero } from './components/Hero';
 import { About } from './components/About';
 import { Skills } from './components/Skills';
 import { Experience } from './components/Experience';
 import { Projects } from './components/Projects';
 import { Contact } from './components/Contact';
-import LeftScrollbar from './components/LeftScrollbar';
 import { LanguageProvider, useLang } from './LanguageContext';
 import { i18n } from './data';
 import { ArrowUp } from 'lucide-react';
@@ -23,15 +23,16 @@ function AppContent() {
     <>
       <LeftScrollbar />
       <Navbar />
-      <main className="max-w-7xl mx-auto px-6 md:px-12 pt-24 font-sans overflow-x-hidden">
-        <Hero />
-        <About />
-        <Skills />
-        <Experience />
-        <Projects />
-        <Contact />
-      </main>
-      <footer className="py-12 px-6 border-t-4 border-brand-dark mt-12 bg-brand-dark text-brand-white text-center font-mono rounded-t-3xl">
+      <div id="portfolio-main">
+        <main className="max-w-7xl mx-auto px-6 md:px-12 pt-24 font-sans">
+          <Hero />
+          <About />
+          <Skills />
+          <Experience />
+          <Projects />
+          <Contact />
+        </main>
+        <footer className="py-12 px-6 border-t-4 border-brand-dark mt-12 bg-brand-dark text-brand-white text-center font-mono rounded-t-3xl">
         <div className="flex flex-col items-center justify-center gap-4">
           <p className="text-[12px] uppercase tracking-[0.2em] opacity-90 font-bold italic">
             João Rodrigues <br className="hidden md:block"/>
@@ -49,6 +50,7 @@ function AppContent() {
           </button>
         </div>
       </footer>
+      </div>
     </>
   );
 }

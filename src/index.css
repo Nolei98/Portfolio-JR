@@ -60,6 +60,8 @@
 
 html {
   scroll-behavior: smooth;
+  -webkit-tap-highlight-color: transparent;
+  overflow-x: hidden;
 }
 
 body {
@@ -69,7 +71,6 @@ body {
     linear-gradient(to right, rgba(17, 17, 17, 0.05) 1px, transparent 1px),
     linear-gradient(to bottom, rgba(17, 17, 17, 0.05) 1px, transparent 1px);
   background-size: 40px 40px;
-  overflow-x: hidden;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -92,7 +93,28 @@ h1, h2, h3, h4, h5, h6 {
   background: var(--color-brand-dark);
 }
 
-html.is-scrollbar-active::-webkit-scrollbar-thumb,
-body.is-scrollbar-active::-webkit-scrollbar-thumb {
+html.is-scrollbar-active::-webkit-scrollbar-thumb {
   background: var(--color-brand-dark);
+}
+
+@media print {
+  body {
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+    background-color: var(--color-brand-light) !important;
+  }
+  
+  #portfolio-main {
+    width: 100%;
+  }
+
+  nav, .fixed, .hidden.sm\:block, button[aria-label="Toggle language"], footer {
+    display: none !important;
+  }
+  
+  section {
+    page-break-inside: auto;
+    break-inside: auto;
+    margin-bottom: 2rem;
+  }
 }
