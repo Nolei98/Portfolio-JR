@@ -3,11 +3,12 @@
 @theme {
   --color-brand-light: #F4F4F0;
   --color-brand-dark: #111111;
-  --color-brand-green: #00fa9a;
-  --color-brand-pink: #ff1053;
-  --color-brand-blue: #b500ff;
-  --color-brand-yellow: #ffea00;
-  --color-brand-peach: #ff5e00;
+  --color-brand-green: #CFD4C5;
+  --color-brand-pink: #E8E5E1;
+  --color-brand-blue: #D6DBDF;
+  --color-brand-yellow: #EBE5D9;
+  --color-brand-peach: #E1DACD;
+  --color-brand-accent: #A8FF35;
   --color-brand-white: #FFFFFF;
   --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
   --font-display: "Syne", ui-sans-serif, system-ui, sans-serif;
