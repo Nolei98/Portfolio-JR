@@ -1,5 +1,5 @@
 import { motion } from 'motion/react';
-import { Gitlab, Linkedin, Mail, Instagram, ChevronDown } from 'lucide-react';
+import { Gitlab, Linkedin, Mail, Instagram, ChevronDown, Github, Phone } from 'lucide-react';
 import { personalInfo, i18n } from '../data';
 import { FadeIn } from './ui/Layout';
 import { useLang } from '../LanguageContext';
@@ -60,10 +60,14 @@ export function Hero() {
             {text.contactBtn}
           </a>
           
-          <div className="flex items-center gap-6">
+          <div className="flex flex-wrap items-center gap-4 md:gap-6 mt-4 md:mt-0">
             <a href={personalInfo.gitlab} target="_blank" rel="noreferrer" className="p-3 bg-brand-white border-2 border-brand-dark text-brand-dark shadow-brutal-hover rounded-2xl">
               <Gitlab className="w-6 h-6" />
               <span className="sr-only">GitLab</span>
+            </a>
+            <a href={personalInfo.github} target="_blank" rel="noreferrer" className="p-3 bg-brand-white border-2 border-brand-dark text-brand-dark shadow-brutal-hover rounded-2xl">
+              <Github className="w-6 h-6" />
+              <span className="sr-only">GitHub</span>
             </a>
             <a href={personalInfo.linkedin} target="_blank" rel="noreferrer" className="p-3 bg-brand-white border-2 border-brand-dark text-brand-dark shadow-brutal-hover rounded-2xl">
               <Linkedin className="w-6 h-6" />
@@ -72,6 +76,10 @@ export function Hero() {
             <a href={personalInfo.instagram} target="_blank" rel="noreferrer" className="p-3 bg-brand-white border-2 border-brand-dark text-brand-dark shadow-brutal-hover rounded-2xl">
               <Instagram className="w-6 h-6" />
               <span className="sr-only">Instagram</span>
+            </a>
+            <a href={personalInfo.whatsapp} target="_blank" rel="noreferrer" className="p-3 bg-brand-white border-2 border-brand-dark text-brand-dark shadow-brutal-hover rounded-2xl">
+              <Phone className="w-6 h-6" />
+              <span className="sr-only">WhatsApp</span>
             </a>
           </div>
         </FadeIn>

@@ -3,10 +3,12 @@ import { Briefcase, Code, Terminal } from 'lucide-react';
 
 export const personalInfo = {
   name: "João",
-  email: "contato@seunome.com",
-  gitlab: "https://gitlab.com/",
-  linkedin: "https://linkedin.com/in/",
-  instagram: "https://instagram.com/",
+  email: "noleirodrigues@gmail.com",
+  gitlab: "https://gitlab.com/JoaoRodrigues_Nolei",
+  linkedin: "https://www.linkedin.com/in/joão-rodrigues-18b731179",
+  instagram: "https://instagram.com/noleicreative",
+  github: "https://github.com/Nolei98",
+  whatsapp: "https://wa.me/5587999099937",
 };
 
 export const i18n = {
