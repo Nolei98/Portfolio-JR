@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import { Navbar } from './components/Navbar';
-import LeftScrollbar from './components/LeftScrollbar';
 import { Hero } from './components/Hero';
 import { About } from './components/About';
 import { Skills } from './components/Skills';
@@ -35,7 +34,6 @@ function AppContent() {
 
   return (
     <>
-      <LeftScrollbar />
       <Navbar />
       <div id="portfolio-main">
         <main className="max-w-7xl mx-auto px-4 sm:px-6 md:px-12 pt-16 md:pt-24 font-sans">
