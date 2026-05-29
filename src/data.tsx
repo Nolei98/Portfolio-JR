@@ -34,7 +34,7 @@ export const i18n = {
         { name: "Portuguese", level: "Native", percent: 100, flag: "https://api.iconify.design/flag:br-4x3.svg" },
         { name: "English", level: "Intermediate (Continuous Study)", percent: 65, flag: "https://api.iconify.design/flag:us-4x3.svg" },
         { name: "Spanish", level: "Basic", percent: 30, flag: "https://api.iconify.design/flag:es-4x3.svg" },
-        { name: "Libras", level: "Basic", percent: 20, flag: "https://api.iconify.design/lucide:hand.svg?color=%23111" }
+        { name: "Brazilian Sign Language", level: "Basic", percent: 20, flag: "https://api.iconify.design/lucide:hand.svg?color=%23111" }
       ],
       musicAlbums: [
         { title: "AM", artist: "Arctic Monkeys", image: "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/69/9c/b5/699cb5d6-115c-ff73-9d26-e57ea4350d72/887828031795.png/600x600bb.jpg", link: "https://open.spotify.com/artist/7Ln80lUS6He07XvHI8qqHH" },
@@ -82,7 +82,7 @@ export const i18n = {
         { name: "Português", level: "Nativo", percent: 100, flag: "https://api.iconify.design/flag:br-4x3.svg" },
         { name: "Inglês", level: "Intermediário (Estudo Contínuo)", percent: 65, flag: "https://api.iconify.design/flag:us-4x3.svg" },
         { name: "Espanhol", level: "Básico", percent: 30, flag: "https://api.iconify.design/flag:es-4x3.svg" },
-        { name: "Libras", level: "Básico", percent: 20, flag: "https://api.iconify.design/lucide:hand.svg?color=%23111" }
+        { name: "Brazilian Sign Language", level: "Básico", percent: 20, flag: "https://api.iconify.design/lucide:hand.svg?color=%23111" }
       ],
       musicAlbums: [
         { title: "AM", artist: "Arctic Monkeys", image: "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/69/9c/b5/699cb5d6-115c-ff73-9d26-e57ea4350d72/887828031795.png/600x600bb.jpg", link: "https://open.spotify.com/artist/7Ln80lUS6He07XvHI8qqHH" },
