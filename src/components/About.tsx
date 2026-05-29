@@ -32,7 +32,7 @@ export function About() {
             <div className="space-y-6 text-brand-dark font-medium text-lg leading-relaxed bg-brand-white p-8 border-2 border-brand-dark shadow-brutal rounded-3xl">
               <p dangerouslySetInnerHTML={{ __html: text.p1 }} />
               <p>{text.p2}</p>
-              <p>{text.p3}</p>
+              {text.p3 && <p>{text.p3}</p>}
             </div>
           </FadeIn>
           

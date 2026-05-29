@@ -17,15 +17,15 @@ export const i18n = {
     hero: { 
       greeting: "Hello, world! I am", 
       subtitle: "Rodrigues", 
-      desc: "Building bridges between design and mental engineering. Specialized in creating exceptional, accessible, and user-centric digital experiences.", 
+      desc: "Transforming logic into real solutions since 2014. With solid experience in web development since 2019, I help build scalable systems, secure architectures, and consistent digital businesses.", 
       contactBtn: "Get in touch" 
     },
     about: { 
       title: "About Me", 
       subtitle: "01.", 
-      p1: `Hello! I am João Rodrigues, a Software Engineer focused on building beautiful and functional interfaces. My interest in web development started back in 2017 when I realized I wanted to bring my digital ideas to life.`, 
-      p2: "I am a passionate developer creating modern, efficient, and scalable web solutions. Specialized in transforming complex ideas into clean interfaces and seamless digital experiences.", 
-      p3: "My main focus today is building products and experiences across various disciplines in an accessible and scalable way.",
+      p1: `My journey in technology started early, in 2014, when I enrolled in the IT Tech course at IF Campus Salgueiro. That's where I built the algorithmic and structural foundation that pushed me into the web development market in 2019. Since then, whether through my agency NOLEI CREATIVE or in independent partnerships, I've been transforming real needs into efficient digital platforms.`, 
+      p2: "Currently, I am in the 3rd semester of the Bachelor's degree in Software Engineering at Jala University, improving my view of system architecture and going deeper into the corporate back-end ecosystem. My daily focus is writing clean code, designing performant databases, and delivering solutions that actually solve problems, always driven by collaboration and a constant desire to learn.", 
+      p3: "",
       musicTitle: "Music Taste", 
       musicDesc: "Indie Rock, Electronic, Alternative, Brazilian MPB", 
       softTitle: "Soft Skills", 
@@ -47,15 +47,15 @@ export const i18n = {
     hero: { 
       greeting: "Olá, mundo! Eu sou", 
       subtitle: "Rodrigues", 
-      desc: "Construindo pontes entre design e engenharia mental. Especializado em criar experiências digitais excepcionais, acessíveis e centradas no usuário.", 
+      desc: "Transformando lógica em soluções reais desde 2014. Com sólida atuação no desenvolvimento web desde 2019, ajudo a construir sistemas escaláveis, arquiteturas seguras e negócios digitais consistentes.", 
       contactBtn: "Entrar em Contato" 
     },
     about: { 
       title: "Sobre Mim", 
       subtitle: "01.", 
-      p1: `Olá! Sou João Rodrigues, um Engenheiro de Software focado em construir interfaces bonitas e funcionais. Meu interesse em desenvolvimento web começou em 2017 quando percebi que queria dar vida às minhas ideias digitais.`, 
-      p2: "Sou um desenvolvedor apaixonado por criar soluções web modernas, eficientes e escaláveis. Especializado em transformar ideias complexas em interfaces limpas e experiências digitais fluidas.", 
-      p3: "Meu foco principal hoje é construir produtos e experiências em várias disciplinas de forma acessível e escalável.",
+      p1: `Minha jornada na tecnologia começou cedo, em 2014, quando ingressei no curso Técnico em TI no IF Campus Salgueiro. Foi lá que construí a base algorítmica e estrutural que me impulsionou para o mercado de desenvolvimento web em 2019. Desde então, seja através da minha agência NOLEI CREATIVE ou em parcerias independentes, venho transformando necessidades reais em plataformas digitais eficientes.`, 
+      p2: "Atualmente, estou no 3º semestre do Bacharelado em Engenharia de Software na Jala University, aprimorando minha visão de arquitetura de sistemas e me aprofundando no ecossistema de back-end corporativo. Meu foco diário é escrever código limpo, projetar bancos de dados performáticos e entregar soluções que realmente resolvam problemas, sempre movido pela colaboração e pela constante vontade de aprender.", 
+      p3: "",
       musicTitle: "Gosto Musical", 
       musicDesc: "Indie Rock, Eletrônica, Alternativo, MPB", 
       softTitle: "Soft Skills", 
@@ -143,73 +143,114 @@ export const skillsObj = {
 
 export const experienceData = [
   {
-    role: { en: "Senior Developer", pt: "Desenvolvedor Sênior" },
-    company: "Tech Solutions Inc.",
-    period: "2022 - Present",
+    role: { en: "System Creation & Maintenance", pt: "Criação e Manutenção de Sistemas" },
+    company: "Web Development",
+    period: "2019 - Present",
     description: { 
-      en: "Technical leadership in architecture and core platform development, resulting in a 40% overall performance improvement and adoption of modern CI/CD practices.", 
-      pt: "Liderança técnica na arquitetura e desenvolvimento da plataforma principal, resultando em uma melhoria de 40% na performance geral e adoção de práticas modernas de CI/CD." 
-    },
-    icon: <Briefcase className="w-5 h-5" />
-  },
-  {
-    role: { en: "Mid-level Developer", pt: "Desenvolvedor Pleno" },
-    company: "Startup Inovadora",
-    period: "2019 - 2022",
-    description: { 
-      en: "Development of robust APIs and interactive UI, working closely with the design team to ensure the best user experience.", 
-      pt: "Desenvolvimento de APIs robustas e interfaces de usuário interativas, trabalhando em estreita colaboração com a equipe de design para garantir a melhor experiência do usuário."
+      en: "Development of custom solutions for digital management and operation of companies and diverse clients.", 
+      pt: "Desenvolvimento de soluções sob medida para gestão e operação digital de empresas e clientes variados." 
     },
     icon: <Code className="w-5 h-5" />
   },
   {
-    role: { en: "Jr Programmer Analyst", pt: "Analista Programador Jr" },
-    company: "Agência Digital",
-    period: "2017 - 2019",
+    role: { en: "E-commerce & CMS", pt: "E-commerce & CMS" },
+    company: "E-commerce platforms",
+    period: "2019 - Present",
     description: { 
-      en: "Creation of landing pages, maintenance of legacy systems, and implementation of new features in custom CMS.", 
-      pt: "Criação de landing pages, manutenção de sistemas legados e implementação de novas funcionalidades em CMS personalizados." 
+      en: "Structuring, customization, and maintenance of high-performance virtual stores and dynamic portals using ecosystems like OpenCart, WordPress, and Joomla.", 
+      pt: "Estruturação, customização e manutenção de lojas virtuais e portais dinâmicos de alto desempenho utilizando ecossistemas como OpenCart, WordPress e Joomla."
+    },
+    icon: <Briefcase className="w-5 h-5" />
+  },
+  {
+    role: { en: "Robust Back-end", pt: "Back-end Robusto" },
+    company: "APIs & Data",
+    period: "2022 - Present",
+    description: { 
+      en: "Implementation of advanced business rules, APIs, and data manipulation using Java, Spring Boot, and PHP, prioritizing security, cryptography, and structural efficiency.", 
+      pt: "Implementação de regras de negócios avançadas, APIs e manipulação de dados utilizando Java, Spring Boot e PHP, priorizando segurança, criptografia e eficiência estrutural." 
+    },
+    icon: <Terminal className="w-5 h-5" />
+  },
+  {
+    role: { en: "B.S. in Software Engineering", pt: "Bacharelado em Eng. de Software" },
+    company: "Jala University",
+    period: "2025 - 2029",
+    description: {
+      en: "Currently in the 3rd semester, focusing on back-end development, design patterns (Repository Pattern, DTOs), and data modeling.",
+      pt: "Atualmente cursando o 3º semestre, com foco em desenvolvimento back-end, padrões de projeto (Repository Pattern, DTOs) e modelagem de dados."
+    },
+    icon: <Briefcase className="w-5 h-5" />
+  },
+  {
+    role: { en: "IT Technician (High School)", pt: "Técnico em TI Integrado ao Ensino Médio" },
+    company: "IF Campus Salgueiro",
+    period: "2014 - 2019",
+    description: {
+      en: "Technical education that established my foundation in programming, logic, and infrastructure.",
+      pt: "Formação técnica que estabeleceu meus fundamentos em programação, lógica e infraestrutura."
     },
     icon: <Terminal className="w-5 h-5" />
   }
 ];
 
-export const projectsData = [
+export const projectsCategories = [
   {
-    id: 1,
-    title: { en: "Omni E-commerce Platform", pt: "Plataforma de E-commerce Omni" },
-    description: {
-      en: "A complete e-commerce system with an administrative dashboard, real-time inventory management, and multiple payment gateway integrations.",
-      pt: "Um sistema completo de comércio eletrônico com painel administrativo, gestão de inventário em tempo real e integração de múltiplos gateways de pagamento."
-    },
-    tech: ["Next.js", "Node.js", "Stripe", "PostgreSQL"],
-    link: "#",
-    gitlab: "#",
-    image: "https://images.unsplash.com/photo-1557821552-17105176677c?w=800&q=80",
+    id: "university-projects",
+    label: { en: "University Projects", pt: "Projetos Universitários" },
+    items: [
+      {
+        id: "modutask-capstone",
+        title: "ModuTask",
+        semester: { en: "3rd Semester - Jala University", pt: "3º Semestre - Jala University" },
+        description: { 
+          en: "CLI-based task management system developed as a Capstone (Sprint) project. Focus on layered architecture and data security.", 
+          pt: "Sistema de gerenciamento de tarefas baseado em CLI desenvolvido como projeto Capstone (Sprint). Foco em arquitetura em camadas e segurança de dados." 
+        },
+        technologies: ["Java", "MongoDB", "AES Encryption", "Service Layer"],
+        repositoryLink: "https://github.com/Nolei98/modutask", // User's GitHub is Nolei98 based on earlier context
+        liveDemoLink: null,
+        image: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=800&q=80"
+      }
+    ]
   },
   {
-    id: 2,
-    title: { en: "EcoCalc Dashboard", pt: "EcoCalc Dashboard" },
-    description: {
-      en: "SaaS application for calculating environmental metrics with interactive data visualization and exportable reports.",
-      pt: "Aplicativo SaaS para cálculo de métricas ambientais com visualização de dados interativa e relatórios exportáveis."
-    },
-    tech: ["React", "TypeScript", "Tailwind CSS", "Recharts"],
-    link: "#",
-    gitlab: "#",
-    image: "https://images.unsplash.com/photo-1518770660439-4636190af475?w=800&q=80",
+    id: "web-ecommerce",
+    label: { en: "Web Apps & E-commerce", pt: "Aplicações Web & E-commerce" },
+    items: [
+      {
+        id: "exemplo-ecommerce-opencart",
+        title: "Virtual Store - Client X",
+        semester: { en: "Professional - NOLEI CREATIVE", pt: "Profissional - NOLEI CREATIVE" },
+        description: {
+          en: "Complete e-commerce development, payment gateway configuration, and virtual storefront speed optimization.",
+          pt: "Desenvolvimento de e-commerce completo, configuração de gateway de pagamento e otimização de velocidade da vitrine virtual."
+        },
+        technologies: ["OpenCart", "PHP", "MySQL", "Bootstrap"],
+        repositoryLink: null,
+        liveDemoLink: "https://noleicreative.com", // Dummy or actual if available
+        image: "https://images.unsplash.com/photo-1557821552-17105176677c?w=800&q=80"
+      }
+    ]
   },
   {
-    id: 3,
-    title: { en: "Manager ERP Studio", pt: "Manager ERP Studio" },
-    description: {
-      en: "Custom internal ERP management system encompassing HR, finance, and access control modules.",
-      pt: "Sistema interno de gestão ERP desenvolvido sob medida, englobando módulos de RH, financeiro e controle de acesso."
-    },
-    tech: ["Vue.js", "Django", "Docker", "Redis"],
-    link: "#",
-    gitlab: "#",
-    image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&q=80",
-  },
+    id: "backend-architecture",
+    label: { en: "Backend & Architecture", pt: "Backend & Arquitetura" },
+    items: [
+      {
+        id: "exemplo-api-springboot",
+        title: "Internal Management API",
+        semester: { en: "Studies/Professional", pt: "Estudos/Profissional" },
+        description: {
+          en: "Development of a RESTful API using the Repository pattern, DTOs, and rich domain structuring to guarantee the integrity of business rules.",
+          pt: "Desenvolvimento de uma API RESTful utilizando o padrão Repository, DTOs e estruturação de domínio rico para garantir a integridade das regras de negócio."
+        },
+        technologies: ["Java", "Spring Boot", "PostgreSQL", "Docker"],
+        repositoryLink: "https://github.com/Nolei98/",
+        liveDemoLink: null,
+        image: "https://images.unsplash.com/photo-1518770660439-4636190af475?w=800&q=80"
+      }
+    ]
+  }
 ];
 
