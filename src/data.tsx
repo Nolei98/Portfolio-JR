@@ -43,7 +43,7 @@ export const i18n = {
     footer: { text1: "Built with brutalist but soft modern design.", text2: "© 2026" }
   },
   pt: {
-    nav: { about: "Sobre", skills: "Habilidades", experience: "Linha do Tempo", projects: "Projetos", contact: "Contato", resume: "Currículo" },
+    nav: { about: "Sobre", skills: "Habilidades", experience: "Carreira", projects: "Projetos", contact: "Contato", resume: "Currículo" },
     hero: { 
       greeting: "Olá, mundo! Eu sou", 
       subtitle: "Rodrigues", 

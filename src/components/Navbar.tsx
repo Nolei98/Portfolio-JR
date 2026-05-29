@@ -41,8 +41,8 @@ export function Navbar() {
         </a>
 
         {/* Desktop Nav */}
-        <nav className="hidden md:flex items-center gap-8">
-          <ol className="flex items-center gap-8 font-mono text-[11px] font-bold uppercase tracking-[0.2em] text-brand-dark">
+        <nav className="hidden lg:flex items-center gap-8">
+          <ol className="flex items-center gap-6 xl:gap-8 font-mono text-[11px] font-bold uppercase tracking-[0.2em] text-brand-dark">
             {navLinks.map((link) => (
                <li key={link.name}>
                  <a href={link.href} className="flex items-center group">
@@ -67,7 +67,7 @@ export function Navbar() {
         </nav>
         
         {/* Mobile Menu Toggle */}
-        <div className="flex items-center gap-4 md:hidden">
+        <div className="flex items-center gap-4 lg:hidden">
             <button 
               onClick={toggleLang} 
               className="px-2 py-1 font-mono text-xs font-bold border-2 border-brand-dark bg-brand-white rounded-lg"
@@ -75,7 +75,7 @@ export function Navbar() {
               {lang === 'en' ? 'EN' : 'PT'}
             </button>
             <button 
-            className="md:hidden text-brand-dark hover:text-brand-green z-50 relative p-2 bg-brand-white border-2 border-brand-dark shadow-brutal rounded-xl"
+            className="lg:hidden text-brand-dark hover:text-brand-green z-50 relative p-2 bg-brand-white border-2 border-brand-dark shadow-brutal rounded-xl"
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
             >
              {isMobileMenuOpen ? <X /> : <Menu />}
