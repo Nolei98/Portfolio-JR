@@ -55,7 +55,7 @@ export function Hero() {
         <FadeIn delay={0.5} className="flex flex-wrap items-center gap-8">
           <a
             href="#contact"
-            className="px-8 py-4 bg-brand-green text-brand-dark border-2 border-brand-dark font-bold font-mono text-[12px] uppercase tracking-widest shadow-brutal-hover rounded-2xl"
+            className="px-8 py-4 bg-brand-accent text-brand-dark border-2 border-brand-dark font-bold font-mono text-[12px] uppercase tracking-widest shadow-brutal-hover rounded-2xl"
           >
             {text.contactBtn}
           </a>
