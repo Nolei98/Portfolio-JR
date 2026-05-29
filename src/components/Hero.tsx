@@ -13,21 +13,25 @@ export function Hero() {
       
       {/* Abstract pixel stairs */}
       <div className="absolute top-[15%] left-[5%] flex-col hidden md:flex -z-10 opacity-90">
-        <div className="w-8 h-8 bg-brand-dark"></div>
-        <div className="w-16 h-8 bg-brand-dark -mt-px"></div>
-        <div className="w-24 h-8 bg-brand-dark -mt-px"></div>
+        <div className="w-8 h-8 bg-brand-accent"></div>
+        <div className="w-16 h-8 bg-brand-accent -mt-px"></div>
+        <div className="w-24 h-8 bg-brand-accent -mt-px"></div>
       </div>
       
       {/* Abstract wavy line SVG */}
-      <div className="absolute bottom-[20%] right-[5%] hidden md:block -z-10 opacity-50">
+      <motion.div 
+        animate={{ x: [0, 15, 0] }}
+        transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
+        className="absolute bottom-[20%] right-[5%] hidden md:block -z-10 opacity-50"
+      >
         <svg width="200" height="150" viewBox="0 0 200 150" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M0,75 Q50,0 100,75 T200,75" stroke="var(--color-brand-dark)" strokeWidth="3" fill="none" />
         </svg>
-      </div>
+      </motion.div>
 
       <div className="relative z-10 pt-10 mt-10 md:mt-0">
         <FadeIn delay={0.1}>
-          <span className="inline-block bg-brand-dark text-brand-green px-4 py-1 border-2 border-brand-dark shadow-brutal text-[10px] font-bold uppercase tracking-[0.5em] font-mono mb-8 transform -rotate-2">
+          <span className="inline-block bg-brand-dark text-brand-accent px-4 py-1 border-2 border-brand-dark shadow-[6px_6px_0_var(--color-brand-accent)] text-[10px] font-bold uppercase tracking-[0.5em] font-mono mb-8 transform -rotate-2">
             {text.greeting}
           </span>
         </FadeIn>
@@ -47,9 +51,20 @@ export function Hero() {
         </FadeIn>
         
         <FadeIn delay={0.4}>
-          <p className="max-w-xl text-lg md:text-xl font-medium text-brand-dark leading-relaxed mb-12 bg-brand-white p-6 border-2 border-brand-dark shadow-brutal rounded-2xl">
-            {text.desc}
-          </p>
+          <div className="relative inline-block max-w-xl mb-12">
+            <p className="text-lg md:text-xl font-medium text-brand-dark leading-relaxed bg-brand-white p-6 border-2 border-brand-dark shadow-brutal rounded-2xl relative">
+              {text.desc}
+            </p>
+            <a href="#about" className="absolute -bottom-[18px] -right-[18px] focus:outline-none focus:ring-4 focus:ring-brand-accent rounded-full z-20">
+              <motion.div 
+                className="text-brand-dark p-2 bg-brand-accent border-2 border-brand-dark shadow-[4px_4px_0_#111] rounded-full cursor-pointer hover:bg-brand-white transition-colors flex items-center justify-center"
+                animate={{ y: [0, 8, 0] }}
+                transition={{ repeat: Infinity, duration: 2 }}
+              >
+                <ChevronDown className="w-6 h-6" />
+              </motion.div>
+            </a>
+          </div>
         </FadeIn>
 
         <FadeIn delay={0.5} className="flex flex-wrap items-center gap-8">
@@ -84,16 +99,6 @@ export function Hero() {
           </div>
         </FadeIn>
       </div>
-
-      <a href="#about" className="absolute bottom-10 left-1/2 -translate-x-1/2 focus:outline-none focus:ring-4 focus:ring-brand-green rounded-full z-20">
-        <motion.div 
-          className="text-brand-dark p-2 bg-brand-green border-2 border-brand-dark shadow-brutal rounded-full cursor-pointer hover:bg-brand-white transition-colors"
-          animate={{ y: [0, 10, 0] }}
-          transition={{ repeat: Infinity, duration: 2 }}
-        >
-          <ChevronDown className="w-6 h-6" />
-        </motion.div>
-      </a>
     </section>
   );
 }

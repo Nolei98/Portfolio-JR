@@ -67,7 +67,7 @@ export function About() {
               </div>
               
               <div className="absolute -bottom-4 -right-4 w-16 h-16 bg-brand-yellow border-2 border-brand-dark rounded-full shadow-brutal z-20 flex items-center justify-center">
-                 <span className="text-3xl text-brand-dark font-display font-bold">@</span>
+                 <span className="text-3xl font-display font-bold text-transparent bg-clip-text bg-gradient-to-tr from-[#f9ce34] via-[#ee2a7b] to-[#6228d7]">@</span>
               </div>
             </div>
           </FadeIn>

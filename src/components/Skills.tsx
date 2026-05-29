@@ -12,9 +12,9 @@ export function Skills() {
       {/* Abstract background shapes */}
       <div className="absolute top-[50%] right-[-10%] w-[400px] h-[400px] bg-[#75A5E3] rounded-full -z-20 opacity-10 blur-3xl hidden md:block" />
       <div className="absolute bottom-[-5%] left-[-5%] hidden md:flex flex-col -z-10 opacity-80">
-        <div className="w-32 h-8 bg-brand-dark"></div>
-        <div className="w-24 h-8 bg-brand-dark -mt-px"></div>
-        <div className="w-16 h-8 bg-brand-dark -mt-px"></div>
+        <div className="w-32 h-8 bg-brand-accent"></div>
+        <div className="w-24 h-8 bg-brand-accent -mt-px"></div>
+        <div className="w-16 h-8 bg-brand-accent -mt-px"></div>
       </div>
 
       <FadeIn>

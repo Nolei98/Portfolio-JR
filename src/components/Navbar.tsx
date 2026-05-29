@@ -36,8 +36,8 @@ export function Navbar() {
       <div className="max-w-7xl mx-auto px-6 md:px-12 flex items-center justify-between">
         
         {/* Logo */}
-        <a href="#home" className="text-3xl font-bold text-brand-dark font-display tracking-tighter transform transition-transform cursor-pointer hover:text-brand-green">
-          {'<dev>'}
+        <a href="#home" className="text-2xl md:text-3xl font-bold text-brand-dark font-display tracking-tighter transform transition-transform cursor-pointer hover:text-brand-green relative select-none">
+          &lt;d<span className="relative inline-block">ev<span className="absolute bottom-full translate-y-[9px] md:translate-y-[11px] left-1/2 -translate-x-1/2 text-[10px] text-brand-accent normal-case tracking-normal font-sans leading-none italic">Nolei</span></span>&gt;
         </a>
 
         {/* Desktop Nav */}
