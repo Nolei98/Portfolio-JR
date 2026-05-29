@@ -72,7 +72,12 @@ export function Navbar() {
               className="px-3 py-1 font-mono text-sm font-bold border-2 border-brand-dark shadow-[2px_2px_0_#111] hover:shadow-[4px_4px_0_#111] transition-all bg-brand-white rounded-lg flex items-center gap-2 focus:outline-none outline-none"
               aria-label="Toggle language"
             >
-              {lang === 'en' ? '🇬🇧 EN' : '🇧🇷 PT'}
+              <img 
+                src={lang === 'en' ? "https://api.iconify.design/flag:us-4x3.svg" : "https://api.iconify.design/flag:br-4x3.svg"} 
+                alt={lang === 'en' ? "US Flag" : "BR Flag"} 
+                className="w-4 h-auto rounded-sm"
+              />
+              {lang === 'en' ? 'EN' : 'PT'}
             </button>
             <button onClick={handleDownloadPDF} className="px-6 py-2 bg-brand-accent border-2 border-brand-dark text-brand-dark font-bold font-mono text-[11px] uppercase tracking-[0.2em] shadow-[4px_4px_0_#111] hover:shadow-[0_0_0_#111] transition-all rounded-xl hover:-translate-y-0.5 focus:outline-none cursor-pointer">
               {text.resume}
@@ -84,8 +89,13 @@ export function Navbar() {
         <div className="flex items-center gap-4 lg:hidden print-hide">
             <button 
               onClick={toggleLang} 
-              className="px-2 py-1 font-mono text-xs font-bold border-2 border-brand-dark bg-brand-white rounded-lg focus:outline-none outline-none"
+              className="px-2 py-1 font-mono text-xs font-bold flex items-center gap-2 border-2 border-brand-dark bg-brand-white rounded-lg focus:outline-none outline-none"
             >
+              <img 
+                src={lang === 'en' ? "https://api.iconify.design/flag:us-4x3.svg" : "https://api.iconify.design/flag:br-4x3.svg"} 
+                alt={lang === 'en' ? "US Flag" : "BR Flag"} 
+                className="w-4 h-auto rounded-sm"
+              />
               {lang === 'en' ? 'EN' : 'PT'}
             </button>
             <button 

@@ -27,9 +27,27 @@ export const i18n = {
       p2: "Currently, I am in the 3rd semester of the Bachelor's degree in Software Engineering at Jala University, improving my view of system architecture and going deeper into the corporate back-end ecosystem. My daily focus is writing clean code, designing performant databases, and delivering solutions that actually solve problems, always driven by collaboration and a constant desire to learn.", 
       p3: "",
       musicTitle: "Music Taste", 
-      musicDesc: "Indie Rock, Electronic, Alternative, Brazilian MPB", 
       softTitle: "Soft Skills", 
-      softDesc: "Problem Solving, Communication, Adaptability, Teamwork" 
+      softDesc: "Problem Solving, Communication, Adaptability, Teamwork",
+      langTitle: "Languages",
+      languages: [
+        { name: "Portuguese", level: "Native", percent: 100, flag: "https://api.iconify.design/flag:br-4x3.svg" },
+        { name: "English", level: "Intermediate (Continuous Study)", percent: 65, flag: "https://api.iconify.design/flag:us-4x3.svg" },
+        { name: "Spanish", level: "Basic", percent: 30, flag: "https://api.iconify.design/flag:es-4x3.svg" },
+        { name: "Libras", level: "Basic", percent: 20, flag: "https://api.iconify.design/lucide:hand.svg?color=%23111" }
+      ],
+      musicAlbums: [
+        { title: "AM", artist: "Arctic Monkeys", image: "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/69/9c/b5/699cb5d6-115c-ff73-9d26-e57ea4350d72/887828031795.png/600x600bb.jpg", link: "https://open.spotify.com/artist/7Ln80lUS6He07XvHI8qqHH" },
+        { title: "Currents", artist: "Tame Impala", image: "https://upload.wikimedia.org/wikipedia/en/9/9b/Tame_Impala_-_Currents.png", link: "https://open.spotify.com/artist/5INjqkS1o8h1imAzPqGZBb" },
+        { title: "Blonde", artist: "Frank Ocean", image: "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/42/62/50/426250f9-7e39-f907-687c-442caa436636/dj.nhptxziz.jpg/600x600bb.jpg", link: "https://open.spotify.com/artist/2h93pZq0e7k5yf4dywlkpM" },
+        { title: "Atrás/Além", artist: "O Terno", image: "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/1a/aa/2d/1aaa2d4b-4b14-8d23-0075-b458da27a35c/8447053313121.jpg/600x600bb.jpg", link: "https://open.spotify.com/artist/5XDi5mKz3mX8I1sO0m9w5x" },
+        { title: "SOS", artist: "SZA", image: "https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/62/93/13/6293132e-20ff-67ab-3d1f-96bb6797a6ba/196589564955.jpg/600x600bb.jpg", link: "https://open.spotify.com/artist/7tYKF4w9nC0nq9CsPZTHyP" },
+        { title: "The Gods We...", artist: "AURORA", image: "https://is1-ssl.mzstatic.com/image/thumb/Music112/v4/17/ee/5e/17ee5e67-1dcd-beab-a5d4-4845f9dbacbf/5056167167433.jpg/600x600bb.jpg", link: "https://open.spotify.com/artist/1cS6z4MjalROizuWrrm5ok" },
+        { title: "21", artist: "Adele", image: "https://upload.wikimedia.org/wikipedia/en/1/1b/Adele_-_21.png", link: "https://open.spotify.com/artist/4dpARuHxo51G3z768sgnrY" },
+        { title: "Freudian", artist: "Daniel Caesar", image: "https://is1-ssl.mzstatic.com/image/thumb/Music112/v4/d5/d6/6d/d5d66d5e-9f4f-8566-079c-1b9b92065dee/22UMGIM42324.rgb.jpg/600x600bb.jpg", link: "https://open.spotify.com/artist/20wkVLutqOEhC173SjktsG" },
+        { title: "Born to Die", artist: "Lana Del Rey", image: "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/59/10/66/591066ea-3c85-3dfe-ef82-ffdbbcdfc8b9/12UMGIM00033.rgb.jpg/600x600bb.jpg", link: "https://open.spotify.com/artist/00FQb4Vj1XNCwPNE55zLci" },
+        { title: "Indigo Borbol...", artist: "Liniker", image: "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/5c/ac/71/5cac71f4-f5f0-fba3-9779-e8d51167a33e/8445162491440.jpg/600x600bb.jpg", link: "https://open.spotify.com/artist/5S7uK06GzGqXnK5j2QIt9u" }
+      ]
     },
     skills: { title: "Tech Skills", subtitle: "02." },
     experience: { title: "Professional Path", subtitle: "03." },
@@ -57,9 +75,27 @@ export const i18n = {
       p2: "Atualmente, estou no 3º semestre do Bacharelado em Engenharia de Software na Jala University, aprimorando minha visão de arquitetura de sistemas e me aprofundando no ecossistema de back-end corporativo. Meu foco diário é escrever código limpo, projetar bancos de dados performáticos e entregar soluções que realmente resolvam problemas, sempre movido pela colaboração e pela constante vontade de aprender.", 
       p3: "",
       musicTitle: "Gosto Musical", 
-      musicDesc: "Indie Rock, Eletrônica, Alternativo, MPB", 
       softTitle: "Soft Skills", 
-      softDesc: "Resolução de Problemas, Comunicação, Adaptabilidade, Trabalho em Equipe" 
+      softDesc: "Resolução de Problemas, Comunicação, Adaptabilidade, Trabalho em Equipe",
+      langTitle: "Idiomas",
+      languages: [
+        { name: "Português", level: "Nativo", percent: 100, flag: "https://api.iconify.design/flag:br-4x3.svg" },
+        { name: "Inglês", level: "Intermediário (Estudo Contínuo)", percent: 65, flag: "https://api.iconify.design/flag:us-4x3.svg" },
+        { name: "Espanhol", level: "Básico", percent: 30, flag: "https://api.iconify.design/flag:es-4x3.svg" },
+        { name: "Libras", level: "Básico", percent: 20, flag: "https://api.iconify.design/lucide:hand.svg?color=%23111" }
+      ],
+      musicAlbums: [
+        { title: "AM", artist: "Arctic Monkeys", image: "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/69/9c/b5/699cb5d6-115c-ff73-9d26-e57ea4350d72/887828031795.png/600x600bb.jpg", link: "https://open.spotify.com/artist/7Ln80lUS6He07XvHI8qqHH" },
+        { title: "Currents", artist: "Tame Impala", image: "https://upload.wikimedia.org/wikipedia/en/9/9b/Tame_Impala_-_Currents.png", link: "https://open.spotify.com/artist/5INjqkS1o8h1imAzPqGZBb" },
+        { title: "Blonde", artist: "Frank Ocean", image: "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/42/62/50/426250f9-7e39-f907-687c-442caa436636/dj.nhptxziz.jpg/600x600bb.jpg", link: "https://open.spotify.com/artist/2h93pZq0e7k5yf4dywlkpM" },
+        { title: "Atrás/Além", artist: "O Terno", image: "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/1a/aa/2d/1aaa2d4b-4b14-8d23-0075-b458da27a35c/8447053313121.jpg/600x600bb.jpg", link: "https://open.spotify.com/artist/5XDi5mKz3mX8I1sO0m9w5x" },
+        { title: "SOS", artist: "SZA", image: "https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/62/93/13/6293132e-20ff-67ab-3d1f-96bb6797a6ba/196589564955.jpg/600x600bb.jpg", link: "https://open.spotify.com/artist/7tYKF4w9nC0nq9CsPZTHyP" },
+        { title: "The Gods We...", artist: "AURORA", image: "https://is1-ssl.mzstatic.com/image/thumb/Music112/v4/17/ee/5e/17ee5e67-1dcd-beab-a5d4-4845f9dbacbf/5056167167433.jpg/600x600bb.jpg", link: "https://open.spotify.com/artist/1cS6z4MjalROizuWrrm5ok" },
+        { title: "21", artist: "Adele", image: "https://upload.wikimedia.org/wikipedia/en/1/1b/Adele_-_21.png", link: "https://open.spotify.com/artist/4dpARuHxo51G3z768sgnrY" },
+        { title: "Freudian", artist: "Daniel Caesar", image: "https://is1-ssl.mzstatic.com/image/thumb/Music112/v4/d5/d6/6d/d5d66d5e-9f4f-8566-079c-1b9b92065dee/22UMGIM42324.rgb.jpg/600x600bb.jpg", link: "https://open.spotify.com/artist/20wkVLutqOEhC173SjktsG" },
+        { title: "Born to Die", artist: "Lana Del Rey", image: "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/59/10/66/591066ea-3c85-3dfe-ef82-ffdbbcdfc8b9/12UMGIM00033.rgb.jpg/600x600bb.jpg", link: "https://open.spotify.com/artist/00FQb4Vj1XNCwPNE55zLci" },
+        { title: "Indigo Borbol...", artist: "Liniker", image: "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/5c/ac/71/5cac71f4-f5f0-fba3-9779-e8d51167a33e/8445162491440.jpg/600x600bb.jpg", link: "https://open.spotify.com/artist/5S7uK06GzGqXnK5j2QIt9u" }
+      ]
     },
     skills: { title: "Habilidade Técnicas", subtitle: "02." },
     experience: { title: "Trajetória Profissional", subtitle: "03." },
@@ -113,24 +149,27 @@ export const skillsObj = {
         { name: "GitHub", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" },
         { name: "GitLab", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/gitlab/gitlab-original.svg" },
         { name: "CLI (Ubuntu/Linux)", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/ubuntu/ubuntu-plain.svg" },
-        { name: "AWS", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" }
+        { name: "Figma", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/figma/figma-original.svg" },
+        { name: "PlantUML", icon: "https://api.iconify.design/vscode-icons:file-type-plantuml.svg" },
+        { name: "Mermaid", icon: "https://api.iconify.design/simple-icons:mermaid.svg?color=%23111" }
       ] 
     },
     { 
       category: "Web Ecosystems", 
       items: [
         { name: "WordPress", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/wordpress/wordpress-original.svg" },
-        { name: "Joomla", icon: "https://cdn.simpleicons.org/joomla/111111" },
-        { name: "OpenCart", icon: "https://cdn.simpleicons.org/opencart/111111" }
+        { name: "WooCommerce", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/woocommerce/woocommerce-original.svg" },
+        { name: "Joomla", icon: "https://api.iconify.design/logos:joomla.svg" },
+        { name: "OpenCart", icon: "https://api.iconify.design/fa-brands:opencart.svg?color=%23111" }
       ] 
     },
     { 
       category: "Soft Skills & Methodologies", 
       items: [
-        { name: "Clear Communication", icon: "" },
-        { name: "Teamwork", icon: "" },
-        { name: "Flexibility", icon: "" },
-        { name: "Agile (Scrum)", icon: "" }
+        { name: "Clear Communication", icon: "https://api.iconify.design/lucide:message-square.svg" },
+        { name: "Teamwork", icon: "https://api.iconify.design/lucide:users.svg" },
+        { name: "Flexibility", icon: "https://api.iconify.design/lucide:arrow-right-left.svg" },
+        { name: "Agile (Scrum)", icon: "https://api.iconify.design/lucide:kanban.svg" }
       ] 
     }
   ],
@@ -172,26 +211,29 @@ export const skillsObj = {
         { name: "GitHub", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" },
         { name: "GitLab", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/gitlab/gitlab-original.svg" },
         { name: "CLI (Ubuntu/Linux)", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/ubuntu/ubuntu-plain.svg" },
-        { name: "AWS", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" }
+        { name: "Figma", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/figma/figma-original.svg" },
+        { name: "PlantUML", icon: "https://api.iconify.design/vscode-icons:file-type-plantuml.svg" },
+        { name: "Mermaid", icon: "https://api.iconify.design/simple-icons:mermaid.svg?color=%23111" }
       ] 
     },
     { 
       category: "Ecossistemas Web", 
       items: [
         { name: "WordPress", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/wordpress/wordpress-original.svg" },
-        { name: "Joomla", icon: "https://cdn.simpleicons.org/joomla/111111" },
-        { name: "OpenCart", icon: "https://cdn.simpleicons.org/opencart/111111" }
+        { name: "WooCommerce", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/woocommerce/woocommerce-original.svg" },
+        { name: "Joomla", icon: "https://api.iconify.design/logos:joomla.svg" },
+        { name: "OpenCart", icon: "https://api.iconify.design/fa-brands:opencart.svg?color=%23111" }
       ] 
     },
     { 
       category: "Soft Skills & Metodologias", 
       items: [
-        { name: "Comunicação clara", icon: "" },
-        { name: "Teamwork (Trabalho em Equipe)", icon: "" },
-        { name: "Flexibilidade", icon: "" },
-        { name: "Rápida adaptabilidade técnica", icon: "" },
-        { name: "Controle de versão contínuo", icon: "" },
-        { name: "Metodologias Ágeis (Scrum)", icon: "" }
+        { name: "Comunicação clara", icon: "https://api.iconify.design/lucide:message-square.svg" },
+        { name: "Teamwork (Trabalho em Equipe)", icon: "https://api.iconify.design/lucide:users.svg" },
+        { name: "Flexibilidade", icon: "https://api.iconify.design/lucide:arrow-right-left.svg" },
+        { name: "Rápida adaptabilidade técnica", icon: "https://api.iconify.design/lucide:zap.svg" },
+        { name: "Controle de versão contínuo", icon: "https://api.iconify.design/lucide:git-branch.svg" },
+        { name: "Metodologias Ágeis (Scrum)", icon: "https://api.iconify.design/lucide:kanban.svg" }
       ] 
     }
   ]

@@ -1,11 +1,25 @@
+import { useRef } from 'react';
 import { i18n } from '../data';
 import { FadeIn, SectionHeading } from './ui/Layout';
 import { useLang } from '../LanguageContext';
-import { Music, HeartHandshake } from 'lucide-react';
+import { Music, ChevronLeft, ChevronRight } from 'lucide-react';
 
 export function About() {
   const { lang } = useLang();
   const text = i18n[lang].about;
+  const carouselRef = useRef<HTMLDivElement>(null);
+
+  const scrollLeft = () => {
+    if (carouselRef.current) {
+      carouselRef.current.scrollBy({ left: -200, behavior: 'smooth' });
+    }
+  };
+
+  const scrollRight = () => {
+    if (carouselRef.current) {
+      carouselRef.current.scrollBy({ left: 200, behavior: 'smooth' });
+    }
+  };
 
   return (
     <section id="about" className="py-20 scroll-mt-20 relative">
@@ -55,22 +69,77 @@ export function About() {
             </div>
           </FadeIn>
           
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mt-6">
-            <FadeIn delay={0.2}>
-              <div className="bg-brand-blue p-6 border-2 border-brand-dark shadow-brutal rounded-3xl h-full transform hover:-translate-y-1 transition-transform">
-                <Music className="w-8 h-8 mb-4 opacity-80" />
-                <h3 className="font-display font-bold text-xl uppercase tracking-wider mb-2">{text.musicTitle}</h3>
-                <p className="font-mono text-sm leading-relaxed font-bold opacity-90">{text.musicDesc}</p>
+          <FadeIn delay={0.4}>
+            <div className="bg-brand-white p-6 md:p-8 border-2 border-brand-dark shadow-brutal rounded-3xl mt-6">
+              <h3 className="font-display font-bold text-xl uppercase tracking-wider mb-6 pb-4 border-b-2 border-brand-dark inline-block">{text.langTitle}</h3>
+              <div className="space-y-5">
+                {text.languages.map((langItem: any, index: number) => (
+                  <div key={index} className="space-y-2">
+                    <div className="flex justify-between items-center text-sm font-bold font-mono">
+                      <span className="flex items-center gap-2">
+                        <img src={langItem.flag} alt={langItem.name} className="w-5 h-auto rounded-[2px]" />
+                        {langItem.name}
+                      </span>
+                      <span className="opacity-80">{langItem.level}</span>
+                    </div>
+                    <div className="h-3 w-full bg-brand-light border-2 border-brand-dark rounded-full overflow-hidden">
+                      <div 
+                        className="h-full bg-brand-accent transition-all duration-1000 ease-out border-r-2 border-brand-dark"
+                        style={{ width: `${langItem.percent}%` }}
+                      ></div>
+                    </div>
+                  </div>
+                ))}
               </div>
-            </FadeIn>
-            <FadeIn delay={0.3}>
-              <div className="bg-brand-pink p-6 border-2 border-brand-dark shadow-brutal rounded-3xl h-full transform hover:-translate-y-1 transition-transform">
-                <HeartHandshake className="w-8 h-8 mb-4 opacity-80" />
-                <h3 className="font-display font-bold text-xl uppercase tracking-wider mb-2">{text.softTitle}</h3>
-                <p className="font-mono text-sm leading-relaxed font-bold opacity-90">{text.softDesc}</p>
+            </div>
+          </FadeIn>
+
+          <FadeIn delay={0.5}>
+            <div className="bg-brand-dark text-brand-white p-6 md:p-8 border-2 border-brand-dark shadow-[6px_6px_0_var(--color-brand-accent)] rounded-3xl mt-6 relative">
+              <div className="flex items-center gap-3 mb-6">
+                <Music className="w-6 h-6 text-[#1DB954]" />
+                <h3 className="font-display font-bold text-xl uppercase tracking-wider">{text.musicTitle}</h3>
               </div>
-            </FadeIn>
-          </div>
+              <div className="absolute top-6 right-6 md:right-8 flex gap-2">
+                <button 
+                  onClick={scrollLeft}
+                  className="w-8 h-8 rounded-full bg-[#181818] border border-[#333] flex items-center justify-center hover:bg-[#282828] transition-colors"
+                  aria-label="Scroll left"
+                >
+                  <ChevronLeft className="w-5 h-5 text-brand-white" />
+                </button>
+                <button 
+                  onClick={scrollRight}
+                  className="w-8 h-8 rounded-full bg-[#181818] border border-[#333] flex items-center justify-center hover:bg-[#282828] transition-colors"
+                  aria-label="Scroll right"
+                >
+                  <ChevronRight className="w-5 h-5 text-brand-white" />
+                </button>
+              </div>
+              <div ref={carouselRef} className="flex overflow-x-auto gap-4 pb-4 snap-x hide-scrollbar">
+                {text.musicAlbums.map((album: any, i: number) => (
+                  <a 
+                    key={i} 
+                    href={album.link} 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="group block shrink-0 w-36 xs:w-40 sm:w-44 bg-[#181818] p-3 rounded-lg hover:bg-[#282828] transition-colors border border-transparent hover:border-[#333] snap-start"
+                  >
+                    <div className="relative aspect-square w-full mb-3 rounded shadow-[0_8px_24px_rgba(0,0,0,0.5)] overflow-hidden">
+                      <img src={album.image} alt={album.title} className="w-full h-full object-cover" />
+                      <div className="absolute bottom-2 right-2 w-10 h-10 bg-[#1DB954] text-black rounded-full flex items-center justify-center opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 transition-all shadow-lg">
+                        <svg viewBox="0 0 24 24" fill="currentColor" className="w-5 h-5 ml-1">
+                          <path d="M8 5v14l11-7z" />
+                        </svg>
+                      </div>
+                    </div>
+                    <h4 className="font-bold text-sm text-balance text-white truncate mb-1">{album.title}</h4>
+                    <p className="text-xs text-[#a7a7a7] font-mono truncate">{album.artist}</p>
+                  </a>
+                ))}
+              </div>
+            </div>
+          </FadeIn>
         </div>
 
       </div>
