@@ -9,8 +9,7 @@ export function Hero() {
   const text = i18n[lang].hero;
 
   return (
-    <section id="home" className="min-h-[85vh] flex flex-col justify-center relative pt-20 overflow-hidden">
-      <div className="absolute top-[10%] right-0 w-[50vw] max-w-[500px] h-[50vw] max-h-[500px] bg-[#E8A0BF] rounded-full blur-[120px] opacity-40 pointer-events-none" />
+    <section id="home" className="min-h-[85vh] flex flex-col justify-center relative pt-20">
       
       {/* Abstract pixel stairs */}
       <div className="absolute top-[15%] left-[5%] flex-col hidden md:flex -z-10 opacity-90">

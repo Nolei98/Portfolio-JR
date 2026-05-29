@@ -16,8 +16,9 @@ function AppContent() {
 
   return (
     <>
+      <div className="absolute top-[10%] right-0 w-[50vw] max-w-[500px] h-[50vw] max-h-[500px] bg-[#E8A0BF] rounded-full blur-[120px] opacity-40 pointer-events-none -z-20 overflow-hidden" />
       <Navbar />
-      <main className="max-w-7xl mx-auto px-6 md:px-12 pt-24 font-sans">
+      <main className="max-w-7xl mx-auto px-6 md:px-12 pt-24 font-sans overflow-x-hidden">
         <Hero />
         <About />
         <Skills />
