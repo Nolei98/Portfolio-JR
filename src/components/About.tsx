@@ -75,12 +75,12 @@ export function About() {
               <div className="space-y-5">
                 {text.languages.map((langItem: any, index: number) => (
                   <div key={index} className="space-y-2">
-                    <div className="flex justify-between items-center text-sm font-bold font-mono">
+                    <div className="flex flex-col sm:flex-row sm:justify-between items-start sm:items-center gap-1 text-[11px] md:text-sm font-bold font-mono">
                       <span className="flex items-center gap-2">
                         <img src={langItem.flag} alt={langItem.name} className="w-5 h-auto rounded-[2px]" />
                         {langItem.name}
                       </span>
-                      <span className="opacity-80">{langItem.level}</span>
+                      <span className="opacity-80 sm:text-right text-brand-dark/70 break-words w-full sm:w-auto">{langItem.level}</span>
                     </div>
                     <div className="h-3 w-full bg-brand-light border-2 border-brand-dark rounded-full overflow-hidden">
                       <div 
