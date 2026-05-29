@@ -18,7 +18,7 @@
 
 .huge-text {
   font-family: var(--font-display);
-  font-size: clamp(2rem, 7vw, 7.5rem);
+  font-size: clamp(2.5rem, 12vw, 7.5rem);
   line-height: 0.9;
   letter-spacing: -0.05em;
   font-weight: 800;
@@ -116,5 +116,6 @@ html.is-scrollbar-active::-webkit-scrollbar-thumb {
     page-break-inside: auto;
     break-inside: auto;
     margin-bottom: 2rem;
+    min-height: auto !important;
   }
 }

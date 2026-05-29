@@ -24,7 +24,7 @@ function AppContent() {
       <LeftScrollbar />
       <Navbar />
       <div id="portfolio-main">
-        <main className="max-w-7xl mx-auto px-6 md:px-12 pt-24 font-sans">
+        <main className="max-w-7xl mx-auto px-4 sm:px-6 md:px-12 pt-24 font-sans">
           <Hero />
           <About />
           <Skills />

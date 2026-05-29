@@ -47,7 +47,7 @@ export function Navbar() {
         isScrolled ? 'bg-brand-light/95 backdrop-blur-md border-b-4 border-brand-dark py-4 shadow-[0_4px_0_#111]' : 'bg-transparent py-6'
       }`}
     >
-      <div className="max-w-7xl mx-auto px-6 md:px-12 flex items-center justify-between">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-12 flex items-center justify-between">
         
         {/* Logo */}
         <a href="#home" className="text-2xl md:text-3xl font-bold text-brand-dark font-display tracking-tighter transform transition-transform cursor-pointer hover:text-brand-green relative select-none">

@@ -27,7 +27,7 @@ export function About() {
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start mt-8">
         
         {/* Text Content */}
-        <div className="lg:col-span-7 space-y-6">
+        <div className="order-2 lg:order-1 lg:col-span-7 space-y-6">
           <FadeIn delay={0.1}>
             <div className="space-y-6 text-brand-dark font-medium text-lg leading-relaxed bg-brand-white p-8 border-2 border-brand-dark shadow-brutal rounded-3xl">
               <p dangerouslySetInnerHTML={{ __html: text.p1 }} />
@@ -55,7 +55,7 @@ export function About() {
         </div>
 
         {/* Image */}
-        <div className="lg:col-span-5">
+        <div className="order-1 lg:order-2 lg:col-span-5 mb-4 lg:mb-0">
           <FadeIn delay={0.4} direction="left">
             <div className="relative group p-4 bg-brand-white border-2 border-brand-dark shadow-brutal transform rotate-2 hover:rotate-0 transition-transform rounded-[2rem]">
               <div className="aspect-square w-full max-w-md mx-auto relative z-10 overflow-hidden border-2 border-brand-dark bg-brand-dark rounded-[1.5rem]">
