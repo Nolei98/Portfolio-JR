@@ -306,7 +306,7 @@ export const projectsCategories = [
           pt: "Sistema de gerenciamento de tarefas baseado em CLI desenvolvido como projeto Capstone (Sprint). Foco em arquitetura em camadas e segurança de dados." 
         },
         technologies: ["Java", "MongoDB", "AES Encryption", "Service Layer"],
-        repositoryLink: "https://github.com/Nolei98/modutask", // User's GitHub is Nolei98 based on earlier context
+        repositoryLink: null,
         liveDemoLink: null,
         image: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=800&q=80"
       }
@@ -326,7 +326,7 @@ export const projectsCategories = [
         },
         technologies: ["OpenCart", "PHP", "MySQL", "Bootstrap"],
         repositoryLink: null,
-        liveDemoLink: "https://noleicreative.com", // Dummy or actual if available
+        liveDemoLink: null,
         image: "https://images.unsplash.com/photo-1557821552-17105176677c?w=800&q=80"
       }
     ]
@@ -344,7 +344,7 @@ export const projectsCategories = [
           pt: "Desenvolvimento de uma API RESTful utilizando o padrão Repository, DTOs e estruturação de domínio rico para garantir a integridade das regras de negócio."
         },
         technologies: ["Java", "Spring Boot", "PostgreSQL", "Docker"],
-        repositoryLink: "https://github.com/Nolei98/",
+        repositoryLink: null,
         liveDemoLink: null,
         image: "https://images.unsplash.com/photo-1518770660439-4636190af475?w=800&q=80"
       }
