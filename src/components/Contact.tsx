@@ -17,11 +17,11 @@ export function Contact() {
       </div>
 
       <FadeIn className="text-center max-w-3xl mx-auto bg-brand-accent p-12 lg:p-20 border-4 border-brand-dark shadow-brutal relative rounded-[3rem]">
-        <div className="absolute -top-6 -right-6 w-16 h-16 bg-brand-orange-neon border-4 border-brand-dark rounded-full flex items-center justify-center font-bold text-2xl rotate-12">
+        <div className="absolute -top-4 -right-1 sm:-top-6 sm:-right-6 w-12 h-12 sm:w-16 sm:h-16 bg-brand-orange-neon border-4 border-brand-dark rounded-full flex items-center justify-center font-bold text-xl sm:text-2xl rotate-12">
           !
         </div>
         <span className="text-[12px] bg-brand-white border-2 border-brand-dark px-3 py-1 font-bold uppercase tracking-widest font-mono mb-6 inline-block rounded-xl">{text.subtitle}</span>
-        <h2 className="text-5xl md:text-7xl font-bold font-display uppercase mb-8 text-brand-dark leading-none">
+        <h2 className="text-3xl sm:text-5xl md:text-7xl font-bold font-display uppercase mb-8 text-brand-dark leading-none break-words">
           {text.title}
         </h2>
         <p className="font-bold text-brand-dark text-lg md:text-xl mb-10 leading-relaxed max-w-2xl mx-auto">
