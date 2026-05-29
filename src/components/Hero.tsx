@@ -9,7 +9,7 @@ export function Hero() {
   const text = i18n[lang].hero;
 
   return (
-    <section id="home" className="min-h-[85vh] flex flex-col justify-center relative pt-20">
+    <section id="home" className="min-h-[85vh] flex flex-col justify-center relative pt-8 md:pt-20">
       
       {/* Abstract pixel stairs */}
       <div className="absolute top-[15%] left-[5%] flex-col hidden md:flex -z-10 opacity-90">
@@ -29,7 +29,7 @@ export function Hero() {
         </svg>
       </motion.div>
 
-      <div className="relative z-10 pt-10 mt-10 md:mt-0">
+      <div className="relative z-10 pt-4 mt-6 md:pt-10 md:mt-0">
         <FadeIn delay={0.1}>
           <span className="inline-block bg-brand-dark text-brand-accent px-4 py-1 border-2 border-brand-dark shadow-[6px_6px_0_var(--color-brand-accent)] text-[10px] font-bold uppercase tracking-[0.5em] font-mono mb-8 transform -rotate-2">
             {text.greeting}
@@ -51,11 +51,11 @@ export function Hero() {
         </FadeIn>
         
         <FadeIn delay={0.4}>
-          <div className="relative inline-block max-w-xl mb-12">
-            <p className="text-lg md:text-xl font-medium text-brand-dark leading-relaxed bg-brand-white p-6 border-2 border-brand-dark shadow-brutal rounded-2xl relative">
+          <div className="relative inline-block max-w-xl mb-8 md:mb-12">
+            <p className="text-[14px] md:text-xl font-medium text-brand-dark leading-relaxed bg-brand-white p-5 md:p-6 border-2 border-brand-dark shadow-brutal rounded-2xl relative">
               {text.desc}
             </p>
-            <a href="#about" className="absolute -bottom-[18px] -right-[18px] focus:outline-none focus:ring-4 focus:ring-brand-accent rounded-full z-20">
+            <a href="#about" className="absolute -bottom-4 right-4 md:-bottom-[18px] md:-right-[18px] focus:outline-none focus:ring-4 focus:ring-brand-accent rounded-full z-20">
               <motion.div 
                 className="text-brand-dark p-2 bg-brand-accent border-2 border-brand-dark shadow-[4px_4px_0_#111] rounded-full cursor-pointer hover:bg-brand-white transition-colors flex items-center justify-center"
                 animate={{ y: [0, 8, 0] }}
@@ -67,42 +67,42 @@ export function Hero() {
           </div>
         </FadeIn>
 
-        <FadeIn delay={0.5} className="flex flex-wrap items-center gap-8">
+        <FadeIn delay={0.5} className="flex flex-wrap items-center gap-4 md:gap-8">
           <a
             href="#contact"
-            className="px-8 py-4 bg-brand-accent text-brand-dark border-2 border-brand-dark font-bold font-mono text-[12px] uppercase tracking-widest shadow-brutal-hover rounded-2xl"
+            className="px-6 py-3 md:px-8 md:py-4 bg-brand-accent text-brand-dark border-2 border-brand-dark font-bold font-mono text-[10px] md:text-[12px] uppercase tracking-widest shadow-brutal-hover rounded-xl md:rounded-2xl"
           >
             {text.contactBtn}
           </a>
           
-          <div className="flex flex-wrap items-center gap-4 md:gap-6 mt-4 md:mt-0">
+          <div className="flex flex-wrap items-center gap-3 md:gap-6 mt-2 md:mt-0">
             {personalInfo.gitlab && (
-              <a href={personalInfo.gitlab} target="_blank" rel="noreferrer" className="p-3 bg-brand-white border-2 border-brand-dark text-brand-dark shadow-brutal-hover rounded-2xl">
-                <Gitlab className="w-6 h-6" />
+              <a href={personalInfo.gitlab} target="_blank" rel="noreferrer" className="p-2 md:p-3 bg-brand-white border-2 border-brand-dark text-brand-dark shadow-brutal-hover rounded-xl md:rounded-2xl">
+                <Gitlab className="w-5 h-5 md:w-6 md:h-6" />
                 <span className="sr-only">GitLab</span>
               </a>
             )}
             {personalInfo.github && (
-              <a href={personalInfo.github} target="_blank" rel="noreferrer" className="p-3 bg-brand-white border-2 border-brand-dark text-brand-dark shadow-brutal-hover rounded-2xl">
-                <Github className="w-6 h-6" />
+              <a href={personalInfo.github} target="_blank" rel="noreferrer" className="p-2 md:p-3 bg-brand-white border-2 border-brand-dark text-brand-dark shadow-brutal-hover rounded-xl md:rounded-2xl">
+                <Github className="w-5 h-5 md:w-6 md:h-6" />
                 <span className="sr-only">GitHub</span>
               </a>
             )}
             {personalInfo.linkedin && (
-              <a href={personalInfo.linkedin} target="_blank" rel="noreferrer" className="p-3 bg-brand-white border-2 border-brand-dark text-brand-dark shadow-brutal-hover rounded-2xl">
-                <Linkedin className="w-6 h-6" />
+              <a href={personalInfo.linkedin} target="_blank" rel="noreferrer" className="p-2 md:p-3 bg-brand-white border-2 border-brand-dark text-brand-dark shadow-brutal-hover rounded-xl md:rounded-2xl">
+                <Linkedin className="w-5 h-5 md:w-6 md:h-6" />
                 <span className="sr-only">LinkedIn</span>
               </a>
             )}
             {personalInfo.instagram && (
-              <a href={personalInfo.instagram} target="_blank" rel="noreferrer" className="p-3 bg-brand-white border-2 border-brand-dark text-brand-dark shadow-brutal-hover rounded-2xl">
-                <Instagram className="w-6 h-6" />
+              <a href={personalInfo.instagram} target="_blank" rel="noreferrer" className="p-2 md:p-3 bg-brand-white border-2 border-brand-dark text-brand-dark shadow-brutal-hover rounded-xl md:rounded-2xl">
+                <Instagram className="w-5 h-5 md:w-6 md:h-6" />
                 <span className="sr-only">Instagram</span>
               </a>
             )}
             {personalInfo.email && (
-              <a href={`mailto:${personalInfo.email}`} className="p-3 bg-brand-white border-2 border-brand-dark text-brand-dark shadow-brutal-hover rounded-2xl">
-                <Mail className="w-6 h-6" />
+              <a href={`mailto:${personalInfo.email}`} className="p-2 md:p-3 bg-brand-white border-2 border-brand-dark text-brand-dark shadow-brutal-hover rounded-xl md:rounded-2xl">
+                <Mail className="w-5 h-5 md:w-6 md:h-6" />
                 <span className="sr-only">Email</span>
               </a>
             )}
