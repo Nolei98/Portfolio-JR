@@ -67,7 +67,7 @@ export function Hero() {
           </div>
         </FadeIn>
 
-        <FadeIn delay={0.5} className="flex flex-wrap items-center gap-4 md:gap-8">
+        <FadeIn delay={0.5} className="flex flex-wrap items-center gap-4 md:gap-8 print-hide">
           <a
             href="#contact"
             className="px-6 py-3 md:px-8 md:py-4 bg-brand-accent text-brand-dark border-2 border-brand-dark font-bold font-mono text-[10px] md:text-[12px] uppercase tracking-widest shadow-brutal-hover rounded-xl md:rounded-2xl"
@@ -108,6 +108,10 @@ export function Hero() {
             )}
           </div>
         </FadeIn>
+        
+        <div className="hidden print:block text-brand-dark font-mono mt-8 font-bold text-sm">
+          <p>{personalInfo.email} | {personalInfo.linkedin}</p>
+        </div>
       </div>
     </section>
   );

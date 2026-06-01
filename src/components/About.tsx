@@ -94,7 +94,7 @@ export function About() {
             </div>
           </FadeIn>
 
-          <FadeIn delay={0.5}>
+          <FadeIn delay={0.5} className="mt-6 print-hide">
             <div className="bg-brand-dark text-brand-white p-6 md:p-8 border-2 border-brand-dark shadow-[6px_6px_0_var(--color-brand-accent)] rounded-3xl mt-6 relative">
               <div className="flex items-center gap-3 mb-6">
                 <Music className="w-6 h-6 text-[#1DB954]" />

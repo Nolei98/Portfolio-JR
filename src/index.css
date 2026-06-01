@@ -151,7 +151,7 @@ html.is-scrollbar-active::-webkit-scrollbar-thumb {
     scale: 1 !important;
   }
 
-  .print-hide {
+  .print-hide, button, .button, nav, a.rounded-xl {
     display: none !important;
   }
   
@@ -161,15 +161,43 @@ html.is-scrollbar-active::-webkit-scrollbar-thumb {
     page-break-after: always;
     break-after: page;
     padding: 10px 0 !important;
-    margin: 0 !important;
+    margin: 0 auto !important;
     min-height: auto;
     height: auto;
     display: block;
+    text-align: center !important;
+    max-width: 100% !important;
   }
   
   /* Zoom out large sections to fit them on one page */
-  section#projects, section#experience, section#about, section#skills {
+  section#projects, section#experience, section#about, section#skills, section#home {
     zoom: 0.8;
+  }
+
+  p, h1, h2, h3, h4, h5, h6, ul, li {
+    text-align: center !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+
+  .text-left {
+    text-align: center !important;
+  }
+
+  /* Center the structural components */
+  .flex, .grid {
+    justify-content: center !important;
+    align-items: center !important;
+    text-align: center !important;
+  }
+  
+  .flex-col, .lg\:flex-row {
+     flex-direction: column !important;
+  }
+
+  .ml-auto {
+    margin-left: auto !important;
+    margin-right: auto !important;
   }
 
   section:last-of-type {

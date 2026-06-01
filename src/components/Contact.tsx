@@ -8,7 +8,7 @@ export function Contact() {
   const text = i18n[lang].contact;
 
   return (
-    <section id="contact" className="py-32 mb-20 relative">
+    <section id="contact" className="py-32 mb-20 relative print-hide">
       {/* Abstract background shapes */}
       <div className="absolute bottom-[-10%] right-[10%] hidden md:flex flex-col -z-10 opacity-70">
         <div className="w-16 h-8 bg-brand-dark"></div>
