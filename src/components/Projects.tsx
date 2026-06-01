@@ -27,7 +27,7 @@ export function Projects() {
         <SectionHeading subtitle={text.subtitle} title={text.title} />
       </FadeIn>
       
-      <div className="space-y-6 mt-16 relative z-10 max-w-5xl mx-auto">
+      <div className="space-y-6 mt-16 relative z-10 max-w-5xl mx-auto print-hide">
         {projectsCategories.map((category) => (
           <FadeIn key={category.id} delay={0.1}>
             <div className="border-4 border-brand-dark bg-brand-white shadow-brutal rounded-[2rem] overflow-hidden">
@@ -107,6 +107,10 @@ export function Projects() {
             </div>
           </FadeIn>
         ))}
+      </div>
+      
+      <div className="hidden print:block text-center mt-6 p-4 border-2 border-brand-dark bg-brand-light rounded-2xl mx-auto max-w-2xl font-mono text-sm font-bold">
+        {lang === 'pt' ? 'Para visualizar os meus projetos, por favor, verifique o portfólio completo online em: portfolio-jr-lilac.vercel.app' : 'To view my projects, please check out the full portfolio online at: portfolio-jr-lilac.vercel.app'}
       </div>
     </section>
   );

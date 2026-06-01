@@ -41,10 +41,10 @@ export function About() {
       <div className="flex flex-col lg:flex-row gap-12 items-start mt-8">
         
         {/* Image */}
-        <div className="w-full lg:w-5/12 order-1 lg:order-2 mb-4 lg:mb-0 print:order-1 print:w-full print:mb-8">
+        <div className="w-full lg:w-5/12 order-1 lg:order-2 mb-4 lg:mb-0 print:order-1 print:w-full print:flex print:justify-center print:mb-4">
           <FadeIn delay={0.4} direction="left">
-            <div className="relative group p-4 bg-brand-white border-2 border-brand-dark shadow-brutal transform rotate-2 hover:rotate-0 transition-transform rounded-[2rem]">
-              <div className="aspect-square w-full max-w-md mx-auto relative z-10 overflow-hidden border-2 border-brand-dark bg-brand-dark rounded-[1.5rem]">
+            <div className="relative group p-4 bg-brand-white border-2 border-brand-dark shadow-brutal transform rotate-2 hover:rotate-0 transition-transform rounded-[2rem] print:max-wxs print:rotate-0 print:p-2 print:shadow-none print:border-none print:bg-transparent">
+              <div className="aspect-square w-full max-w-md mx-auto relative z-10 overflow-hidden border-2 border-brand-dark bg-brand-dark rounded-[1.5rem] print:w-40 print:h-40 print:mx-auto">
                 <img 
                   src="https://i.imgur.com/81SP9An.jpeg" 
                   alt="João Rodrigues" 
@@ -52,7 +52,7 @@ export function About() {
                 />
               </div>
               
-              <div className="absolute -bottom-4 -right-4 w-16 h-16 bg-gradient-to-tr from-[#f9ce34] via-[#ee2a7b] to-[#6228d7] border-2 border-brand-dark rounded-full shadow-brutal z-20 flex items-center justify-center">
+              <div className="absolute -bottom-4 -right-4 w-16 h-16 bg-gradient-to-tr from-[#f9ce34] via-[#ee2a7b] to-[#6228d7] border-2 border-brand-dark rounded-full shadow-brutal z-20 flex items-center justify-center print:hidden">
                  <span className="text-3xl font-display font-bold text-white">@</span>
               </div>
             </div>
@@ -70,11 +70,11 @@ export function About() {
           </FadeIn>
           
           <FadeIn delay={0.4}>
-            <div className="bg-brand-white p-6 md:p-8 border-2 border-brand-dark shadow-brutal rounded-3xl mt-6">
-              <h3 className="font-display font-bold text-xl uppercase tracking-wider mb-6 pb-4 border-b-2 border-brand-dark inline-block">{text.langTitle}</h3>
-              <div className="space-y-5">
+            <div className="bg-brand-white p-6 md:p-8 border-2 border-brand-dark shadow-brutal rounded-3xl mt-6 print:mt-4 print:p-4 print:shadow-none print:border-none">
+              <h3 className="font-display font-bold text-xl uppercase tracking-wider mb-6 pb-4 border-b-2 border-brand-dark inline-block print:mb-2 print:pb-2 print:text-center print:w-full">{text.langTitle}</h3>
+              <div className="space-y-5 print:space-y-2 print:flex print:flex-wrap print:gap-4 print:justify-center">
                 {text.languages.map((langItem: any, index: number) => (
-                  <div key={index} className="space-y-2">
+                  <div key={index} className="space-y-2 print:w-auto">
                     <div className="flex flex-col sm:flex-row sm:justify-between items-start sm:items-center gap-1 text-[11px] md:text-sm font-bold font-mono">
                       <span className="flex items-center gap-2">
                         <img src={langItem.flag} alt={langItem.name} className="w-5 h-auto rounded-[2px]" />
@@ -82,7 +82,7 @@ export function About() {
                       </span>
                       <span className="opacity-80 sm:text-right text-brand-dark/70 break-words w-full sm:w-auto">{langItem.level}</span>
                     </div>
-                    <div className="h-3 w-full bg-brand-light border-2 border-brand-dark rounded-full overflow-hidden">
+                    <div className="h-3 w-full bg-brand-light border-2 border-brand-dark rounded-full overflow-hidden print:hidden">
                       <div 
                         className="h-full bg-brand-accent transition-all duration-1000 ease-out border-r-2 border-brand-dark"
                         style={{ width: `${langItem.percent}%` }}

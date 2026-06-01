@@ -156,10 +156,10 @@ html.is-scrollbar-active::-webkit-scrollbar-thumb {
   }
   
   section {
-    page-break-inside: avoid;
-    break-inside: avoid;
-    page-break-after: always;
-    break-after: page;
+    page-break-inside: auto;
+    break-inside: auto;
+    page-break-after: auto;
+    break-after: auto;
     padding: 10px 0 !important;
     margin: 0 auto !important;
     min-height: auto;
@@ -171,7 +171,7 @@ html.is-scrollbar-active::-webkit-scrollbar-thumb {
   
   /* Zoom out large sections to fit them on one page */
   section#projects, section#experience, section#about, section#skills, section#home {
-    zoom: 0.8;
+    /* no zoom applied anymore to allow natural flow */
   }
 
   p, h1, h2, h3, h4, h5, h6, ul, li {
@@ -216,8 +216,19 @@ html.is-scrollbar-active::-webkit-scrollbar-thumb {
   .mb-6 {
     margin-bottom: 0.5rem !important;
   }
+  .mb-10 {
+    margin-bottom: 1rem !important;
+  }
   .gap-12 {
     gap: 1rem !important;
+  }
+  .huge-text {
+    font-size: 3rem !important;
+  }
+  
+  .group, .shadow-brutal {
+    page-break-inside: avoid !important;
+    break-inside: avoid !important;
   }
 }
 

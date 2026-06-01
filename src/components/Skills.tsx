@@ -21,23 +21,23 @@ export function Skills() {
         <SectionHeading subtitle={text.subtitle} title={text.title} />
       </FadeIn>
       
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12 print:grid-cols-3 print:gap-4 print:mt-6">
         {skills.map((skillGroup, index) => (
           <FadeIn key={skillGroup.category} delay={index * 0.1}>
-            <div className="h-full p-6 md:p-8 border-4 border-brand-dark bg-brand-light shadow-brutal shadow-brutal-hover rounded-3xl relative overflow-hidden">
-              <h3 className="text-[12px] uppercase tracking-widest font-mono font-bold mb-6 text-brand-dark border-2 border-brand-dark pb-1 bg-brand-blue inline-block px-3 py-1 -ml-6 -mt-2 shadow-[2px_2px_0_#111] rounded-r-xl">
+            <div className="h-full p-6 md:p-8 border-4 border-brand-dark bg-brand-light shadow-brutal shadow-brutal-hover rounded-3xl relative overflow-hidden print:p-2 print:border-2 print:shadow-[2px_2px_0_#111] print:bg-brand-white">
+              <h3 className="text-[12px] uppercase tracking-widest font-mono font-bold mb-6 text-brand-dark border-2 border-brand-dark pb-1 bg-brand-blue inline-block px-3 py-1 -ml-6 -mt-2 shadow-[2px_2px_0_#111] rounded-r-xl print:text-[10px] print:mb-2 print:ml-0 print:mt-0 print:rounded-xl">
                 {skillGroup.category}
               </h3>
-              <ul className="flex flex-wrap gap-2">
+              <ul className="flex flex-wrap gap-2 print:justify-center">
                 {skillGroup.items.map((item) => (
                   <li 
                     key={item.name}
-                    className="flex items-center gap-2 font-mono text-[11px] font-bold px-4 py-2 border-2 border-brand-dark bg-brand-white text-brand-dark hover:bg-brand-peach hover:-translate-y-1 hover:shadow-brutal transition-all cursor-crosshair rounded-full"
+                    className="flex items-center gap-2 font-mono text-[11px] font-bold px-4 py-2 border-2 border-brand-dark bg-brand-white text-brand-dark hover:bg-brand-peach hover:-translate-y-1 hover:shadow-brutal transition-all cursor-crosshair rounded-full print:px-2 print:py-1 print:text-[9px] print:border print:bg-brand-light print:shadow-none print:transform-none"
                   >
                     {item.icon ? (
-                      <img src={item.icon} alt={`${item.name} icon`} className="w-5 h-5 object-contain" />
+                      <img src={item.icon} alt={`${item.name} icon`} className="w-5 h-5 object-contain print:hidden" />
                     ) : (
-                      <div className="w-5 h-5 bg-brand-dark rounded-full opacity-20" />
+                      <div className="w-5 h-5 bg-brand-dark rounded-full opacity-20 print:hidden" />
                     )}
                     {item.name}
                   </li>

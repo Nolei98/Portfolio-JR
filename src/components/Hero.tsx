@@ -9,7 +9,7 @@ export function Hero() {
   const text = i18n[lang].hero;
 
   return (
-    <section id="home" className="min-h-[85vh] flex flex-col justify-center relative pt-8 md:pt-20">
+    <section id="home" className="min-h-[85vh] flex flex-col justify-center relative pt-8 md:pt-20 print:min-h-0 print:pt-4 print:mt-0 print:pb-4">
       
       {/* Abstract pixel stairs */}
       <div className="absolute top-[15%] left-[5%] flex-col hidden md:flex -z-10 opacity-90">
@@ -110,7 +110,7 @@ export function Hero() {
         </FadeIn>
         
         <div className="hidden print:block text-brand-dark font-mono mt-8 font-bold text-sm">
-          <p>{personalInfo.email} | {personalInfo.linkedin}</p>
+          <p>{personalInfo.email} | https://portfolio-jr-lilac.vercel.app/?lang={lang}</p>
         </div>
       </div>
     </section>
