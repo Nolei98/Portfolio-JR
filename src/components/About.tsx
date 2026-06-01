@@ -60,17 +60,17 @@ export function About() {
         </div>
 
         {/* Text Content */}
-        <div className="w-full lg:w-7/12 order-2 lg:order-1 space-y-6 print:order-2 print:w-full">
+        <div className="w-full lg:w-7/12 order-2 lg:order-1 space-y-6 print:order-2 print:w-full print:space-y-4">
           <FadeIn delay={0.1}>
-            <div className="space-y-6 text-brand-dark font-medium text-lg leading-relaxed bg-brand-white p-8 border-2 border-brand-dark shadow-brutal rounded-3xl">
+            <div className="space-y-6 text-brand-dark font-medium text-lg leading-relaxed bg-brand-white p-8 border-2 border-brand-dark shadow-brutal rounded-3xl print:p-4 print:text-sm print:space-y-4 print:shadow-none print:border">
               <p dangerouslySetInnerHTML={{ __html: text.p1 }} />
               <p>{text.p2}</p>
               {text.p3 && <p>{text.p3}</p>}
             </div>
           </FadeIn>
           
-          <FadeIn delay={0.4}>
-            <div className="bg-brand-white p-6 md:p-8 border-2 border-brand-dark shadow-brutal rounded-3xl mt-6 print:mt-4 print:p-4 print:shadow-none print:border-none">
+          <FadeIn delay={0.4} className="print-hide">
+            <div className="bg-brand-white p-6 md:p-8 border-2 border-brand-dark shadow-brutal rounded-3xl mt-6">
               <h3 className="font-display font-bold text-xl uppercase tracking-wider mb-6 pb-4 border-b-2 border-brand-dark inline-block print:mb-2 print:pb-2 print:text-center print:w-full">{text.langTitle}</h3>
               <div className="space-y-5 print:space-y-2 print:flex print:flex-wrap print:gap-4 print:justify-center">
                 {text.languages.map((langItem: any, index: number) => (

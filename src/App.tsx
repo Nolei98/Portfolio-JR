@@ -36,7 +36,7 @@ function AppContent() {
     <>
       <Navbar />
       <div id="portfolio-main">
-        <main className="max-w-7xl mx-auto px-4 sm:px-6 md:px-12 pt-16 md:pt-24 font-sans">
+        <main className="max-w-7xl mx-auto px-4 sm:px-6 md:px-12 pt-16 md:pt-24 print:pt-0 print:px-0 font-sans">
           <Hero />
           <About />
           <Skills />

@@ -158,8 +158,8 @@ html.is-scrollbar-active::-webkit-scrollbar-thumb {
   section {
     page-break-inside: auto;
     break-inside: auto;
-    page-break-after: auto;
-    break-after: auto;
+    page-break-after: always;
+    break-after: page;
     padding: 10px 0 !important;
     margin: 0 auto !important;
     min-height: auto;
@@ -167,6 +167,11 @@ html.is-scrollbar-active::-webkit-scrollbar-thumb {
     display: block;
     text-align: center !important;
     max-width: 100% !important;
+  }
+  
+  section#home {
+    page-break-after: auto;
+    break-after: auto;
   }
   
   /* Zoom out large sections to fit them on one page */
@@ -200,7 +205,7 @@ html.is-scrollbar-active::-webkit-scrollbar-thumb {
     margin-right: auto !important;
   }
 
-  section:last-of-type {
+  section#projects, section:last-of-type {
     page-break-after: auto;
     break-after: auto;
   }
