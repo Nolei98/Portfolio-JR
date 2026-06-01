@@ -48,7 +48,7 @@ function AppContent() {
         <div className="flex flex-col items-center justify-center gap-4">
           <p className="text-[10px] sm:text-[11px] md:text-[12px] uppercase tracking-[0.1em] md:tracking-[0.2em] opacity-90 font-bold italic text-center flex flex-col gap-1 items-center whitespace-nowrap">
             <span>João Rodrigues</span>
-            <span>« Innovate today, build the future »</span>
+            <span>{text.quote}</span>
           </p>
           <div className="mt-2 text-brand-white font-bold text-lg font-display tracking-widest relative select-none">
             &lt;d<span className="relative inline-block">ev<span className="absolute bottom-full translate-y-[10px] left-1/2 -translate-x-1/2 text-[10px] text-brand-accent normal-case tracking-normal font-sans leading-none italic">Nolei</span></span>&gt;

@@ -58,7 +58,7 @@ export const i18n = {
       p: "Although I'm not currently looking for any new opportunities, my inbox is always open. Whether you have a question or just want to say hi, I'll try my best to get back to you!", 
       btn: "Say Hello" 
     },
-    footer: { text1: "Built with brutalist but soft modern design.", text2: "© 2026" }
+    footer: { text1: "Built with brutalist but soft modern design.", text2: "© 2026", quote: "« Innovate today, build the future »" }
   },
   pt: {
     nav: { about: "Sobre", skills: "Habilidades", experience: "Carreira", projects: "Projetos", contact: "Contato", resume: "Currículo" },
@@ -106,7 +106,7 @@ export const i18n = {
       p: "Embora eu não esteja procurando ativamente por novas oportunidades de emprego no momento, minha caixa de entrada está sempre aberta. Seja para uma pergunta, uma proposta de projeto ou apenas para dizer oi!", 
       btn: "Diga Olá" 
     },
-    footer: { text1: "Construído de forma brutal e mais livre.", text2: "© 2026" }
+    footer: { text1: "Construído de forma brutal e mais livre.", text2: "© 2026", quote: "« Inovar hoje, construir o futuro »" }
   }
 };
 
