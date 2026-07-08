@@ -6,7 +6,7 @@ export const personalInfo = {
   email: "noleirodrigues@gmail.com",
   gitlab: "https://gitlab.com/JoaoRodrigues_Nolei",
   linkedin: "https://www.linkedin.com/in/joão-rodrigues-18b731179",
-  instagram: "https://instagram.com/noleicreative",
+  instagram: "https://instagram.com/joaorodrigues.ai",
   github: "https://github.com/Nolei98",
   whatsapp: "https://wa.me/5587999099937",
 };
@@ -24,11 +24,11 @@ export const i18n = {
       title: "About Me", 
       subtitle: "01.", 
       p1: `My journey in technology started early, in 2014, when I enrolled in the IT Tech course at IF Campus Salgueiro. That's where I built the algorithmic and structural foundation that pushed me into the web development market in 2019. Since then, whether through my agency NOLEI CREATIVE or in independent partnerships, I've been transforming real needs into efficient digital platforms.`, 
-      p2: "Currently, I am in the 3rd semester of the Bachelor's degree in Software Engineering at Jala University, improving my view of system architecture and going deeper into the corporate back-end ecosystem. My daily focus is writing clean code, designing performant databases, and delivering solutions that actually solve problems, always driven by collaboration and a constant desire to learn.", 
+      p2: "Currently, I am in the 3rd semester of the Bachelor's degree in Software Engineering at Jala University, improving my view of system architecture and going deeper into the corporate back-end ecosystem. My daily focus is writing clean code, designing performant systems, and specializing in AI (Artificial Intelligence), delivering solutions that keep up with current technological advancements, always driven by collaboration and a constant desire to learn.", 
       p3: "",
       musicTitle: "Music Taste", 
       softTitle: "Soft Skills", 
-      softDesc: "Problem Solving, Communication, Adaptability, Teamwork",
+      softDesc: "Problem Solving, Communication, Adaptability, Teamwork, Quality Assurance (QA)",
       langTitle: "Languages",
       languages: [
         { name: "Portuguese", level: "Native", percent: 100, flag: "https://api.iconify.design/flag:br-4x3.svg" },
@@ -72,11 +72,11 @@ export const i18n = {
       title: "Sobre Mim", 
       subtitle: "01.", 
       p1: `Minha jornada na tecnologia começou cedo, em 2014, quando ingressei no curso Técnico em TI no IF Campus Salgueiro. Foi lá que construí a base algorítmica e estrutural que me impulsionou para o mercado de desenvolvimento web em 2019. Desde então, seja através da minha agência NOLEI CREATIVE ou em parcerias independentes, venho transformando necessidades reais em plataformas digitais eficientes.`, 
-      p2: "Atualmente, estou no 3º semestre do Bacharelado em Engenharia de Software na Jala University, aprimorando minha visão de arquitetura de sistemas e me aprofundando no ecossistema de back-end corporativo. Meu foco diário é escrever código limpo, projetar bancos de dados performáticos e entregar soluções que realmente resolvam problemas, sempre movido pela colaboração e pela constante vontade de aprender.", 
+      p2: "Atualmente, estou no 3º semestre do Bacharelado em Engenharia de Software na Jala University, aprimorando minha visão de arquitetura de sistemas e me aprofundando no ecossistema de back-end corporativo. Meu foco diário é escrever código limpo, projetar sistemas performáticos e me especializar com AI (Inteligência Artificial), entregando soluções acompanhando o avanço atual, sempre movido pela colaboração e pela constante vontade de aprender.", 
       p3: "",
       musicTitle: "Gosto Musical", 
       softTitle: "Soft Skills", 
-      softDesc: "Resolução de Problemas, Comunicação, Adaptabilidade, Trabalho em Equipe",
+      softDesc: "Resolução de Problemas, Comunicação, Adaptabilidade, Trabalho em Equipe, Testes (QA)",
       langTitle: "Idiomas",
       languages: [
         { name: "Português", level: "Nativo", percent: 100, flag: "https://api.iconify.design/flag:br-4x3.svg" },
@@ -119,7 +119,8 @@ export const skillsObj = {
         { name: "Spring Boot", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/spring/spring-original.svg" },
         { name: "PHP", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/php/php-original.svg" },
         { name: "Python", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" },
-        { name: "C++", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cplusplus/cplusplus-original.svg" }
+        { name: "C++", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cplusplus/cplusplus-original.svg" },
+        { name: "C#", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/csharp/csharp-original.svg" }
       ] 
     },
     { 
@@ -151,7 +152,15 @@ export const skillsObj = {
         { name: "CLI (Ubuntu/Linux)", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/ubuntu/ubuntu-plain.svg" },
         { name: "Figma", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/figma/figma-original.svg" },
         { name: "PlantUML", icon: "https://api.iconify.design/vscode-icons:file-type-plantuml.svg" },
-        { name: "Mermaid", icon: "https://api.iconify.design/simple-icons:mermaid.svg?color=%23111" }
+        { name: "Mermaid", icon: "https://api.iconify.design/simple-icons:mermaid.svg?color=%23111" },
+        { name: "Claude Code", icon: "https://api.iconify.design/simple-icons:anthropic.svg?color=%23111" },
+        { name: "Design", icon: "https://api.iconify.design/lucide:pen-tool.svg" },
+        { name: "Antigravity", icon: "https://api.iconify.design/lucide:rocket.svg" },
+        { name: "Notion", icon: "https://api.iconify.design/simple-icons:notion.svg?color=%23111" },
+        { name: "Obsidian", icon: "https://api.iconify.design/simple-icons:obsidian.svg?color=%23111" },
+        { name: "Supabase", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/supabase/supabase-original.svg" },
+        { name: "Firebase", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/firebase/firebase-original.svg" },
+        { name: "LLM", icon: "https://api.iconify.design/lucide:brain.svg" }
       ] 
     },
     { 
@@ -160,7 +169,8 @@ export const skillsObj = {
         { name: "WordPress", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/wordpress/wordpress-original.svg" },
         { name: "WooCommerce", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/woocommerce/woocommerce-original.svg" },
         { name: "Joomla", icon: "https://api.iconify.design/logos:joomla.svg" },
-        { name: "OpenCart", icon: "https://api.iconify.design/fa-brands:opencart.svg?color=%23111" }
+        { name: "OpenCart", icon: "https://api.iconify.design/fa-brands:opencart.svg?color=%23111" },
+        { name: "cPanel", icon: "https://api.iconify.design/simple-icons:cpanel.svg?color=%23111" }
       ] 
     },
     { 
@@ -181,7 +191,8 @@ export const skillsObj = {
         { name: "Spring Boot", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/spring/spring-original.svg" },
         { name: "PHP", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/php/php-original.svg" },
         { name: "Python", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" },
-        { name: "C++", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cplusplus/cplusplus-original.svg" }
+        { name: "C++", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cplusplus/cplusplus-original.svg" },
+        { name: "C#", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/csharp/csharp-original.svg" }
       ] 
     },
     { 
@@ -213,7 +224,15 @@ export const skillsObj = {
         { name: "CLI (Ubuntu/Linux)", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/ubuntu/ubuntu-plain.svg" },
         { name: "Figma", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/figma/figma-original.svg" },
         { name: "PlantUML", icon: "https://api.iconify.design/vscode-icons:file-type-plantuml.svg" },
-        { name: "Mermaid", icon: "https://api.iconify.design/simple-icons:mermaid.svg?color=%23111" }
+        { name: "Mermaid", icon: "https://api.iconify.design/simple-icons:mermaid.svg?color=%23111" },
+        { name: "Claude Code", icon: "https://api.iconify.design/simple-icons:anthropic.svg?color=%23111" },
+        { name: "Design", icon: "https://api.iconify.design/lucide:pen-tool.svg" },
+        { name: "Antigravity", icon: "https://api.iconify.design/lucide:rocket.svg" },
+        { name: "Notion", icon: "https://api.iconify.design/simple-icons:notion.svg?color=%23111" },
+        { name: "Obsidian", icon: "https://api.iconify.design/simple-icons:obsidian.svg?color=%23111" },
+        { name: "Supabase", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/supabase/supabase-original.svg" },
+        { name: "Firebase", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/firebase/firebase-original.svg" },
+        { name: "LLM", icon: "https://api.iconify.design/lucide:brain.svg" }
       ] 
     },
     { 
@@ -222,7 +241,8 @@ export const skillsObj = {
         { name: "WordPress", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/wordpress/wordpress-original.svg" },
         { name: "WooCommerce", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/woocommerce/woocommerce-original.svg" },
         { name: "Joomla", icon: "https://api.iconify.design/logos:joomla.svg" },
-        { name: "OpenCart", icon: "https://api.iconify.design/fa-brands:opencart.svg?color=%23111" }
+        { name: "OpenCart", icon: "https://api.iconify.design/fa-brands:opencart.svg?color=%23111" },
+        { name: "cPanel", icon: "https://api.iconify.design/simple-icons:cpanel.svg?color=%23111" }
       ] 
     },
     { 
