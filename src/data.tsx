@@ -1,5 +1,5 @@
 import React from 'react';
-import { Briefcase, Code, Terminal } from 'lucide-react';
+import { Briefcase, Code, Terminal, Brain } from 'lucide-react';
 
 export const personalInfo = {
   name: "João",
@@ -261,6 +261,36 @@ export const skillsObj = {
 
 export const experienceData = [
   {
+    role: { en: "AI Specialization & Tooling", pt: "Especialização e Ferramentas de IA" },
+    company: "Continuous Learning",
+    period: "2025 - Present",
+    description: { 
+      en: "Focusing on Artificial Intelligence, applying modern LLMs, and integrating AI tools to deliver cutting-edge solutions, keeping up with the rapid technological advancements.", 
+      pt: "Foco em Inteligência Artificial, aplicando LLMs modernos e integrando ferramentas de IA para entregar soluções de ponta, acompanhando de perto os rápidos avanços tecnológicos." 
+    },
+    icon: <Brain className="w-5 h-5" />
+  },
+  {
+    role: { en: "B.S. in Software Engineering", pt: "Bacharelado em Eng. de Software" },
+    company: "Jala University",
+    period: "2025 - 2029",
+    description: {
+      en: "Currently in the 3rd semester, focusing on back-end development, design patterns (Repository Pattern, DTOs), and data modeling.",
+      pt: "Atualmente cursando o 3º semestre, com foco em desenvolvimento back-end, padrões de projeto (Repository Pattern, DTOs) e modelagem de dados."
+    },
+    icon: <Briefcase className="w-5 h-5" />
+  },
+  {
+    role: { en: "Robust Back-end", pt: "Back-end Robusto" },
+    company: "APIs & Data",
+    period: "2022 - Present",
+    description: { 
+      en: "Implementation of advanced business rules, APIs, and data manipulation using Java, Spring Boot, and PHP, prioritizing security, cryptography, and structural efficiency.", 
+      pt: "Implementação de regras de negócios avançadas, APIs e manipulação de dados utilizando Java, Spring Boot e PHP, priorizando segurança, criptografia e eficiência estrutural." 
+    },
+    icon: <Terminal className="w-5 h-5" />
+  },
+  {
     role: { en: "System Creation & Maintenance", pt: "Criação e Manutenção de Sistemas" },
     company: "Web Development",
     period: "2019 - Present",
@@ -277,26 +307,6 @@ export const experienceData = [
     description: { 
       en: "Structuring, customization, and maintenance of high-performance virtual stores and dynamic portals using ecosystems like OpenCart, WordPress, and Joomla.", 
       pt: "Estruturação, customização e manutenção de lojas virtuais e portais dinâmicos de alto desempenho utilizando ecossistemas como OpenCart, WordPress e Joomla."
-    },
-    icon: <Briefcase className="w-5 h-5" />
-  },
-  {
-    role: { en: "Robust Back-end", pt: "Back-end Robusto" },
-    company: "APIs & Data",
-    period: "2022 - Present",
-    description: { 
-      en: "Implementation of advanced business rules, APIs, and data manipulation using Java, Spring Boot, and PHP, prioritizing security, cryptography, and structural efficiency.", 
-      pt: "Implementação de regras de negócios avançadas, APIs e manipulação de dados utilizando Java, Spring Boot e PHP, priorizando segurança, criptografia e eficiência estrutural." 
-    },
-    icon: <Terminal className="w-5 h-5" />
-  },
-  {
-    role: { en: "B.S. in Software Engineering", pt: "Bacharelado em Eng. de Software" },
-    company: "Jala University",
-    period: "2025 - 2029",
-    description: {
-      en: "Currently in the 3rd semester, focusing on back-end development, design patterns (Repository Pattern, DTOs), and data modeling.",
-      pt: "Atualmente cursando o 3º semestre, com foco em desenvolvimento back-end, padrões de projeto (Repository Pattern, DTOs) e modelagem de dados."
     },
     icon: <Briefcase className="w-5 h-5" />
   },
