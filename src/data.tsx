@@ -17,6 +17,7 @@ export const i18n = {
     hero: { 
       greeting: "Hello, world! I am", 
       subtitle: "Rodrigues", 
+      available: "Open to opportunities",
       desc: "Transforming logic into real solutions since 2014. With solid experience in web development since 2019, I help build scalable systems, secure architectures, and consistent digital businesses.", 
       contactBtn: "Get in touch" 
     },
@@ -55,7 +56,7 @@ export const i18n = {
     contact: { 
       title: "Let's Talk", 
       subtitle: "05 / Next Step", 
-      p: "Although I'm not currently looking for any new opportunities, my inbox is always open. Whether you have a question or just want to say hi, I'll try my best to get back to you!", 
+      p: "I'm open to new roles, freelance projects and collaborations. If you're hiring, have a project in mind, or just want to say hi — my inbox is always open and I reply fast!", 
       btn: "Say Hello" 
     },
     footer: { text1: "Built with brutalist but soft modern design.", text2: "© 2026", quote: "« Innovate today, build the future »" }
@@ -65,6 +66,7 @@ export const i18n = {
     hero: { 
       greeting: "Olá, mundo! Eu sou", 
       subtitle: "Rodrigues", 
+      available: "Disponível para propostas",
       desc: "Transformando lógica em soluções reais desde 2014. Com sólida atuação no desenvolvimento web desde 2019, ajudo a construir sistemas escaláveis, arquiteturas seguras e negócios digitais consistentes.", 
       contactBtn: "Entrar em Contato" 
     },
@@ -103,7 +105,7 @@ export const i18n = {
     contact: { 
       title: "Vamos Conversar", 
       subtitle: "05 / Próximo passo", 
-      p: "Embora eu não esteja procurando ativamente por novas oportunidades de emprego no momento, minha caixa de entrada está sempre aberta. Seja para uma pergunta, uma proposta de projeto ou apenas para dizer oi!", 
+      p: "Estou aberto a novas vagas, projetos freelance e colaborações. Se você está contratando, tem um projeto em mente ou só quer dizer olá — minha caixa de entrada está sempre aberta e eu respondo rápido!", 
       btn: "Diga Olá" 
     },
     footer: { text1: "Construído de forma brutal e mais livre.", text2: "© 2026", quote: "« Inovar hoje, construir o futuro »" }

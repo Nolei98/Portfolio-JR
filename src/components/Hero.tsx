@@ -29,7 +29,14 @@ export function Hero() {
         </svg>
       </motion.div>
 
-      <div className="relative z-10 pt-4 mt-6 md:pt-10 md:mt-0">
+      <div className="relative z-10 grid lg:grid-cols-[1.25fr_0.85fr] gap-10 lg:gap-14 items-center pt-4 mt-6 md:pt-10 md:mt-0">
+        <div className="order-2 lg:order-1 min-w-0">
+        <FadeIn delay={0.05}>
+          <span className="inline-flex items-center gap-2 bg-brand-dark text-brand-white px-4 py-2 border-2 border-brand-dark rounded-full shadow-[4px_4px_0_var(--color-brand-accent)] text-[10px] font-bold uppercase tracking-[0.2em] font-mono mb-5">
+            <span className="w-2 h-2 rounded-full bg-brand-accent animate-pulse"></span>
+            {text.available}
+          </span>
+        </FadeIn>
         <FadeIn delay={0.1}>
           <span className="inline-block bg-brand-dark text-brand-accent px-4 py-1 border-2 border-brand-dark shadow-[6px_6px_0_var(--color-brand-accent)] text-[10px] font-bold uppercase tracking-[0.5em] font-mono mb-8 transform -rotate-2">
             {text.greeting}
@@ -109,6 +116,26 @@ export function Hero() {
                 <span className="sr-only">Email</span>
               </a>
             )}
+          </div>
+        </FadeIn>
+        </div>
+
+        <FadeIn delay={0.3} direction="left" className="order-1 lg:order-2 justify-self-center w-full max-w-[340px] print-hide">
+          <div className="relative">
+            <div className="absolute -inset-2.5 bg-brand-clay border-2 border-brand-dark rounded-[2rem] -rotate-3"></div>
+            <div className="relative p-3.5 bg-brand-white border-2 border-brand-dark shadow-brutal rounded-[2rem] transform rotate-2 hover:rotate-0 transition-transform">
+            <div className="w-full aspect-[4/5] overflow-hidden border-2 border-brand-dark bg-brand-dark rounded-[1.5rem]">
+              <img
+                src="/joao-portrait.png"
+                alt="João Rodrigues"
+                className="w-full h-full object-cover"
+                style={{ objectPosition: 'center 22%' }}
+              />
+            </div>
+            <div className="absolute -bottom-4 -right-4 w-14 h-14 bg-brand-orange-neon border-2 border-brand-dark rounded-full shadow-brutal flex items-center justify-center rotate-12">
+              <span className="text-2xl font-display font-bold text-brand-white">*</span>
+            </div>
+          </div>
           </div>
         </FadeIn>
       </div>
