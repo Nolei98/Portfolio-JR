@@ -51,10 +51,13 @@ export function Hero() {
         </FadeIn>
         
         <FadeIn delay={0.4}>
-          <div className="relative inline-block max-w-xl mb-8 md:mb-12">
-            <p className="text-[14px] md:text-xl font-medium text-brand-dark leading-relaxed bg-brand-white p-5 md:p-6 border-2 border-brand-dark shadow-brutal rounded-2xl relative">
+          <div className="relative inline-block max-w-xl mb-8 md:mb-12 print:mb-2">
+            <p className="text-[14px] md:text-xl font-medium text-brand-dark leading-relaxed bg-brand-white p-5 md:p-6 border-2 border-brand-dark shadow-brutal rounded-2xl relative print:p-2 print:text-xs print:shadow-none print:border">
               {text.desc}
             </p>
+            <div className="hidden print:block text-brand-dark font-mono font-bold text-xs mt-2 w-full text-center">
+              <p>{personalInfo.email} | https://portfolio-jr-lilac.vercel.app</p>
+            </div>
             <a href="#about" className="absolute -bottom-4 right-4 md:-bottom-[18px] md:-right-[18px] focus:outline-none focus:ring-4 focus:ring-brand-accent rounded-full z-20">
               <motion.div 
                 className="text-brand-dark p-2 bg-brand-accent border-2 border-brand-dark shadow-[4px_4px_0_#111] rounded-full cursor-pointer hover:bg-brand-white transition-colors flex items-center justify-center"
@@ -108,10 +111,6 @@ export function Hero() {
             )}
           </div>
         </FadeIn>
-        
-        <div className="hidden print:block text-brand-dark font-mono font-bold text-sm text-center w-full max-w-xl mx-auto">
-          <p>{personalInfo.email} | https://portfolio-jr-lilac.vercel.app</p>
-        </div>
       </div>
     </section>
   );

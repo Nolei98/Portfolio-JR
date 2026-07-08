@@ -38,13 +38,13 @@ export function About() {
         <SectionHeading subtitle={text.subtitle} title={text.title} />
       </FadeIn>
       
-      <div className="flex flex-col lg:flex-row gap-12 items-start mt-8">
+      <div className="flex flex-col lg:flex-row gap-12 items-start mt-8 print:flex-row print:gap-6 print:mt-2 print:items-center">
         
         {/* Image */}
-        <div className="w-full lg:w-5/12 order-1 lg:order-2 mb-4 lg:mb-0 print:order-1 print:w-full print:flex print:justify-center print:mb-4">
+        <div className="w-full lg:w-5/12 order-1 lg:order-2 mb-4 lg:mb-0 print:order-1 print:w-1/3 print:flex print:justify-center print:mb-0">
           <FadeIn delay={0.4} direction="left">
-            <div className="relative group p-4 bg-brand-white border-2 border-brand-dark shadow-brutal transform rotate-2 hover:rotate-0 transition-transform rounded-[2rem] print:max-wxs print:rotate-0 print:p-2 print:shadow-none print:border-none print:bg-transparent">
-              <div className="aspect-square w-full max-w-md mx-auto relative z-10 overflow-hidden border-2 border-brand-dark bg-brand-dark rounded-[1.5rem] print:w-40 print:h-40 print:mx-auto">
+            <div className="relative group p-4 bg-brand-white border-2 border-brand-dark shadow-brutal transform rotate-2 hover:rotate-0 transition-transform rounded-[2rem] print:rotate-0 print:p-0 print:shadow-none print:border-none print:bg-transparent">
+              <div className="aspect-square w-full max-w-md mx-auto relative z-10 overflow-hidden border-2 border-brand-dark bg-brand-dark rounded-[1.5rem] print:w-32 print:h-32 print:mx-auto">
                 <img 
                   src="https://i.imgur.com/81SP9An.jpeg" 
                   alt="João Rodrigues" 
@@ -60,9 +60,9 @@ export function About() {
         </div>
 
         {/* Text Content */}
-        <div className="w-full lg:w-7/12 order-2 lg:order-1 space-y-6 print:order-2 print:w-full print:space-y-4">
+        <div className="w-full lg:w-7/12 order-2 lg:order-1 space-y-6 print:order-2 print:w-2/3 print:space-y-2">
           <FadeIn delay={0.1}>
-            <div className="space-y-6 text-brand-dark font-medium text-lg leading-relaxed bg-brand-white p-8 border-2 border-brand-dark shadow-brutal rounded-3xl print:p-4 print:text-sm print:space-y-4 print:shadow-none print:border">
+            <div className="space-y-6 text-brand-dark font-medium text-lg leading-relaxed bg-brand-white p-8 border-2 border-brand-dark shadow-brutal rounded-3xl print:p-2 print:text-xs print:space-y-2 print:shadow-none print:border-none print:bg-transparent">
               <p dangerouslySetInnerHTML={{ __html: text.p1 }} />
               <p>{text.p2}</p>
               {text.p3 && <p>{text.p3}</p>}
