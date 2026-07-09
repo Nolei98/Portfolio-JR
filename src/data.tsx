@@ -13,7 +13,7 @@ export const personalInfo = {
 
 export const i18n = {
   en: {
-    nav: { about: "About", skills: "Skills", experience: "Timeline", projects: "Projects", contact: "Contact", resume: "Resume" },
+    nav: { about: "About", skills: "Stack", experience: "Timeline", projects: "Work", contact: "Contact", resume: "Resume" },
     hero: { 
       greeting: "Hello, world! I am", 
       subtitle: "Rodrigues", 
@@ -50,19 +50,27 @@ export const i18n = {
         { title: "Indigo Borbol...", artist: "Liniker", image: "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/5c/ac/71/5cac71f4-f5f0-fba3-9779-e8d51167a33e/8445162491440.jpg/600x600bb.jpg", link: "https://open.spotify.com/artist/5S7uK06GzGqXnK5j2QIt9u" }
       ]
     },
-    skills: { title: "Tech Skills", subtitle: "02." },
-    experience: { title: "Professional Path", subtitle: "03." },
-    projects: { title: "Featured Work", subtitle: "04.", projectLabel: "Project" },
-    contact: { 
-      title: "Let's Talk", 
-      subtitle: "05 / Next Step", 
-      p: "I'm open to new roles, freelance projects and collaborations. If you're hiring, have a project in mind, or just want to say hi — my inbox is always open and I reply fast!", 
-      btn: "Say Hello" 
+    skills: {
+      title: "Tech Stack",
+      subtitle: "02.",
+      sub: "A decade of hands-on engineering — from robust back-ends and databases to modern front-ends, DevOps and design tooling.",
+      count: "30+ technologies · full-stack"
     },
-    footer: { text1: "Built with brutalist but soft modern design.", text2: "© 2026", quote: "« Innovate today, build the future »" }
+    experience: { title: "Professional Path", subtitle: "03." },
+    projects: { title: "Selected Work", subtitle: "01.", projectLabel: "Project" },
+    contact: {
+      kicker: "Next step",
+      title: "Let's build something",
+      subtitle: "05 / Next Step",
+      p: "I'm open to new roles, freelance projects and collaborations. If you're hiring, have a project in mind, or just want to say hi — my inbox is always open and I reply fast.",
+      btn: "Message on WhatsApp",
+      copyEmail: "Copy email",
+      copied: "Copied!"
+    },
+    footer: { text1: "Built by João Rodrigues · NOLEI CREATIVE", text2: "© 2026", quote: "« Innovate today, build the future »" }
   },
   pt: {
-    nav: { about: "Sobre", skills: "Habilidades", experience: "Carreira", projects: "Projetos", contact: "Contato", resume: "Currículo" },
+    nav: { about: "Sobre", skills: "Stack", experience: "Carreira", projects: "Projetos", contact: "Contato", resume: "Currículo" },
     hero: { 
       greeting: "Olá, mundo! Eu sou", 
       subtitle: "Rodrigues", 
@@ -99,16 +107,24 @@ export const i18n = {
         { title: "Indigo Borbol...", artist: "Liniker", image: "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/5c/ac/71/5cac71f4-f5f0-fba3-9779-e8d51167a33e/8445162491440.jpg/600x600bb.jpg", link: "https://open.spotify.com/artist/5S7uK06GzGqXnK5j2QIt9u" }
       ]
     },
-    skills: { title: "Habilidade Técnicas", subtitle: "02." },
-    experience: { title: "Trajetória Profissional", subtitle: "03." },
-    projects: { title: "Trabalhos em Destaque", subtitle: "04.", projectLabel: "Projeto" },
-    contact: { 
-      title: "Vamos Conversar", 
-      subtitle: "05 / Próximo passo", 
-      p: "Estou aberto a novas vagas, projetos freelance e colaborações. Se você está contratando, tem um projeto em mente ou só quer dizer olá — minha caixa de entrada está sempre aberta e eu respondo rápido!", 
-      btn: "Diga Olá" 
+    skills: {
+      title: "Stack Técnica",
+      subtitle: "02.",
+      sub: "Uma década de engenharia na prática — de back-ends robustos e bancos de dados a front-ends modernos, DevOps e ferramentas de design.",
+      count: "30+ tecnologias · full-stack"
     },
-    footer: { text1: "Construído de forma brutal e mais livre.", text2: "© 2026", quote: "« Inovar hoje, construir o futuro »" }
+    experience: { title: "Trajetória Profissional", subtitle: "03." },
+    projects: { title: "Trabalhos em Destaque", subtitle: "01.", projectLabel: "Projeto" },
+    contact: {
+      kicker: "Próximo passo",
+      title: "Vamos construir algo",
+      subtitle: "05 / Próximo passo",
+      p: "Estou aberto a novas vagas, projetos freelance e colaborações. Se você está contratando, tem um projeto em mente ou só quer dizer olá — minha caixa de entrada está sempre aberta e eu respondo rápido.",
+      btn: "Chamar no WhatsApp",
+      copyEmail: "Copiar email",
+      copied: "Copiado!"
+    },
+    footer: { text1: "Feito por João Rodrigues · NOLEI CREATIVE", text2: "© 2026", quote: "« Inovar hoje, construir o futuro »" }
   }
 };
 
@@ -383,4 +399,19 @@ export const projectsCategories = [
     ]
   }
 ];
+
+export const statsData = {
+  en: [
+    { num: "10+", label: "Years in tech" },
+    { num: "7", label: "Years building for the web" },
+    { num: "30+", label: "Tools & technologies" },
+    { num: "Founder", label: "NOLEI CREATIVE agency" }
+  ],
+  pt: [
+    { num: "10+", label: "Anos em tecnologia" },
+    { num: "7", label: "Anos criando para a web" },
+    { num: "30+", label: "Ferramentas & tecnologias" },
+    { num: "Fundador", label: "Agência NOLEI CREATIVE" }
+  ]
+};
 

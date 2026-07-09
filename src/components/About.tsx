@@ -22,7 +22,7 @@ export function About() {
   };
 
   return (
-    <section id="about" className="py-20 scroll-mt-20 relative">
+    <section id="about" className="hidden print:block py-20 scroll-mt-20 relative">
       {/* Abstract background shapes */}
       <div className="absolute top-[30%] -right-10 flex flex-col items-start -z-10 opacity-80 hidden md:flex">
          <div className="w-16 h-8 bg-brand-dark"></div>

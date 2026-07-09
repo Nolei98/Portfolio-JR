@@ -7,7 +7,7 @@ export function Experience() {
   const text = i18n[lang].experience;
 
   return (
-    <section id="experience" className="py-20 scroll-mt-20 relative">
+    <section id="experience" className="hidden print:block py-20 scroll-mt-20 relative">
       {/* Abstract background shapes */}
       <div className="absolute top-[20%] left-[-10%] w-[500px] h-[500px] bg-[#75A5E3] rounded-full -z-20 opacity-10 blur-3xl hidden md:block" />
       <div className="absolute top-[60%] right-[-5%] hidden md:flex flex-col items-end -z-10 opacity-80">
