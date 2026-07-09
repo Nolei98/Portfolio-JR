@@ -25,8 +25,96 @@
 
   <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
   <title>João Rodrigues | Portfolio</title>
+
+  <style>
+    #app-preloader {
+      position: fixed;
+      inset: 0;
+      z-index: 9999;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 22px;
+      background: #141210;
+      transition: opacity .5s ease, visibility .5s ease;
+    }
+    #app-preloader.pl-hide {
+      opacity: 0;
+      visibility: hidden;
+      pointer-events: none;
+    }
+    .pl-mark {
+      position: relative;
+      width: 72px;
+      height: 72px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .pl-ring {
+      position: absolute;
+      inset: 0;
+      border: 2px solid rgba(255, 255, 255, .12);
+      border-top-color: #C15D30;
+      border-radius: 50%;
+      animation: pl-spin .9s linear infinite;
+    }
+    .pl-brand {
+      font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+      font-weight: 700;
+      font-size: 15px;
+      color: #F2EADF;
+      letter-spacing: -0.02em;
+    }
+    .pl-text {
+      display: flex;
+      align-items: baseline;
+      font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: .22em;
+      text-transform: uppercase;
+      color: #A2937E;
+    }
+    .pl-dots {
+      display: inline-block;
+      overflow: hidden;
+      width: 0;
+      animation: pl-dots 1.4s steps(4) infinite;
+    }
+    @keyframes pl-spin {
+      to { transform: rotate(360deg); }
+    }
+    @keyframes pl-dots {
+      to { width: 1.7em; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      .pl-ring { animation: none; }
+      .pl-dots { animation: none; width: 1.7em; }
+    }
+  </style>
 </head>
 <body>
+  <div id="app-preloader" aria-hidden="true">
+    <div class="pl-mark">
+      <span class="pl-ring"></span>
+      <span class="pl-brand">&lt;dev&gt;</span>
+    </div>
+    <p class="pl-text"><span id="pl-label">Loading</span><span class="pl-dots">...</span></p>
+  </div>
+  <script>
+    (function () {
+      var params = new URLSearchParams(window.location.search);
+      var urlLang = params.get('lang');
+      var lang = (urlLang === 'pt' || urlLang === 'en')
+        ? urlLang
+        : (navigator.language || '').toLowerCase().startsWith('pt') ? 'pt' : 'en';
+      var label = document.getElementById('pl-label');
+      if (label) label.textContent = lang === 'pt' ? 'Carregando' : 'Loading';
+    })();
+  </script>
+
   <div id="root"></div>
   <script type="module" src="/src/main.tsx"></script>
 </body>

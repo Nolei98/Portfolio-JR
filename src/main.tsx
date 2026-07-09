@@ -8,3 +8,16 @@ createRoot(document.getElementById('root')!).render(
     <App />
   </StrictMode>,
 );
+
+const hidePreloader = () => {
+  const el = document.getElementById('app-preloader');
+  if (!el) return;
+  el.classList.add('pl-hide');
+  el.addEventListener('transitionend', () => el.remove(), { once: true });
+};
+
+if (document.readyState === 'complete') {
+  hidePreloader();
+} else {
+  window.addEventListener('load', hidePreloader, { once: true });
+}
