@@ -79,7 +79,7 @@ export function Navbar() {
               />
               {lang === 'en' ? 'PT' : 'EN'}
             </button>
-            <button onClick={handleDownloadPDF} className="px-6 py-2 bg-brand-accent border-2 border-brand-dark text-brand-dark font-bold font-mono text-[11px] uppercase tracking-[0.2em] shadow-[4px_4px_0_#111] hover:shadow-[0_0_0_#111] transition-all rounded-xl hover:-translate-y-0.5 focus:outline-none cursor-pointer">
+            <button onClick={handleDownloadPDF} data-magnetic className="px-6 py-2 bg-brand-accent border-2 border-brand-dark text-brand-dark font-bold font-mono text-[11px] uppercase tracking-[0.2em] shadow-[4px_4px_0_#111] hover:shadow-[0_0_0_#111] transition-all rounded-xl hover:-translate-y-0.5 focus:outline-none cursor-pointer">
               {text.resume}
             </button>
           </div>

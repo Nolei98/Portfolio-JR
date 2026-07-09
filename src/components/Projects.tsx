@@ -57,6 +57,7 @@ export function Projects() {
           <FadeIn key={category.id} delay={index * 0.1}>
             <button
               onClick={() => setOpenId(category.id)}
+              data-tilt
               className="group w-full h-full text-left flex flex-col gap-5 p-7 border-4 border-brand-dark bg-brand-white shadow-brutal shadow-brutal-hover rounded-[2rem] focus:outline-none"
             >
               <div className="flex items-center justify-between">

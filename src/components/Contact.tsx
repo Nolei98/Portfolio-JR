@@ -32,6 +32,7 @@ export function Contact() {
             href={personalInfo.whatsapp}
             target="_blank"
             rel="noreferrer"
+            data-magnetic
             className="inline-flex items-center justify-center gap-2 sm:gap-3 px-6 py-4 sm:px-10 sm:py-5 bg-brand-white text-brand-dark border-4 border-brand-dark font-bold font-mono hover:bg-brand-dark hover:text-brand-white transition-colors text-xs sm:text-sm uppercase tracking-widest shadow-[4px_4px_0_#111] hover:shadow-none hover:translate-x-1 hover:translate-y-1 rounded-2xl break-words whitespace-normal text-center"
           >
             <Phone className="w-4 h-4 sm:w-5 sm:h-5" />
