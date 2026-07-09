@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { projectsCategories, i18n } from '../data';
 import { FadeIn } from './ui/Layout';
-import { Github, ExternalLink, GraduationCap, Briefcase, Code2, ArrowRight, X } from 'lucide-react';
+import { Github, ExternalLink, GraduationCap, Briefcase, Code2, ArrowRight, X, Lock } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
 import { useLang } from '../LanguageContext';
 
@@ -97,7 +97,7 @@ export function Work() {
               exit={{ scale: 0.94, y: 24 }}
               transition={{ type: 'spring', damping: 26, stiffness: 240 }}
               onClick={(e) => e.stopPropagation()}
-              className="relative w-full max-w-4xl max-h-[88vh] overflow-y-auto bg-ink-panel border border-ink-line rounded-2xl p-6 md:p-10 hide-scrollbar"
+              className="relative w-full max-w-4xl max-h-[88vh] overflow-y-auto bg-ink-panel border border-ink-line rounded-2xl p-6 md:p-10"
             >
               <div className="flex items-start justify-between gap-4 mb-8 sticky top-0">
                 <div className="flex items-center gap-4">
@@ -128,12 +128,22 @@ export function Work() {
                     key={project.id}
                     className="flex flex-col bg-ink-bg border border-ink-line rounded-lg overflow-hidden"
                   >
-                    <div className="aspect-video w-full overflow-hidden bg-ink-panel-2">
-                      <img
-                        src={project.image}
-                        alt={project.title}
-                        className="w-full h-full object-cover"
-                      />
+                    <div className="aspect-video w-full overflow-hidden bg-ink-panel-2 flex items-center justify-center">
+                      {project.image ? (
+                        <img
+                          src={project.image}
+                          alt={project.title}
+                          loading="lazy"
+                          className="w-full h-full object-cover"
+                        />
+                      ) : (
+                        <div className="flex flex-col items-center gap-2 px-4 text-center text-ink-muted">
+                          <Lock className="w-6 h-6 text-ink-accent" />
+                          <span className="font-mono text-[10px] font-bold uppercase tracking-widest">
+                            {lang === 'pt' ? 'Acesso restrito' : 'Restricted access'}
+                          </span>
+                        </div>
+                      )}
                     </div>
                     <div className="flex flex-col gap-2.5 p-5 flex-1">
                       <span className="self-start text-[10px] uppercase tracking-widest font-bold text-ink-accent font-mono">

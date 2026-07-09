@@ -349,14 +349,27 @@ export const projectsCategories = [
         id: "modutask-capstone",
         title: "ModuTask",
         semester: { en: "3rd Semester - Jala University", pt: "3º Semestre - Jala University" },
-        description: { 
-          en: "CLI-based task management system developed as a Capstone (Sprint) project. Focus on layered architecture and data security.", 
-          pt: "Sistema de gerenciamento de tarefas baseado em CLI desenvolvido como projeto Capstone (Sprint). Foco em arquitetura em camadas e segurança de dados." 
+        description: {
+          en: "CLI-based task management system developed as a Capstone (Sprint) project. Focus on layered architecture and data security.",
+          pt: "Sistema de gerenciamento de tarefas baseado em CLI desenvolvido como projeto Capstone (Sprint). Foco em arquitetura em camadas e segurança de dados."
         },
         technologies: ["Java", "MongoDB", "AES Encryption", "Service Layer"],
         repositoryLink: null,
         liveDemoLink: null,
         image: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=800&q=80"
+      },
+      {
+        id: "bio-saver-project",
+        title: "BioSaver",
+        semester: { en: "Academic Project - Calculus II", pt: "Projeto Acadêmico - Cálculo II" },
+        description: {
+          en: "Uses mathematical modeling (Calculus II) and technology to calculate the viable time window for reintroducing endangered species into the wild.",
+          pt: "Utiliza modelagem matemática (Cálculo II) e tecnologia para calcular o tempo viável de reinserção de espécies em risco de extinção ao redor do mundo."
+        },
+        technologies: ["HTML", "CSS", "JavaScript"],
+        repositoryLink: null,
+        liveDemoLink: "https://bio-saver-project.vercel.app/",
+        image: "/projects/biosaver.webp"
       }
     ]
   },
@@ -365,17 +378,199 @@ export const projectsCategories = [
     label: { en: "Web Apps & E-commerce", pt: "Aplicações Web & E-commerce" },
     items: [
       {
-        id: "exemplo-ecommerce-opencart",
-        title: "Virtual Store - Client X",
-        semester: { en: "Professional - NOLEI CREATIVE", pt: "Profissional - NOLEI CREATIVE" },
+        id: "acasa-do-agricultor",
+        title: "A Casa do Agricultor",
+        semester: { en: "Client - NOLEI CREATIVE", pt: "Cliente - NOLEI CREATIVE" },
         description: {
-          en: "Complete e-commerce development, payment gateway configuration, and virtual storefront speed optimization.",
-          pt: "Desenvolvimento de e-commerce completo, configuração de gateway de pagamento e otimização de velocidade da vitrine virtual."
+          en: "Full online store for rural and agricultural products, with catalog, cart, and checkout.",
+          pt: "Loja virtual completa para produtos agropecuários e do campo, com catálogo, carrinho e checkout."
         },
-        technologies: ["OpenCart", "PHP", "MySQL", "Bootstrap"],
+        technologies: ["OpenCart", "PHP", "MySQL"],
         repositoryLink: null,
-        liveDemoLink: null,
-        image: "https://images.unsplash.com/photo-1557821552-17105176677c?w=800&q=80"
+        liveDemoLink: "https://acasadoagricultor.com.br/",
+        image: "/projects/acasadoagricultor.webp"
+      },
+      {
+        id: "cet-ortopedia-cariri",
+        title: "CET Ortopedia Cariri",
+        semester: { en: "Client - NOLEI CREATIVE", pt: "Cliente - NOLEI CREATIVE" },
+        description: {
+          en: "Institutional site for an orthopedic clinic, with appointment scheduling and the medical team presentation.",
+          pt: "Site institucional para clínica ortopédica, com agendamento e apresentação da equipe médica."
+        },
+        technologies: ["WordPress", "PHP", "MySQL"],
+        repositoryLink: null,
+        liveDemoLink: "https://cetortopediacariri.com.br/",
+        image: "/projects/cetortopediacariri.webp"
+      },
+      {
+        id: "dr-guelfer-saraiva",
+        title: "Dr. Guelfer Saraiva",
+        semester: { en: "Client - NOLEI CREATIVE", pt: "Cliente - NOLEI CREATIVE" },
+        description: {
+          en: "Professional site for a gastroenterologist and endoscopist physician, presenting specialties and contact.",
+          pt: "Site profissional para médico gastroenterologista e endoscopista, com apresentação de especialidades e contato."
+        },
+        technologies: ["WordPress", "PHP", "MySQL"],
+        repositoryLink: null,
+        liveDemoLink: "https://drguelfersaraiva.com.br/",
+        image: "/projects/drguelfersaraiva.webp"
+      },
+      {
+        id: "pos-parto-consciente",
+        title: "Pós-Parto Consciente",
+        semester: { en: "Client - NOLEI CREATIVE", pt: "Cliente - NOLEI CREATIVE" },
+        description: {
+          en: "Institutional web application about postpartum care, built with HTML/CSS/JS and Bootstrap.",
+          pt: "Aplicação web institucional sobre cuidados no pós-parto, construída com HTML/CSS/JS e Bootstrap."
+        },
+        technologies: ["HTML", "CSS", "JavaScript", "Bootstrap"],
+        repositoryLink: null,
+        liveDemoLink: "http://ppconsciente.com.br/",
+        image: "/projects/ppconsciente.webp"
+      },
+      {
+        id: "via-mirante",
+        title: "Via Mirante",
+        semester: { en: "Client - NOLEI CREATIVE", pt: "Cliente - NOLEI CREATIVE" },
+        description: {
+          en: "Institutional site for a shopping/store gallery, listing tenants and events.",
+          pt: "Site institucional de shopping/galeria de lojas, com listagem de lojistas e eventos."
+        },
+        technologies: ["Joomla", "PHP", "MySQL"],
+        repositoryLink: null,
+        liveDemoLink: "https://viamirante.com.br/",
+        image: "/projects/viamirante.webp"
+      },
+      {
+        id: "pactas",
+        title: "Pactas",
+        semester: { en: "Client - NOLEI CREATIVE", pt: "Cliente - NOLEI CREATIVE" },
+        description: {
+          en: "Institutional site for the Alto Solimões Science and Technology Park, with news and projects.",
+          pt: "Site institucional do Parque Científico e Tecnológico do Alto Solimões, com notícias e projetos."
+        },
+        technologies: ["Joomla", "PHP", "MySQL"],
+        repositoryLink: null,
+        liveDemoLink: "https://pactas.org/",
+        image: "/projects/pactas.webp"
+      },
+      {
+        id: "pensare-psicologia",
+        title: "Pensare Psicologia",
+        semester: { en: "Client - NOLEI CREATIVE", pt: "Cliente - NOLEI CREATIVE" },
+        description: {
+          en: "Professional site for a psychologist attending Brazilians in Brazil and abroad.",
+          pt: "Site profissional para psicóloga que atende brasileiros no Brasil e no exterior."
+        },
+        technologies: ["WordPress", "PHP", "MySQL"],
+        repositoryLink: null,
+        liveDemoLink: "https://pensarepsi.com.br/",
+        image: "/projects/pensarepsi.webp"
+      },
+      {
+        id: "laboratorio-lamic",
+        title: "Laboratório LAMIC",
+        semester: { en: "Client - NOLEI CREATIVE", pt: "Cliente - NOLEI CREATIVE" },
+        description: {
+          en: "Institutional site for a clinical analysis laboratory, with exam scheduling via WhatsApp.",
+          pt: "Site institucional para laboratório de análises clínicas, com agendamento de exames via WhatsApp."
+        },
+        technologies: ["WordPress", "PHP", "MySQL"],
+        repositoryLink: null,
+        liveDemoLink: "https://laboratoriolamic.com.br/",
+        image: "/projects/laboratoriolamic.webp"
+      },
+      {
+        id: "medicina-nuclear-juazeiro",
+        title: "Medicina Nuclear Juazeiro",
+        semester: { en: "Client - NOLEI CREATIVE", pt: "Cliente - NOLEI CREATIVE" },
+        description: {
+          en: "Institutional site for a nuclear medicine and radiology clinic, featuring scintigraphy exams.",
+          pt: "Site institucional para clínica de medicina nuclear e radiologia, com exames de cintilografia."
+        },
+        technologies: ["WordPress", "PHP", "MySQL"],
+        repositoryLink: null,
+        liveDemoLink: "https://medicinanuclearjuazeiro.com.br/",
+        image: "/projects/medicinanuclearjuazeiro.webp"
+      },
+      {
+        id: "lamic-viva-mais",
+        title: "LAMIC Viva+",
+        semester: { en: "Client - NOLEI CREATIVE", pt: "Cliente - NOLEI CREATIVE" },
+        description: {
+          en: "Platform for the LAMIC Group's health benefits and discount card.",
+          pt: "Plataforma do cartão de benefícios e descontos em saúde do Grupo LAMIC."
+        },
+        technologies: ["WordPress", "WooCommerce", "PHP", "MySQL"],
+        repositoryLink: null,
+        liveDemoLink: "https://lamicvivamais.com.br/",
+        image: "/projects/lamicvivamais.webp"
+      },
+      {
+        id: "observatorio-alto-solimoes",
+        title: "Observatório Alto Solimões",
+        semester: { en: "Client - NOLEI CREATIVE", pt: "Cliente - NOLEI CREATIVE" },
+        description: {
+          en: "Institutional site currently behind access restrictions — live link below.",
+          pt: "Site institucional atualmente com acesso restrito — link direto abaixo."
+        },
+        technologies: [],
+        repositoryLink: null,
+        liveDemoLink: "https://observatorioaltosolimoes.org/",
+        image: null
+      },
+      {
+        id: "nesam",
+        title: "NESAM",
+        semester: { en: "Client - NOLEI CREATIVE", pt: "Cliente - NOLEI CREATIVE" },
+        description: {
+          en: "Institutional site currently behind access restrictions — live link below.",
+          pt: "Site institucional atualmente com acesso restrito — link direto abaixo."
+        },
+        technologies: [],
+        repositoryLink: null,
+        liveDemoLink: "http://nesam.com.br/",
+        image: null
+      },
+      {
+        id: "isnfdph-ufcg",
+        title: "ISNFDPH — UFCG",
+        semester: { en: "Client - NOLEI CREATIVE", pt: "Cliente - NOLEI CREATIVE" },
+        description: {
+          en: "Academic site hosted by UFCG, currently unavailable for preview — live link below.",
+          pt: "Site acadêmico hospedado pela UFCG, atualmente indisponível para pré-visualização — link direto abaixo."
+        },
+        technologies: [],
+        repositoryLink: null,
+        liveDemoLink: "https://isnfdph.historia.sti.ufcg.edu.br",
+        image: null
+      },
+      {
+        id: "coimi",
+        title: "COIMI",
+        semester: { en: "Client - NOLEI CREATIVE", pt: "Cliente - NOLEI CREATIVE" },
+        description: {
+          en: "Institutional site currently behind access restrictions — live link below.",
+          pt: "Site institucional atualmente com acesso restrito — link direto abaixo."
+        },
+        technologies: [],
+        repositoryLink: null,
+        liveDemoLink: "https://coimi.net/pt",
+        image: null
+      },
+      {
+        id: "abm-brazil",
+        title: "ABM Brazil",
+        semester: { en: "Client - NOLEI CREATIVE", pt: "Cliente - NOLEI CREATIVE" },
+        description: {
+          en: "Corporate institutional site, built with HTML/CSS/JS.",
+          pt: "Site institucional corporativo, construído com HTML/CSS/JS."
+        },
+        technologies: ["HTML", "CSS", "JavaScript"],
+        repositoryLink: null,
+        liveDemoLink: "https://abmbrazil.com/",
+        image: "/projects/abmbrazil.webp"
       }
     ]
   },
