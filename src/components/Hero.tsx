@@ -16,7 +16,7 @@ export function Hero() {
   ];
 
   return (
-    <section id="home" className="max-w-7xl mx-auto px-4 sm:px-6 md:px-12 pt-6 md:pt-32 pb-14 print:pt-0 print:pb-0">
+    <section id="home" className="max-w-7xl mx-auto px-4 sm:px-6 md:px-12 pt-2 md:pt-32 pb-14 print:pt-0 print:pb-0">
       <div className="grid lg:grid-cols-[1.15fr_0.85fr] gap-10 lg:gap-14 items-center">
         {/* Mobile only: badge shown above the hero image */}
         <FadeIn className="order-1 lg:hidden">
@@ -90,7 +90,7 @@ export function Hero() {
           </FadeIn>
         </div>
 
-        <FadeIn delay={0.15} direction="left" className="order-2 lg:order-2 justify-self-center w-full max-w-[220px] sm:max-w-[340px] lg:max-w-[420px] print-hide">
+        <FadeIn delay={0.15} direction="left" className="order-2 lg:order-2 justify-self-center w-full max-w-[280px] sm:max-w-[340px] lg:max-w-[420px] print-hide">
           <img
             src="/joao-blend.webp"
             alt="João Rodrigues"
