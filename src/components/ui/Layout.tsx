@@ -1,5 +1,8 @@
-import React, { ReactNode } from 'react';
+import React, { ReactNode, useState } from 'react';
 import { motion } from 'motion/react';
+
+const isMobileViewport = () =>
+  typeof window !== 'undefined' && window.matchMedia('(max-width: 639px)').matches;
 
 interface FadeInProps {
   children: ReactNode;
@@ -9,9 +12,14 @@ interface FadeInProps {
   /** Disables the spring overshoot + scale pop. Use for dense grids on mobile, where the
    *  scale overshoot causes a hairline repaint flicker along card borders. */
   subtle?: boolean;
+  /** Skips the scroll-in animation entirely on mobile viewports — renders children
+   *  plainly, with no transform/opacity transition tied to scroll position. */
+  mobileStatic?: boolean;
 }
 
-export const FadeIn: React.FC<FadeInProps> = ({ children, delay = 0, direction = 'up', className = '', subtle = false }) => {
+export const FadeIn: React.FC<FadeInProps> = ({ children, delay = 0, direction = 'up', className = '', subtle = false, mobileStatic = false }) => {
+  const [skipAnimation] = useState(() => mobileStatic && isMobileViewport());
+
   const directions = {
     up: { y: 40 },
     down: { y: -40 },
@@ -19,6 +27,10 @@ export const FadeIn: React.FC<FadeInProps> = ({ children, delay = 0, direction =
     right: { x: -40 },
     none: { x: 0, y: 0 },
   };
+
+  if (skipAnimation) {
+    return <div className={className}>{children}</div>;
+  }
 
   return (
     <motion.div

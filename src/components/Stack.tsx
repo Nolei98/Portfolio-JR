@@ -57,8 +57,8 @@ export function Stack() {
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-12 grid grid-cols-1 sm:grid-cols-2 gap-3.5 sm:gap-4">
         {skills.map((skillGroup, index) => (
-          <FadeIn key={skillGroup.category} delay={index * 0.08} subtle>
-            <div data-tilt className="stack-card bg-black/16 border border-white/20 rounded-lg p-5 sm:p-7 h-full">
+          <FadeIn key={skillGroup.category} delay={index * 0.08} subtle mobileStatic>
+            <div className="stack-card bg-black/16 border border-white/20 rounded-lg p-5 sm:p-7 h-full">
               <div className="flex items-center gap-3 mb-4 pb-3.5 border-b border-white/20">
                 <h3 className="font-display font-semibold text-lg text-white">{skillGroup.category}</h3>
               </div>

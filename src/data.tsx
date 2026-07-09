@@ -6,7 +6,7 @@ export const personalInfo = {
   email: "noleirodrigues@gmail.com",
   gitlab: "https://gitlab.com/JoaoRodrigues_Nolei",
   linkedin: "https://www.linkedin.com/in/joão-rodrigues-18b731179",
-  instagram: "https://instagram.com/joaorodrigues.ai",
+  instagram: "https://instagram.com/joaorodrigues.ia",
   github: "https://github.com/Nolei98",
   whatsapp: "https://wa.me/5587999099937",
 };
