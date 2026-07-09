@@ -53,7 +53,7 @@ export const i18n = {
     skills: {
       title: "Tech Stack",
       subtitle: "02.",
-      sub: "A decade of hands-on engineering — from robust back-ends and databases to modern front-ends, DevOps and design tooling.",
+      sub: "A decade of hands-on engineering — from robust back-ends and databases to modern front‑ends, DevOps and design tooling.",
       count: "30+ technologies · full-stack"
     },
     experience: { title: "Professional Path", subtitle: "03." },
@@ -110,7 +110,7 @@ export const i18n = {
     skills: {
       title: "Stack Técnica",
       subtitle: "02.",
-      sub: "Uma década de engenharia na prática — de back-ends robustos e bancos de dados a front-ends modernos, DevOps e ferramentas de design.",
+      sub: "Uma década de engenharia na prática — de back-ends robustos e bancos de dados a front‑ends modernos, DevOps e ferramentas de design.",
       count: "30+ tecnologias · full-stack"
     },
     experience: { title: "Trajetória Profissional", subtitle: "03." },
