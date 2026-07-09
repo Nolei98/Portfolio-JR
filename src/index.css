@@ -58,12 +58,6 @@
   transform: translateZ(0);
 }
 
-.stack-card {
-  will-change: transform;
-  transform: translateZ(0);
-  backface-visibility: hidden;
-}
-
 .huge-text {
   font-family: var(--font-display);
   font-size: clamp(2rem, 10vw, 7.5rem);
