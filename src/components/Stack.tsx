@@ -39,18 +39,18 @@ export function Stack() {
         </div>
       </div>
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-12 grid grid-cols-1 sm:grid-cols-2 gap-4">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-12 grid grid-cols-1 sm:grid-cols-2 gap-3.5 sm:gap-4">
         {skills.map((skillGroup, index) => (
           <FadeIn key={skillGroup.category} delay={index * 0.08}>
-            <div data-tilt className="bg-black/16 border border-white/20 rounded-lg p-7 h-full">
+            <div data-tilt className="bg-black/16 border border-white/20 rounded-lg p-5 sm:p-7 h-full">
               <div className="flex items-center gap-3 mb-4 pb-3.5 border-b border-white/20">
                 <h3 className="font-display font-semibold text-lg text-white">{skillGroup.category}</h3>
               </div>
-              <div className="flex flex-wrap gap-2.5">
+              <div className="flex flex-wrap gap-2 sm:gap-2.5">
                 {skillGroup.items.map((item) => (
                   <span
                     key={item.name}
-                    className="inline-flex items-center gap-2 px-3.5 py-2 bg-black/20 border border-white/22 rounded-md font-mono text-[12.5px] font-semibold text-white"
+                    className="inline-flex items-center gap-2 px-3 sm:px-3.5 py-1.5 sm:py-2 bg-black/20 border border-white/22 rounded-md font-mono text-[12px] sm:text-[12.5px] font-semibold text-white"
                   >
                     {item.icon && <img src={item.icon} alt="" className="w-4 h-4" />}
                     {item.name}

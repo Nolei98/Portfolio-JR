@@ -18,7 +18,7 @@ export const i18n = {
       greeting: "Hello, world! I am", 
       subtitle: "Rodrigues", 
       available: "Open to opportunities",
-      desc: "Transforming logic into real solutions since 2014. With solid experience in web development since 2019, I help build scalable systems, secure architectures, and consistent digital businesses.", 
+      desc: "Transforming logic into real solutions since 2014. With solid experience in web development since 2019, I help build scalable systems, secure architectures, and consistent digital businesses. Currently pursuing a Software Engineering degree at Jala University, with a strong focus on AI.",
       contactBtn: "Get in touch" 
     },
     about: { 
@@ -75,7 +75,7 @@ export const i18n = {
       greeting: "Olá, mundo! Eu sou", 
       subtitle: "Rodrigues", 
       available: "Disponível para propostas",
-      desc: "Transformando lógica em soluções reais desde 2014. Com sólida atuação no desenvolvimento web desde 2019, ajudo a construir sistemas escaláveis, arquiteturas seguras e negócios digitais consistentes.", 
+      desc: "Transformando lógica em soluções reais desde 2014. Com sólida atuação no desenvolvimento web desde 2019, ajudo a construir sistemas escaláveis, arquiteturas seguras e negócios digitais consistentes. Atualmente me formando em Engenharia de Software na Jala University, com foco forte em IA.", 
       contactBtn: "Entrar em Contato" 
     },
     about: { 
@@ -151,17 +151,8 @@ export const skillsObj = {
         { name: "React (🌱 Learning)", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" }
       ] 
     },
-    { 
-      category: "Databases", 
-      items: [
-        { name: "MongoDB", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg" },
-        { name: "MySQL", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg" },
-        { name: "PostgreSQL", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg" },
-        { name: "NoSQL", icon: "https://cdn.simpleicons.org/couchbase/111111" }
-      ] 
-    },
-    { 
-      category: "Infra, DevOps & Tools", 
+    {
+      category: "Infra, DevOps & Tools",
       items: [
         { name: "Docker", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original.svg" },
         { name: "Git", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg" },
@@ -181,24 +172,33 @@ export const skillsObj = {
         { name: "LLM", icon: "https://api.iconify.design/lucide:brain.svg" }
       ] 
     },
-    { 
-      category: "Web Ecosystems", 
+    {
+      category: "Databases",
+      items: [
+        { name: "MongoDB", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg" },
+        { name: "MySQL", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg" },
+        { name: "PostgreSQL", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg" },
+        { name: "NoSQL", icon: "https://cdn.simpleicons.org/couchbase/111111" }
+      ]
+    },
+    {
+      category: "Soft Skills & Methodologies",
+      items: [
+        { name: "Clear Communication", icon: "https://api.iconify.design/lucide:message-square.svg" },
+        { name: "Teamwork", icon: "https://api.iconify.design/lucide:users.svg" },
+        { name: "Flexibility", icon: "https://api.iconify.design/lucide:arrow-right-left.svg" },
+        { name: "Agile (Scrum)", icon: "https://api.iconify.design/lucide:kanban.svg" }
+      ]
+    },
+    {
+      category: "Web Ecosystems",
       items: [
         { name: "WordPress", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/wordpress/wordpress-original.svg" },
         { name: "WooCommerce", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/woocommerce/woocommerce-original.svg" },
         { name: "Joomla", icon: "https://api.iconify.design/logos:joomla.svg" },
         { name: "OpenCart", icon: "https://api.iconify.design/fa-brands:opencart.svg?color=%23111" },
         { name: "cPanel", icon: "https://api.iconify.design/simple-icons:cpanel.svg?color=%23111" }
-      ] 
-    },
-    { 
-      category: "Soft Skills & Methodologies", 
-      items: [
-        { name: "Clear Communication", icon: "https://api.iconify.design/lucide:message-square.svg" },
-        { name: "Teamwork", icon: "https://api.iconify.design/lucide:users.svg" },
-        { name: "Flexibility", icon: "https://api.iconify.design/lucide:arrow-right-left.svg" },
-        { name: "Agile (Scrum)", icon: "https://api.iconify.design/lucide:kanban.svg" }
-      ] 
+      ]
     }
   ],
   pt: [
@@ -223,17 +223,8 @@ export const skillsObj = {
         { name: "React (🌱 Em aprendizado)", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" }
       ] 
     },
-    { 
-      category: "Bancos de Dados", 
-      items: [
-        { name: "MongoDB", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg" },
-        { name: "MySQL", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg" },
-        { name: "PostgreSQL", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg" },
-        { name: "NoSQL", icon: "https://cdn.simpleicons.org/couchbase/111111" }
-      ] 
-    },
-    { 
-      category: "Infraestrutura, DevOps & Ferramentas", 
+    {
+      category: "Infraestrutura, DevOps & Ferramentas",
       items: [
         { name: "Docker", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original.svg" },
         { name: "Git", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg" },
@@ -253,18 +244,17 @@ export const skillsObj = {
         { name: "LLM", icon: "https://api.iconify.design/lucide:brain.svg" }
       ] 
     },
-    { 
-      category: "Ecossistemas Web", 
+    {
+      category: "Bancos de Dados",
       items: [
-        { name: "WordPress", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/wordpress/wordpress-original.svg" },
-        { name: "WooCommerce", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/woocommerce/woocommerce-original.svg" },
-        { name: "Joomla", icon: "https://api.iconify.design/logos:joomla.svg" },
-        { name: "OpenCart", icon: "https://api.iconify.design/fa-brands:opencart.svg?color=%23111" },
-        { name: "cPanel", icon: "https://api.iconify.design/simple-icons:cpanel.svg?color=%23111" }
-      ] 
+        { name: "MongoDB", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg" },
+        { name: "MySQL", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg" },
+        { name: "PostgreSQL", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg" },
+        { name: "NoSQL", icon: "https://cdn.simpleicons.org/couchbase/111111" }
+      ]
     },
-    { 
-      category: "Soft Skills & Metodologias", 
+    {
+      category: "Soft Skills & Metodologias",
       items: [
         { name: "Comunicação clara", icon: "https://api.iconify.design/lucide:message-square.svg" },
         { name: "Teamwork (Trabalho em Equipe)", icon: "https://api.iconify.design/lucide:users.svg" },
@@ -272,7 +262,17 @@ export const skillsObj = {
         { name: "Rápida adaptabilidade técnica", icon: "https://api.iconify.design/lucide:zap.svg" },
         { name: "Controle de versão contínuo", icon: "https://api.iconify.design/lucide:git-branch.svg" },
         { name: "Metodologias Ágeis (Scrum)", icon: "https://api.iconify.design/lucide:kanban.svg" }
-      ] 
+      ]
+    },
+    {
+      category: "Ecossistemas Web",
+      items: [
+        { name: "WordPress", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/wordpress/wordpress-original.svg" },
+        { name: "WooCommerce", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/woocommerce/woocommerce-original.svg" },
+        { name: "Joomla", icon: "https://api.iconify.design/logos:joomla.svg" },
+        { name: "OpenCart", icon: "https://api.iconify.design/fa-brands:opencart.svg?color=%23111" },
+        { name: "cPanel", icon: "https://api.iconify.design/simple-icons:cpanel.svg?color=%23111" }
+      ]
     }
   ]
 };
@@ -405,13 +405,13 @@ export const statsData = {
     { num: "10+", label: "Years in tech" },
     { num: "7", label: "Years building for the web" },
     { num: "30+", label: "Tools & technologies" },
-    { num: "Founder", label: "NOLEI CREATIVE agency" }
+    { num: "Founder", label: "PostPilot" }
   ],
   pt: [
     { num: "10+", label: "Anos em tecnologia" },
     { num: "7", label: "Anos criando para a web" },
     { num: "30+", label: "Ferramentas & tecnologias" },
-    { num: "Fundador", label: "Agência NOLEI CREATIVE" }
+    { num: "Fundador", label: "Da PostPilot" }
   ]
 };
 

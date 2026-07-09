@@ -1,28 +1,34 @@
 import React, { useState, useEffect } from 'react';
-import { Menu, X } from 'lucide-react';
+import { Menu, X, Download, FileText } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
 import { useLang } from '../LanguageContext';
 import { i18n } from '../data';
+import { PdfViewer } from './PdfViewer';
 
 export function Navbar() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-  const [showPrintModal, setShowPrintModal] = useState(false);
+  const [isResumeOpen, setIsResumeOpen] = useState(false);
   const { lang, toggleLang } = useLang();
 
   const text = i18n[lang].nav;
+  const resumeUrl = lang === 'pt' ? '/Curriculo_Joao_Rodrigues_PT.pdf' : '/Resume_Joao_Rodrigues_EN.pdf';
+  const resumeFileName = lang === 'pt' ? 'Curriculo_Joao_Rodrigues_PT.pdf' : 'Resume_Joao_Rodrigues_EN.pdf';
 
-  const handleDownloadPDF = async (e: React.MouseEvent) => {
+  const handleDownloadPDF = (e: React.MouseEvent) => {
     e.preventDefault();
-    try {
-      if (window.self !== window.top) {
-        setShowPrintModal(true);
-      } else {
-        window.print();
-      }
-    } catch {
-      window.print();
-    }
+    setIsResumeOpen(true);
   };
+
+  useEffect(() => {
+    if (!isResumeOpen) return;
+    const onKey = (e: KeyboardEvent) => e.key === 'Escape' && setIsResumeOpen(false);
+    document.addEventListener('keydown', onKey);
+    document.body.style.overflow = 'hidden';
+    return () => {
+      document.removeEventListener('keydown', onKey);
+      document.body.style.overflow = '';
+    };
+  }, [isResumeOpen]);
 
   const navLinks = [
     { name: text.skills, href: '#stack' },
@@ -74,7 +80,7 @@ export function Navbar() {
         </nav>
 
         {/* Mobile Menu Toggle */}
-        <div className="flex items-center gap-3 lg:hidden print-hide">
+        <div className="relative z-[60] flex items-center gap-3 lg:hidden print-hide">
           <button
             onClick={toggleLang}
             className="flex items-center gap-2 px-2 py-1.5 font-mono text-xs font-bold text-ink-text border border-ink-line rounded-md"
@@ -131,37 +137,61 @@ export function Navbar() {
         )}
       </AnimatePresence>
 
+      {/* Resume Viewer Modal */}
       <AnimatePresence>
-        {showPrintModal && (
+        {isResumeOpen && (
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
-            className="fixed inset-0 z-[100] flex items-center justify-center bg-black/70 p-4"
+            className="fixed inset-0 h-screen w-screen z-[100] flex items-center justify-center bg-black/70 backdrop-blur-sm p-3 sm:p-6"
+            onClick={() => setIsResumeOpen(false)}
           >
             <motion.div
-              initial={{ scale: 0.9, y: 20 }}
-              animate={{ scale: 1, y: 0 }}
-              exit={{ scale: 0.9, y: 20 }}
-              className="bg-ink-panel border border-ink-line rounded-2xl p-6 md:p-8 max-w-sm w-full text-center flex flex-col items-center"
+              initial={{ scale: 0.94, y: 24, opacity: 0 }}
+              animate={{ scale: 1, y: 0, opacity: 1 }}
+              exit={{ scale: 0.94, y: 24, opacity: 0 }}
+              transition={{ type: 'spring', damping: 28, stiffness: 260 }}
+              onClick={(e) => e.stopPropagation()}
+              className="relative flex flex-col w-full max-w-4xl h-[88vh] bg-ink-panel border border-ink-line rounded-2xl shadow-2xl overflow-hidden"
             >
-              <div className="w-16 h-16 rounded-2xl bg-ink-accent flex items-center justify-center mb-6 -rotate-6">
-                <span className="text-white text-3xl font-bold font-display">!</span>
+              {/* Modal Header */}
+              <div className="flex items-center justify-between gap-3 px-4 sm:px-6 py-3.5 sm:py-4 border-b border-ink-line bg-ink-panel-2">
+                <div className="flex items-center gap-3 min-w-0">
+                  <div className="w-9 h-9 rounded-md bg-ink-accent/15 border border-ink-accent/40 flex items-center justify-center shrink-0">
+                    <FileText className="w-4 h-4 text-ink-accent" />
+                  </div>
+                  <div className="min-w-0">
+                    <p className="font-display font-semibold text-sm sm:text-base text-ink-text truncate">
+                      {lang === 'pt' ? 'Currículo — João Rodrigues' : 'Resume — João Rodrigues'}
+                    </p>
+                    <p className="font-mono text-[10px] uppercase tracking-[0.08em] text-ink-muted truncate">{resumeFileName}</p>
+                  </div>
+                </div>
+                <div className="flex items-center gap-2 shrink-0">
+                  <a
+                    href={resumeUrl}
+                    download={resumeFileName}
+                    data-magnetic
+                    className="inline-flex items-center gap-2 px-3.5 sm:px-4 py-2 bg-ink-accent text-white rounded-md font-mono text-[11px] font-bold uppercase tracking-[0.1em] hover:bg-ink-accent-deep transition-colors"
+                  >
+                    <Download className="w-3.5 h-3.5" />
+                    <span className="hidden sm:inline">{lang === 'pt' ? 'Baixar' : 'Download'}</span>
+                  </a>
+                  <button
+                    onClick={() => setIsResumeOpen(false)}
+                    aria-label="Close"
+                    className="w-9 h-9 flex items-center justify-center border border-ink-line rounded-md text-ink-text hover:bg-ink-panel hover:border-ink-accent transition-colors"
+                  >
+                    <X className="w-4 h-4" />
+                  </button>
+                </div>
               </div>
-              <h3 className="font-display font-bold text-2xl text-ink-text mb-4">
-                {lang === 'en' ? 'Open in New Tab' : 'Ação Necessária'}
-              </h3>
-              <p className="font-sans text-ink-muted mb-8">
-                {lang === 'en'
-                  ? 'To generate a perfect PDF without visual glitches, please open this app in a new tab (using the button in the top right of the preview) and click Download again.'
-                  : 'Para gerar um PDF perfeito e sem falhas visuais, abra este projeto em uma Nova Aba (através do botão no canto superior direito do preview) e clique em baixar novamente.'}
-              </p>
-              <button
-                onClick={() => setShowPrintModal(false)}
-                className="px-6 py-4 bg-ink-accent text-white font-bold font-mono text-sm uppercase tracking-widest rounded-md w-full cursor-pointer"
-              >
-                {lang === 'en' ? 'Understood' : 'Entendi'}
-              </button>
+
+              {/* PDF Viewer */}
+              <div key={resumeUrl} className="flex-1 min-h-0">
+                <PdfViewer url={resumeUrl} />
+              </div>
             </motion.div>
           </motion.div>
         )}
