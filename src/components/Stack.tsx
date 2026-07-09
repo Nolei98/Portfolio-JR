@@ -33,7 +33,7 @@ export function Stack() {
         <div className="marquee-track flex gap-3.5 w-max">
           {marqueeLoop.map((sk, i) => (
             <span key={`${sk.name}-${i}`} className="inline-flex items-center gap-2.5 px-4 py-2.5 bg-black/16 border border-white/22 rounded-md font-mono text-[13px] font-bold whitespace-nowrap text-white">
-              <img src={sk.icon} alt="" className="w-5 h-5" /> {sk.name}
+              <img src={sk.icon} alt="" loading="lazy" decoding="async" className="w-5 h-5" /> {sk.name}
             </span>
           ))}
         </div>
@@ -52,7 +52,7 @@ export function Stack() {
                     key={item.name}
                     className="inline-flex items-center gap-2 px-3 sm:px-3.5 py-1.5 sm:py-2 bg-black/20 border border-white/22 rounded-md font-mono text-[12px] sm:text-[12.5px] font-semibold text-white"
                   >
-                    {item.icon && <img src={item.icon} alt="" className="w-4 h-4" />}
+                    {item.icon && <img src={item.icon} alt="" loading="lazy" decoding="async" className="w-4 h-4" />}
                     {item.name}
                   </span>
                 ))}
@@ -68,7 +68,7 @@ export function Stack() {
         <div className="flex flex-wrap gap-4 justify-center">
           {aboutText.languages.map((langItem: any, index: number) => (
             <div key={index} className="flex items-center gap-2 border-2 border-brand-dark p-2 rounded-lg bg-brand-light">
-              <img src={langItem.flag} alt={langItem.name} className="w-4 h-auto rounded-[2px]" />
+              <img src={langItem.flag} alt={langItem.name} loading="lazy" decoding="async" className="w-4 h-auto rounded-[2px]" />
               <span className="font-mono text-[10px] font-bold">{langItem.name}</span>
               <span className="font-mono text-[10px] text-brand-dark/70 ml-2">- {langItem.level}</span>
             </div>

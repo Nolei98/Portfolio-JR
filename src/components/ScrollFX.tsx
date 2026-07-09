@@ -61,7 +61,8 @@ export function ScrollFX() {
 
     let onMove: ((e: PointerEvent) => void) | null = null;
     let onOut: ((e: PointerEvent) => void) | null = null;
-    if (!reduced) {
+    const hasFinePointer = window.matchMedia && window.matchMedia('(hover: hover) and (pointer: fine)').matches;
+    if (!reduced && hasFinePointer) {
       onMove = (e: PointerEvent) => {
         const t = e.target as Element;
         const mag = t.closest && (t.closest('[data-magnetic]') as HTMLElement | null);

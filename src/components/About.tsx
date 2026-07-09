@@ -45,9 +45,11 @@ export function About() {
           <FadeIn delay={0.4} direction="left">
             <div className="relative group p-4 bg-brand-white border-2 border-brand-dark shadow-brutal transform rotate-2 hover:rotate-0 transition-transform rounded-[2rem] print:rotate-0 print:p-0 print:shadow-none print:border-none print:bg-transparent">
               <div className="aspect-square w-full max-w-md mx-auto relative z-10 overflow-hidden border-2 border-brand-dark bg-brand-dark rounded-[1.5rem] print:w-32 print:h-32 print:mx-auto">
-                <img 
-                  src="https://i.imgur.com/81SP9An.jpeg" 
-                  alt="João Rodrigues" 
+                <img
+                  src="https://i.imgur.com/81SP9An.jpeg"
+                  alt="João Rodrigues"
+                  loading="lazy"
+                  decoding="async"
                   className="object-cover w-full h-full transition-all duration-500 hover:scale-105"
                 />
               </div>
@@ -77,7 +79,7 @@ export function About() {
                   <div key={index} className="space-y-2 print:w-auto">
                     <div className="flex flex-col sm:flex-row sm:justify-between items-start sm:items-center gap-1 text-[11px] md:text-sm font-bold font-mono">
                       <span className="flex items-center gap-2">
-                        <img src={langItem.flag} alt={langItem.name} className="w-5 h-auto rounded-[2px]" />
+                        <img src={langItem.flag} alt={langItem.name} loading="lazy" decoding="async" className="w-5 h-auto rounded-[2px]" />
                         {langItem.name}
                       </span>
                       <span className="opacity-80 sm:text-right text-brand-dark/70 break-words w-full sm:w-auto">{langItem.level}</span>
@@ -126,7 +128,7 @@ export function About() {
                     className="group block shrink-0 w-36 xs:w-40 sm:w-44 bg-[#181818] p-3 rounded-lg hover:bg-[#282828] transition-colors border border-transparent hover:border-[#333] snap-start"
                   >
                     <div className="relative aspect-square w-full mb-3 rounded shadow-[0_8px_24px_rgba(0,0,0,0.5)] overflow-hidden">
-                      <img src={album.image} alt={album.title} className="w-full h-full object-cover" />
+                      <img src={album.image} alt={album.title} loading="lazy" decoding="async" className="w-full h-full object-cover" />
                       <div className="absolute bottom-2 right-2 w-10 h-10 bg-[#1DB954] text-black rounded-full flex items-center justify-center opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 transition-all shadow-lg">
                         <svg viewBox="0 0 24 24" fill="currentColor" className="w-5 h-5 ml-1">
                           <path d="M8 5v14l11-7z" />

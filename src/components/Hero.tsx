@@ -79,7 +79,7 @@ export function Hero() {
 
         <FadeIn delay={0.15} direction="left" className="order-1 lg:order-2 justify-self-center w-full max-w-[280px] sm:max-w-[340px] lg:max-w-[420px] print-hide">
           <img
-            src="/joao-blend.png"
+            src="/joao-blend.webp"
             alt="João Rodrigues"
             className="w-full h-auto select-none pointer-events-none"
             draggable={false}
