@@ -46,9 +46,23 @@
 }
 .marquee-track {
   animation: marquee 34s linear infinite;
+  will-change: transform;
+  transform: translateZ(0);
+  backface-visibility: hidden;
 }
 .marquee-wrap:hover .marquee-track {
   animation-play-state: paused;
+}
+.marquee-wrap {
+  contain: layout paint style;
+  transform: translateZ(0);
+}
+
+.stack-card {
+  will-change: transform;
+  transform: translateZ(0);
+  backface-visibility: hidden;
+  contain: layout paint style;
 }
 
 .huge-text {

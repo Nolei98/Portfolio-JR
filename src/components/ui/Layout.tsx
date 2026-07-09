@@ -6,9 +6,12 @@ interface FadeInProps {
   delay?: number;
   direction?: 'up' | 'down' | 'left' | 'right' | 'none';
   className?: string;
+  /** Disables the spring overshoot + scale pop. Use for dense grids on mobile, where the
+   *  scale overshoot causes a hairline repaint flicker along card borders. */
+  subtle?: boolean;
 }
 
-export const FadeIn: React.FC<FadeInProps> = ({ children, delay = 0, direction = 'up', className = '' }) => {
+export const FadeIn: React.FC<FadeInProps> = ({ children, delay = 0, direction = 'up', className = '', subtle = false }) => {
   const directions = {
     up: { y: 40 },
     down: { y: -40 },
@@ -19,10 +22,11 @@ export const FadeIn: React.FC<FadeInProps> = ({ children, delay = 0, direction =
 
   return (
     <motion.div
-      initial={{ opacity: 0, ...directions[direction], scale: 0.98 }}
-      whileInView={{ opacity: 1, x: 0, y: 0, scale: 1 }}
+      initial={{ opacity: 0, ...directions[direction], ...(subtle ? {} : { scale: 0.98 }) }}
+      whileInView={{ opacity: 1, x: 0, y: 0, ...(subtle ? {} : { scale: 1 }) }}
       viewport={{ once: true, margin: "-10%" }}
-      transition={{ type: "spring", bounce: 0.4, duration: 0.8, delay }}
+      transition={subtle ? { type: "tween", ease: "easeOut", duration: 0.5, delay } : { type: "spring", bounce: 0.4, duration: 0.8, delay }}
+      style={{ willChange: 'transform, opacity', backfaceVisibility: 'hidden' }}
       className={className}
     >
       {children}
