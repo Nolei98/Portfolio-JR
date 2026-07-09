@@ -162,9 +162,9 @@ export const skillsObj = {
         { name: "Figma", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/figma/figma-original.svg" },
         { name: "PlantUML", icon: "https://api.iconify.design/vscode-icons:file-type-plantuml.svg" },
         { name: "Mermaid", icon: "https://api.iconify.design/simple-icons:mermaid.svg?color=%23111" },
-        { name: "Claude Code", icon: "https://api.iconify.design/simple-icons:anthropic.svg?color=%23111" },
-        { name: "Design", icon: "https://api.iconify.design/lucide:pen-tool.svg" },
-        { name: "Antigravity", icon: "https://api.iconify.design/lucide:rocket.svg" },
+        { name: "Claude Code" },
+        { name: "Design" },
+        { name: "Antigravity" },
         { name: "Notion", icon: "https://api.iconify.design/simple-icons:notion.svg?color=%23111" },
         { name: "Obsidian", icon: "https://api.iconify.design/simple-icons:obsidian.svg?color=%23111" },
         { name: "Supabase", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/supabase/supabase-original.svg" },
@@ -184,8 +184,8 @@ export const skillsObj = {
     {
       category: "Soft Skills & Methodologies",
       items: [
-        { name: "Clear Communication", icon: "https://api.iconify.design/lucide:message-square.svg" },
-        { name: "Teamwork", icon: "https://api.iconify.design/lucide:users.svg" },
+        { name: "Clear Communication" },
+        { name: "Teamwork" },
         { name: "Flexibility", icon: "https://api.iconify.design/lucide:arrow-right-left.svg" },
         { name: "Agile (Scrum)", icon: "https://api.iconify.design/lucide:kanban.svg" }
       ]
@@ -234,9 +234,9 @@ export const skillsObj = {
         { name: "Figma", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/figma/figma-original.svg" },
         { name: "PlantUML", icon: "https://api.iconify.design/vscode-icons:file-type-plantuml.svg" },
         { name: "Mermaid", icon: "https://api.iconify.design/simple-icons:mermaid.svg?color=%23111" },
-        { name: "Claude Code", icon: "https://api.iconify.design/simple-icons:anthropic.svg?color=%23111" },
-        { name: "Design", icon: "https://api.iconify.design/lucide:pen-tool.svg" },
-        { name: "Antigravity", icon: "https://api.iconify.design/lucide:rocket.svg" },
+        { name: "Claude Code" },
+        { name: "Design" },
+        { name: "Antigravity" },
         { name: "Notion", icon: "https://api.iconify.design/simple-icons:notion.svg?color=%23111" },
         { name: "Obsidian", icon: "https://api.iconify.design/simple-icons:obsidian.svg?color=%23111" },
         { name: "Supabase", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/supabase/supabase-original.svg" },
@@ -256,11 +256,11 @@ export const skillsObj = {
     {
       category: "Soft Skills & Metodologias",
       items: [
-        { name: "Comunicação clara", icon: "https://api.iconify.design/lucide:message-square.svg" },
-        { name: "Teamwork (Trabalho em Equipe)", icon: "https://api.iconify.design/lucide:users.svg" },
+        { name: "Comunicação clara" },
+        { name: "Teamwork (Trabalho em Equipe)" },
         { name: "Flexibilidade", icon: "https://api.iconify.design/lucide:arrow-right-left.svg" },
-        { name: "Rápida adaptabilidade técnica", icon: "https://api.iconify.design/lucide:zap.svg" },
-        { name: "Controle de versão contínuo", icon: "https://api.iconify.design/lucide:git-branch.svg" },
+        { name: "Rápida adaptabilidade técnica" },
+        { name: "Controle de versão contínuo" },
         { name: "Metodologias Ágeis (Scrum)", icon: "https://api.iconify.design/lucide:kanban.svg" }
       ]
     },

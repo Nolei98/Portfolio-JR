@@ -52,6 +52,7 @@ export function Stack() {
                     key={item.name}
                     className="inline-flex items-center gap-2 px-3 sm:px-3.5 py-1.5 sm:py-2 bg-black/20 border border-white/22 rounded-md font-mono text-[12px] sm:text-[12.5px] font-semibold text-white"
                   >
+                    {item.icon && <img src={item.icon} alt="" loading="lazy" decoding="async" className="w-4 h-4" />}
                     {item.name}
                   </span>
                 ))}
