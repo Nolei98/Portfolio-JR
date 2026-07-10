@@ -1,22 +1,6 @@
-import type { ComponentType } from 'react';
-import { Bot, PenTool, Rocket, MessageSquare, Users, Zap, GitBranch } from 'lucide-react';
 import { skillsObj, i18n } from '../data';
 import { FadeIn } from './ui/Layout';
 import { useLang } from '../LanguageContext';
-
-// Bundled fallback icons for items whose remote CDN icon glitched on some mobile devices —
-// rendered locally so there's no external request that can fail or arrive late.
-const localIcons: Record<string, ComponentType<{ className?: string }>> = {
-  'Claude Code': Bot,
-  'Design': PenTool,
-  'Antigravity': Rocket,
-  'Comunicação clara': MessageSquare,
-  'Clear Communication': MessageSquare,
-  'Teamwork (Trabalho em Equipe)': Users,
-  'Teamwork': Users,
-  'Rápida adaptabilidade técnica': Zap,
-  'Controle de versão contínuo': GitBranch,
-};
 
 export function Stack() {
   const { lang } = useLang();
@@ -49,7 +33,7 @@ export function Stack() {
         <div className="marquee-track flex gap-3.5 w-max">
           {marqueeLoop.map((sk, i) => (
             <span key={`${sk.name}-${i}`} className="inline-flex items-center gap-2.5 px-4 py-2.5 bg-black/16 border border-white/22 rounded-md font-mono text-[13px] font-bold whitespace-nowrap text-white">
-              <img src={sk.icon} alt="" loading="lazy" decoding="async" className="w-5 h-5" /> {sk.name}
+              {sk.icon && <img src={sk.icon} alt="" loading="lazy" decoding="async" className="w-5 h-5" />} {sk.name}
             </span>
           ))}
         </div>
@@ -63,19 +47,15 @@ export function Stack() {
                 <h3 className="font-display font-semibold text-lg text-white">{skillGroup.category}</h3>
               </div>
               <div className="flex flex-wrap gap-2 sm:gap-2.5">
-                {skillGroup.items.map((item) => {
-                  const LocalIcon = localIcons[item.name];
-                  return (
-                    <span
-                      key={item.name}
-                      className="inline-flex items-center gap-2 px-3 sm:px-3.5 py-1.5 sm:py-2 bg-black/20 border border-white/22 rounded-md font-mono text-[12px] sm:text-[12.5px] font-semibold text-white"
-                    >
-                      {item.icon && <img src={item.icon} alt="" loading="lazy" decoding="async" className="w-4 h-4" />}
-                      {!item.icon && LocalIcon && <LocalIcon className="w-4 h-4" color="#111" />}
-                      {item.name}
-                    </span>
-                  );
-                })}
+                {skillGroup.items.map((item) => (
+                  <span
+                    key={item.name}
+                    className="inline-flex items-center gap-2 px-3 sm:px-3.5 py-1.5 sm:py-2 bg-black/20 border border-white/22 rounded-md font-mono text-[12px] sm:text-[12.5px] font-semibold text-white"
+                  >
+                    {item.icon && <img src={item.icon} alt="" loading="lazy" decoding="async" className="w-4 h-4" />}
+                    {item.name}
+                  </span>
+                ))}
               </div>
             </div>
           </FadeIn>

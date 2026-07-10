@@ -170,7 +170,7 @@ export const skillsObj = {
         { name: "Supabase", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/supabase/supabase-original.svg" },
         { name: "Firebase", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/firebase/firebase-original.svg" },
         { name: "LLM", icon: "https://api.iconify.design/lucide:brain.svg" }
-      ] 
+      ]
     },
     {
       category: "Databases",
@@ -242,7 +242,7 @@ export const skillsObj = {
         { name: "Supabase", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/supabase/supabase-original.svg" },
         { name: "Firebase", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/firebase/firebase-original.svg" },
         { name: "LLM", icon: "https://api.iconify.design/lucide:brain.svg" }
-      ] 
+      ]
     },
     {
       category: "Bancos de Dados",
