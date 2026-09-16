@@ -1,0 +1,785 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resume - João Igôr Rodrigues Nunes</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700;800&family=Syne:wght@700;800&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    @page {
+      size: A4 portrait;
+      margin: 0;
+    }
+
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      color: #1a1a1a;
+      background: #d4d4d4;
+      -webkit-print-color-adjust: exact;
+      print-color-adjust: exact;
+    }
+
+    .page {
+      width: 210mm;
+      height: 297mm;
+      max-height: 297mm;
+      overflow: hidden;
+      margin: 0 auto;
+      background: #ffffff;
+      display: grid;
+      grid-template-columns: 62mm 148mm;
+      page-break-after: always;
+      break-after: page;
+      position: relative;
+    }
+
+    /* =========================================
+       LEFT SIDEBAR (BROWN / DARK)
+    ========================================= */
+    .sidebar {
+      background: #141210;
+      color: #F2EADF;
+      padding: 24px 16px;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      border-right: 1px solid #26211c;
+    }
+
+    .profile-box {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+
+    .avatar-wrap {
+      width: 90px;
+      height: 90px;
+      border-radius: 50%;
+      padding: 2.5px;
+      background: linear-gradient(135deg, #C15D30, #e07242, #C15D30);
+      margin-bottom: 10px;
+      box-shadow: 0 4px 14px rgba(193, 93, 48, 0.4);
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .avatar-img {
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      object-fit: cover;
+      object-position: center 18%;
+      transform: scale(1.15);
+      transform-origin: center 25%;
+      background: #1c1815;
+      display: block;
+    }
+
+    .sidebar-role {
+      font-family: 'Syne', sans-serif;
+      font-size: 10.5pt;
+      font-weight: 800;
+      line-height: 1.2;
+      color: #F2EADF;
+      margin-bottom: 7px;
+    }
+
+    .sidebar-role span {
+      color: #C15D30;
+    }
+
+    .status-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(193, 93, 48, 0.45);
+      padding: 3.5px 10px;
+      border-radius: 9999px;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 6.8pt;
+      font-weight: 700;
+      color: #C15D30;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+    }
+
+    .status-dot {
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: #34d399;
+      box-shadow: 0 0 6px #34d399;
+    }
+
+    .side-sec {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+
+    .side-sec-title {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 7.2pt;
+      font-weight: 800;
+      color: #C15D30;
+      text-transform: uppercase;
+      letter-spacing: 0.14em;
+      border-bottom: 1px solid #282420;
+      padding-bottom: 3.5px;
+      margin-bottom: 3px;
+    }
+
+    .contact-item {
+      margin-bottom: 6px;
+    }
+
+    .contact-lbl {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 6.5pt;
+      font-weight: 700;
+      text-transform: uppercase;
+      color: #8C7E6D;
+      letter-spacing: 0.06em;
+    }
+
+    .contact-txt {
+      font-size: 7.8pt;
+      color: #E2D9CC;
+      text-decoration: none;
+      word-break: break-all;
+      font-weight: 500;
+      line-height: 1.3;
+      display: block;
+    }
+
+    .soft-pill-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 4px;
+    }
+
+    .soft-pill {
+      background: rgba(255, 255, 255, 0.06);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      padding: 2.5px 7px;
+      border-radius: 4px;
+      font-size: 7.2pt;
+      color: #E2D9CC;
+      font-weight: 500;
+    }
+
+    .lang-item {
+      margin-bottom: 6px;
+    }
+
+    .lang-top {
+      display: flex;
+      justify-content: space-between;
+      font-size: 7.6pt;
+      margin-bottom: 2.5px;
+    }
+
+    .lang-name {
+      font-weight: 700;
+      color: #F2EADF;
+    }
+
+    .lang-desc {
+      color: #8C7E6D;
+      font-size: 6.8pt;
+    }
+
+    .lang-track {
+      height: 3px;
+      background: #282420;
+      border-radius: 9999px;
+      overflow: hidden;
+    }
+
+    .lang-fill {
+      height: 100%;
+      background: #C15D30;
+      border-radius: 9999px;
+    }
+
+    /* =========================================
+       RIGHT MAIN CONTENT (CLEAN STRUCTURED)
+    ========================================= */
+    .main {
+      padding: 22px 24px;
+      background: #ffffff;
+      display: flex;
+      flex-direction: column;
+      gap: 11px;
+    }
+
+    .header-block {
+      border-bottom: 2px solid #1A1411;
+      padding-bottom: 8px;
+      margin-bottom: 2px;
+    }
+
+    .candidate-name {
+      font-family: 'Syne', sans-serif;
+      font-size: 21pt;
+      font-weight: 800;
+      color: #111111;
+      line-height: 1.05;
+      letter-spacing: -0.02em;
+    }
+
+    .candidate-role {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 9pt;
+      font-weight: 800;
+      color: #C15D30;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      margin-top: 3px;
+    }
+
+    /* SECTIONS */
+    .sec-block {
+      margin-bottom: 2px;
+    }
+
+    .sec-title {
+      font-family: 'Syne', sans-serif;
+      font-size: 10pt;
+      font-weight: 800;
+      color: #111111;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      margin-bottom: 5px;
+      display: flex;
+      align-items: baseline;
+      gap: 6px;
+    }
+
+    .sec-title span.num {
+      color: #C15D30;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 8.5pt;
+      font-weight: 800;
+    }
+
+    .summary-content {
+      font-size: 8.2pt;
+      color: #2b2b2b;
+      line-height: 1.4;
+      text-align: justify;
+    }
+
+    /* TECHNICAL SKILLS */
+    .skills-box {
+      display: flex;
+      flex-direction: column;
+      gap: 3.5px;
+    }
+
+    .skill-line {
+      font-size: 8pt;
+      line-height: 1.35;
+      display: flex;
+      align-items: baseline;
+      gap: 6px;
+    }
+
+    .skill-cat {
+      font-weight: 700;
+      color: #111111;
+      white-space: nowrap;
+      min-width: 150px;
+      flex-shrink: 0;
+      font-size: 8pt;
+    }
+
+    .skill-val {
+      color: #333333;
+    }
+
+    /* FEATURED PROJECTS */
+    .projects-box {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+
+    .project-entry {
+      margin-bottom: 2px;
+    }
+
+    .project-top-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-bottom: 1.5px;
+    }
+
+    .proj-title-txt {
+      font-weight: 700;
+      font-size: 8.6pt;
+      color: #111111;
+    }
+
+    .proj-badge-pill {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 7pt;
+      font-weight: 600;
+      color: #C15D30;
+      background: #fcf5f0;
+      border: 1px solid #f3dacd;
+      padding: 1px 6px;
+      border-radius: 3px;
+    }
+
+    .proj-desc-txt {
+      font-size: 7.8pt;
+      color: #333333;
+      line-height: 1.34;
+      text-align: justify;
+    }
+
+    /* PROFESSIONAL EXPERIENCE */
+    .exp-entry {
+      margin-bottom: 4px;
+    }
+
+    .exp-top-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-bottom: 4px;
+    }
+
+    .exp-name {
+      font-size: 9pt;
+      font-weight: 700;
+      color: #111111;
+    }
+
+    .exp-name span.company-tag {
+      color: #C15D30;
+      font-weight: 700;
+    }
+
+    .exp-time {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 7.8pt;
+      font-weight: 600;
+      color: #666666;
+    }
+
+    .exp-bullets {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+
+    .exp-bullets li {
+      position: relative;
+      padding-left: 12px;
+      font-size: 8pt;
+      color: #333333;
+      line-height: 1.36;
+      text-align: justify;
+    }
+
+    .exp-bullets li::before {
+      content: '▪';
+      position: absolute;
+      left: 0;
+      top: 0;
+      color: #C15D30;
+      font-size: 7.5pt;
+    }
+
+    /* EDUCATION */
+    .edu-list {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+    }
+
+    .edu-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+    }
+
+    .edu-course {
+      font-weight: 700;
+      font-size: 8.4pt;
+      color: #111111;
+    }
+
+    .edu-school {
+      color: #C15D30;
+      font-weight: 600;
+      font-size: 8pt;
+    }
+
+    .edu-year {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 7.6pt;
+      color: #666666;
+      font-weight: 600;
+    }
+
+    .idiomas-box {
+      display: flex;
+      flex-direction: column;
+      gap: 3px;
+    }
+
+    .idioma-line {
+      font-size: 8pt;
+      display: flex;
+      gap: 6px;
+    }
+
+    .idioma-lbl {
+      font-weight: 700;
+      color: #111111;
+    }
+
+    .idioma-val {
+      color: #444444;
+    }
+
+    .page-footer {
+      margin-top: auto;
+      border-top: 1px solid #e5e5e5;
+      padding-top: 6px;
+      display: flex;
+      justify-content: space-between;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 7pt;
+      color: #888888;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ============================================================
+       PAGE 1
+  ============================================================ -->
+  <div class="page">
+    
+    <!-- BROWN SIDEBAR -->
+    <aside class="sidebar">
+      <div class="profile-box">
+        <div class="avatar-wrap">
+          <img class="avatar-img" src="../public/joao-blend.webp" alt="João Igôr Rodrigues">
+        </div>
+        <div class="sidebar-role">
+          Developer<br>
+          <span>Back-end Java</span>
+        </div>
+        <div class="status-badge">
+          <span class="status-dot"></span>
+          Available
+        </div>
+      </div>
+
+      <!-- CONTACT -->
+      <div class="side-sec">
+        <div class="side-sec-title">Contact</div>
+        
+        <div class="contact-item">
+          <div class="contact-lbl">✉ Email</div>
+          <a class="contact-txt" href="mailto:noleirodrigues@gmail.com">noleirodrigues@gmail.com</a>
+        </div>
+
+        <div class="contact-item">
+          <div class="contact-lbl">📱 Phone / WhatsApp</div>
+          <a class="contact-txt" href="https://wa.me/5587999099937">+55 87 99909-9937</a>
+        </div>
+
+        <div class="contact-item">
+          <div class="contact-lbl">📍 Location</div>
+          <span class="contact-txt">Juazeiro do Norte, CE · Brazil</span>
+        </div>
+
+        <div class="contact-item">
+          <div class="contact-lbl">🌐 Web Portfolio</div>
+          <a class="contact-txt" href="https://portfolio-jr-lilac.vercel.app" target="_blank">portfolio-jr-lilac.vercel.app</a>
+        </div>
+      </div>
+
+      <!-- LINKS -->
+      <div class="side-sec">
+        <div class="side-sec-title">Links & Social</div>
+        
+        <div class="contact-item">
+          <div class="contact-lbl">💼 LinkedIn</div>
+          <a class="contact-txt" href="https://linkedin.com/in/joão-rodrigues-18b731179" target="_blank">in/joão-rodrigues</a>
+        </div>
+
+        <div class="contact-item">
+          <div class="contact-lbl">🐙 GitHub</div>
+          <a class="contact-txt" href="https://github.com/Nolei98" target="_blank">github.com/Nolei98</a>
+        </div>
+
+        <div class="contact-item">
+          <div class="contact-lbl">🦊 GitLab</div>
+          <a class="contact-txt" href="https://gitlab.com/JoaoRodrigues_Nolei" target="_blank">gitlab.com/JoaoRodrigues_Nolei</a>
+        </div>
+      </div>
+    </aside>
+
+    <!-- RIGHT WHITE CONTENT -->
+    <main class="main">
+      <header class="header-block">
+        <h1 class="candidate-name">João Igôr Rodrigues Nunes</h1>
+        <div class="candidate-role">Java Back-end Developer</div>
+      </header>
+
+      <!-- 01. PROFESSIONAL SUMMARY -->
+      <section class="sec-block">
+        <h2 class="sec-title"><span class="num">01.</span> Professional Summary</h2>
+        <p class="summary-content">
+          Back-end Developer seeking opportunities as a Junior Java Developer. Solid foundation in the Java ecosystem (Spring Boot, Spring Data JPA, Maven) and applying software engineering best practices including SOLID principles and layered architecture. Academic and hands-on experience building RESTful APIs, integrating relational and NoSQL databases (PostgreSQL, MySQL, MongoDB), and containerizing environments with Docker. Currently pursuing a Bachelor's in Software Engineering, combining advanced academic background with real commercial software development and client-facing experience since 2019.
+        </p>
+      </section>
+
+      <!-- 02. TECHNICAL SKILLS -->
+      <section class="sec-block">
+        <h2 class="sec-title"><span class="num">02.</span> Technical Skills</h2>
+        <div class="skills-box">
+          <div class="skill-line">
+            <span class="skill-cat">● Java Ecosystem:</span>
+            <span class="skill-val">Java, Spring Boot, Spring Data JPA, RESTful APIs, DTOs, Global Exception Handling, Maven.</span>
+          </div>
+          <div class="skill-line">
+            <span class="skill-cat">● Databases:</span>
+            <span class="skill-val">PostgreSQL, MySQL, MongoDB (NoSQL), Data Modeling and Entity-Relationship (ER) Design.</span>
+          </div>
+          <div class="skill-line">
+            <span class="skill-cat">● Infrastructure & DevOps:</span>
+            <span class="skill-val">Docker, Docker Compose, Linux (Ubuntu), Git, GitHub, GitLab.</span>
+          </div>
+          <div class="skill-line">
+            <span class="skill-cat">● Architecture & Best Practices:</span>
+            <span class="skill-val">Clean Code, SOLID Principles, Repository Pattern, Agile Methodologies (Scrum).</span>
+          </div>
+          <div class="skill-line">
+            <span class="skill-cat">● Other Technologies:</span>
+            <span class="skill-val">Python, PHP, C#, HTML5, CSS3, JavaScript, React.</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- 03. FEATURED PROJECTS -->
+      <section class="sec-block">
+        <h2 class="sec-title"><span class="num">03.</span> Featured Projects (Java & Back-end Focus)</h2>
+        <div class="projects-box">
+          
+          <div class="project-entry">
+            <div class="project-top-row">
+              <span class="proj-title-txt">● Banking API (mod_account)</span>
+              <span class="proj-badge-pill">Spring Boot · JPA · Pessimistic Locking · DTOs</span>
+            </div>
+            <p class="proj-desc-txt">Co-development of a RESTful banking account management API using Spring Boot. Implementation of domain entities, controllers, DTOs, pessimistic locking for concurrency control, and global exception handling.</p>
+          </div>
+
+          <div class="project-entry">
+            <div class="project-top-row">
+              <span class="proj-title-txt">● Internal Management API</span>
+              <span class="proj-badge-pill">Java · Spring Boot · PostgreSQL · Docker</span>
+            </div>
+            <p class="proj-desc-txt">Development of a RESTful API in Java and Spring Boot applying the Repository pattern and rich domain modeling for business rules. PostgreSQL integration and Docker container orchestration.</p>
+          </div>
+
+          <div class="project-entry">
+            <div class="project-top-row">
+              <span class="proj-title-txt">● ModuTask CLI</span>
+              <span class="proj-badge-pill">Java · MongoDB Atlas · AES Encryption · Layers</span>
+            </div>
+            <p class="proj-desc-txt">Command-line task management system developed in Java. Layered architecture implementation, MongoDB Atlas integration for cloud persistence, and data security with AES encryption.</p>
+          </div>
+
+          <div class="project-entry">
+            <div class="project-top-row">
+              <span class="proj-title-txt">● Logic & Data Structures Applications</span>
+              <span class="proj-badge-pill">Java OOP · SOLID · Streams API · Priority Queues</span>
+            </div>
+            <p class="proj-desc-txt">Development of Java applications focused on object-oriented logic ("March of the Legion" and Banking Simulator), applying SOLID principles, Streams API, and efficient priority queue management.</p>
+          </div>
+
+          <div class="project-entry">
+            <div class="project-top-row">
+              <span class="proj-title-txt">● Notify-Events</span>
+              <span class="proj-badge-pill">Spring Boot · REST API · Vercel Deploy</span>
+            </div>
+            <p class="proj-desc-txt">Architecture and deployment of a web application for event management, developed with Spring Boot and published on the Vercel platform.</p>
+          </div>
+
+        </div>
+      </section>
+    </main>
+  </div>
+
+
+  <!-- ============================================================
+       PAGE 2
+  ============================================================ -->
+  <div class="page">
+    
+    <!-- BROWN SIDEBAR -->
+    <aside class="sidebar">
+      <div class="profile-box">
+        <div class="avatar-wrap">
+          <img class="avatar-img" src="../public/joao-blend.webp" alt="João Igôr Rodrigues">
+        </div>
+        <div class="sidebar-role">
+          Developer<br>
+          <span>Back-end Java</span>
+        </div>
+        <div class="status-badge">
+          <span class="status-dot"></span>
+          Available
+        </div>
+      </div>
+
+      <!-- SOFT SKILLS -->
+      <div class="side-sec">
+        <div class="side-sec-title">Soft Skills</div>
+        <div class="soft-pill-grid">
+          <span class="soft-pill">Clear Communication</span>
+          <span class="soft-pill">Teamwork</span>
+          <span class="soft-pill">Flexibility</span>
+          <span class="soft-pill">Technical Adaptability</span>
+          <span class="soft-pill">Agile Methodologies (Scrum)</span>
+          <span class="soft-pill">Problem Solving</span>
+          <span class="soft-pill">Clean Code & SOLID</span>
+        </div>
+      </div>
+
+      <!-- LANGUAGES -->
+      <div class="side-sec">
+        <div class="side-sec-title">Languages</div>
+        
+        <div class="lang-item">
+          <div class="lang-top">
+            <span class="lang-name">Portuguese</span>
+            <span class="lang-desc">Native</span>
+          </div>
+          <div class="lang-track"><div class="lang-fill" style="width: 100%;"></div></div>
+        </div>
+
+        <div class="lang-item">
+          <div class="lang-top">
+            <span class="lang-name">English</span>
+            <span class="lang-desc">Intermediate</span>
+          </div>
+          <div class="lang-track"><div class="lang-fill" style="width: 65%;"></div></div>
+        </div>
+
+        <div class="lang-item">
+          <div class="lang-top">
+            <span class="lang-name">Spanish</span>
+            <span class="lang-desc">Basic</span>
+          </div>
+          <div class="lang-track"><div class="lang-fill" style="width: 30%;"></div></div>
+        </div>
+      </div>
+    </aside>
+
+    <!-- RIGHT WHITE CONTENT -->
+    <main class="main">
+      
+      <!-- 04. PROFESSIONAL EXPERIENCE -->
+      <section class="sec-block">
+        <h2 class="sec-title"><span class="num">04.</span> Professional Experience</h2>
+        
+        <div class="exp-entry">
+          <div class="exp-top-row">
+            <span class="exp-name">Web Developer — <span class="company-tag">Nolei Creative</span></span>
+            <span class="exp-time">2019 — Present</span>
+          </div>
+          <ul class="exp-bullets">
+            <li><strong>Full Software Lifecycle:</strong> Developed and maintained 15+ web applications and e-commerce platforms (B2B & B2C), handling relational data modeling (MySQL) through production deployment on Linux servers.</li>
+            <li><strong>Full-Stack & APIs:</strong> Built responsive interfaces with HTML5, CSS3, JavaScript, and Bootstrap. Implemented custom business logic and integrated RESTful APIs using PHP.</li>
+            <li><strong>High-Availability CMS & Platforms:</strong> Advanced customization and architecture with WordPress, WooCommerce, OpenCart, and Joomla for healthcare (LAMIC Laboratory, CET Orthopedics, Nuclear Medicine) and agribusiness (A Casa do Agricultor).</li>
+            <li><strong>Integration & Automation:</strong> Configured payment gateways, built automation webhooks (e.g., WhatsApp appointment booking), optimized Core Web Vitals, and administered hosting environments.</li>
+            <li><strong>Technical Alignment:</strong> Direct requirement elicitation with stakeholders, ensuring high-value delivery, legacy systems stability, and sound architectural decisions.</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- 05. EDUCATION -->
+      <section class="sec-block" style="margin-top: 6px;">
+        <h2 class="sec-title"><span class="num">05.</span> Education</h2>
+        <div class="edu-list">
+          
+          <div class="edu-item">
+            <div>
+              <div class="edu-course">Bachelor of Science in Software Engineering</div>
+              <div class="edu-school">Jala University</div>
+            </div>
+            <span class="edu-year">2025 — 2029</span>
+          </div>
+
+          <div class="edu-item">
+            <div>
+              <div class="edu-course">Associate Degree in Artificial Intelligence</div>
+              <div class="edu-school">FIAP</div>
+            </div>
+            <span class="edu-year">Planned</span>
+          </div>
+
+          <div class="edu-item">
+            <div>
+              <div class="edu-course">IT Technician (Integrated High School)</div>
+              <div class="edu-school">IF Campus Salgueiro</div>
+            </div>
+            <span class="edu-year">2014 — 2019</span>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- 06. LANGUAGES -->
+      <section class="sec-block" style="margin-top: 6px;">
+        <h2 class="sec-title"><span class="num">06.</span> Languages</h2>
+        <div class="idiomas-box">
+          <div class="idioma-line">
+            <span class="idioma-lbl">● Portuguese:</span>
+            <span class="idioma-val">Native.</span>
+          </div>
+          <div class="idioma-line">
+            <span class="idioma-lbl">● English:</span>
+            <span class="idioma-val">Intermediate (technical reading, grammar & presentations).</span>
+          </div>
+          <div class="idioma-line">
+            <span class="idioma-lbl">● Spanish:</span>
+            <span class="idioma-val">Basic.</span>
+          </div>
+        </div>
+      </section>
+
+      <footer class="page-footer">
+        <span>João Igôr Rodrigues Nunes · Java Back-end Developer</span>
+        <span>noleirodrigues@gmail.com</span>
+      </footer>
+
+    </main>
+  </div>
+
+</body>
+</html>

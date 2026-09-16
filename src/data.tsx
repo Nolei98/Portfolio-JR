@@ -18,7 +18,7 @@ export const i18n = {
       greeting: "Hello, world! I am", 
       subtitle: "Rodrigues", 
       available: "Open to opportunities",
-      desc: "Transforming logic into real solutions since 2014. With solid experience in web development since 2019, I help build scalable systems, secure architectures, and consistent digital businesses. Currently pursuing a Software Engineering degree at Jala University, with a strong focus on AI.",
+      desc: "Transforming logic into real solutions since 2014. With solid experience in web development since 2019, I help build scalable systems, secure architectures, and consistent digital businesses. Currently pursuing a Software Engineering degree at Jala University, with a strong focus on Java, C#, and AI.",
       contactBtn: "Get in touch" 
     },
     about: { 
@@ -75,7 +75,7 @@ export const i18n = {
       greeting: "Olá, mundo! Eu sou", 
       subtitle: "Rodrigues", 
       available: "Disponível para propostas",
-      desc: "Transformando lógica em soluções reais desde 2014. Com sólida atuação no desenvolvimento web desde 2019, ajudo a construir sistemas escaláveis, arquiteturas seguras e negócios digitais consistentes. Atualmente me formando em Engenharia de Software na Jala University, com foco forte em IA.", 
+      desc: "Transformando lógica em soluções reais desde 2014. Com sólida atuação no desenvolvimento web desde 2019, ajudo a construir sistemas escaláveis, arquiteturas seguras e negócios digitais consistentes. Atualmente me formando em Engenharia de Software na Jala University, com foco forte em Java, C# e IA.", 
       contactBtn: "Entrar em Contato" 
     },
     about: { 

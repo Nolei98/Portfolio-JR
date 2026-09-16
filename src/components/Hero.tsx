@@ -22,7 +22,7 @@ export function Hero() {
         <FadeIn className="order-1 lg:hidden">
           <div className="flex flex-wrap items-center gap-3 mb-3">
             <span className="font-mono text-[11px] font-bold uppercase tracking-[0.2em] text-ink-muted">
-              Web &amp; Front-end Developer · IA
+              Full Stack Developer · IA
             </span>
             <span className="inline-flex items-center gap-2 font-mono text-[10px] font-bold uppercase tracking-[0.14em] text-ink-accent bg-ink-accent/10 border border-ink-accent/40 rounded-md px-3 py-1.5">
               <span className="w-2 h-2 rounded-full bg-ink-accent animate-pulse" />
@@ -35,7 +35,7 @@ export function Hero() {
           <FadeIn className="hidden lg:block">
             <div className="flex flex-wrap items-center gap-3 mb-7">
               <span className="font-mono text-[11px] font-bold uppercase tracking-[0.2em] text-ink-muted">
-                Web &amp; Front-end Developer · IA
+                Full Stack Developer · IA
               </span>
               <span className="inline-flex items-center gap-2 font-mono text-[10px] font-bold uppercase tracking-[0.14em] text-ink-accent bg-ink-accent/10 border border-ink-accent/40 rounded-md px-3 py-1.5">
                 <span className="w-2 h-2 rounded-full bg-ink-accent animate-pulse" />
