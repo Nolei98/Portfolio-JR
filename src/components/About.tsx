@@ -47,7 +47,7 @@ export function About() {
               <div className="aspect-square w-full max-w-md mx-auto relative z-10 overflow-hidden border-2 border-brand-dark bg-brand-dark rounded-[1.5rem] print:w-32 print:h-32 print:mx-auto">
                 <img
                   src="https://i.imgur.com/81SP9An.jpeg"
-                  alt="João Rodrigues"
+                  alt="Igôr Nunes"
                   loading="lazy"
                   decoding="async"
                   className="object-cover w-full h-full transition-all duration-500 hover:scale-105"

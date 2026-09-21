@@ -11,8 +11,8 @@ export function Navbar() {
   const { lang, toggleLang } = useLang();
 
   const text = i18n[lang].nav;
-  const resumeUrl = lang === 'pt' ? '/Curriculo_Joao_Rodrigues_PT.pdf' : '/Resume_Joao_Rodrigues_EN.pdf';
-  const resumeFileName = lang === 'pt' ? 'Curriculo_Joao_Rodrigues_PT.pdf' : 'Resume_Joao_Rodrigues_EN.pdf';
+  const resumeUrl = lang === 'pt' ? '/Curriculo_Igor_Nunes_PT.pdf' : '/Resume_Igor_Nunes_EN.pdf';
+  const resumeFileName = lang === 'pt' ? 'Curriculo_Igor_Nunes_PT.pdf' : 'Resume_Igor_Nunes_EN.pdf';
 
   const handleDownloadPDF = (e: React.MouseEvent) => {
     e.preventDefault();
@@ -163,7 +163,7 @@ export function Navbar() {
                   </div>
                   <div className="min-w-0">
                     <p className="font-display font-semibold text-sm sm:text-base text-ink-text truncate">
-                      {lang === 'pt' ? 'Currículo — João Rodrigues' : 'Resume — João Rodrigues'}
+                      {lang === 'pt' ? 'Currículo — Igôr Nunes' : 'Resume — Igôr Nunes'}
                     </p>
                     <p className="font-mono text-[10px] uppercase tracking-[0.08em] text-ink-muted truncate">{resumeFileName}</p>
                   </div>

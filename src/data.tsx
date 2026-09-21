@@ -2,7 +2,7 @@ import React from 'react';
 import { Briefcase, Code, Terminal, Brain } from 'lucide-react';
 
 export const personalInfo = {
-  name: "João",
+  name: "Igôr",
   email: "noleirodrigues@gmail.com",
   gitlab: "https://gitlab.com/JoaoRodrigues_Nolei",
   linkedin: "https://www.linkedin.com/in/joão-rodrigues-18b731179",
@@ -16,7 +16,7 @@ export const i18n = {
     nav: { about: "About", skills: "Stack", experience: "Timeline", projects: "Work", contact: "Contact", resume: "Resume" },
     hero: { 
       greeting: "Hello, world! I am", 
-      subtitle: "Rodrigues", 
+      subtitle: "Nunes", 
       available: "Open to opportunities",
       desc: "Transforming logic into real solutions since 2014. With solid experience in web development since 2019, I help build scalable systems, secure architectures, and consistent digital businesses. Currently pursuing a Software Engineering degree at Jala University, with a strong focus on Java, C#, and AI.",
       contactBtn: "Get in touch" 
@@ -67,13 +67,13 @@ export const i18n = {
       copyEmail: "Copy email",
       copied: "Copied!"
     },
-    footer: { text1: "Built by João Rodrigues · NOLEI CREATIVE", text2: "© 2026", quote: "« Innovate today, build the future »" }
+    footer: { text1: "Built by Igôr Nunes · NOLEI CREATIVE", text2: "© 2026", quote: "« Innovate today, build the future »" }
   },
   pt: {
     nav: { about: "Sobre", skills: "Stack", experience: "Carreira", projects: "Projetos", contact: "Contato", resume: "Currículo" },
     hero: { 
       greeting: "Olá, mundo! Eu sou", 
-      subtitle: "Rodrigues", 
+      subtitle: "Nunes", 
       available: "Disponível para propostas",
       desc: "Transformando lógica em soluções reais desde 2014. Com sólida atuação no desenvolvimento web desde 2019, ajudo a construir sistemas escaláveis, arquiteturas seguras e negócios digitais consistentes. Atualmente me formando em Engenharia de Software na Jala University, com foco forte em Java, C# e IA.", 
       contactBtn: "Entrar em Contato" 
@@ -124,7 +124,7 @@ export const i18n = {
       copyEmail: "Copiar email",
       copied: "Copiado!"
     },
-    footer: { text1: "Feito por João Rodrigues · NOLEI CREATIVE", text2: "© 2026", quote: "« Inovar hoje, construir o futuro »" }
+    footer: { text1: "Feito por Igôr Nunes · NOLEI CREATIVE", text2: "© 2026", quote: "« Inovar hoje, construir o futuro »" }
   }
 };
 
