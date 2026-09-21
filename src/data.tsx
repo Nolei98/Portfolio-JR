@@ -3,7 +3,7 @@ import { Briefcase, Code, Terminal, Brain } from 'lucide-react';
 
 export const personalInfo = {
   name: "Igôr",
-  email: "noleirodrigues@gmail.com",
+  email: "igornunes@noleicreative.com",
   gitlab: "https://gitlab.com/JoaoRodrigues_Nolei",
   linkedin: "https://www.linkedin.com/in/joão-rodrigues-18b731179",
   instagram: "https://instagram.com/joaorodrigues.ia",
