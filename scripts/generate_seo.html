@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@700;800;900&family=JetBrains+Mono:wght@700;800&family=Syne:wght@800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@500;600;700;800&family=Syne:wght@700;800;900&display=swap" rel="stylesheet">
   <style>
     * {
       margin: 0;
@@ -15,96 +15,172 @@
       width: 1200px;
       height: 630px;
       overflow: hidden;
-      background-color: #BA5427;
-      font-family: 'Inter', sans-serif;
+      background: #BA5427;
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
       -webkit-font-smoothing: antialiased;
     }
     .card {
       position: relative;
       width: 1200px;
       height: 630px;
-      background: #BA5427;
+      background: linear-gradient(135deg, #BD572A 0%, #B24E23 50%, #A4441B 100%);
       display: flex;
       align-items: center;
-      justify-content: flex-start;
+      justify-content: space-between;
       overflow: hidden;
+      padding: 0 80px 0 90px;
     }
+
+    /* Ambient noise/texture effect */
+    .card::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(circle at 20% 50%, rgba(255, 255, 255, 0.08) 0%, transparent 60%);
+      pointer-events: none;
+      z-index: 1;
+    }
+
+    .content {
+      position: relative;
+      z-index: 10;
+      max-width: 580px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 6px 14px;
+      background: rgba(20, 18, 16, 0.4);
+      border: 1px solid rgba(255, 255, 255, 0.18);
+      border-radius: 9999px;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 13px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.14em;
+      color: #F2EADF;
+      margin-bottom: 24px;
+      width: fit-content;
+      backdrop-filter: blur(8px);
+    }
+
+    .badge-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: #22c55e;
+      box-shadow: 0 0 8px #22c55e;
+    }
+
+    .name-container {
+      margin-bottom: 28px;
+    }
+
+    .name-white {
+      font-family: 'Syne', 'Inter', sans-serif;
+      font-size: 88px;
+      font-weight: 900;
+      line-height: 0.95;
+      color: #FFFFFF;
+      letter-spacing: -0.035em;
+      text-shadow: 0 2px 20px rgba(0, 0, 0, 0.15);
+    }
+
+    .name-dark {
+      font-family: 'Syne', 'Inter', sans-serif;
+      font-size: 88px;
+      font-weight: 900;
+      line-height: 0.95;
+      color: #141210;
+      letter-spacing: -0.035em;
+    }
+
+    .divider {
+      width: 54px;
+      height: 4px;
+      background: #141210;
+      border-radius: 2px;
+      margin-bottom: 24px;
+    }
+
+    .role-title {
+      font-family: 'Inter', sans-serif;
+      font-size: 26px;
+      font-weight: 800;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      color: #FFFFFF;
+      margin-bottom: 8px;
+      line-height: 1.2;
+    }
+
+    .role-sub {
+      font-family: 'Inter', sans-serif;
+      font-size: 20px;
+      font-weight: 600;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: #F2EADF;
+      opacity: 0.95;
+      margin-bottom: 30px;
+    }
+
+    .footer-url {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 14px;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      color: rgba(255, 255, 255, 0.75);
+    }
+
     .photo-container {
       position: absolute;
-      right: -20px;
-      top: -30px;
-      width: 680px;
-      height: 700px;
-      z-index: 1;
+      right: 0px;
+      top: -20px;
+      width: 650px;
+      height: 680px;
+      z-index: 2;
       display: flex;
       justify-content: flex-end;
-      align-items: flex-start;
+      align-items: center;
+      pointer-events: none;
     }
+
     .photo-container img {
       width: 100%;
       height: 100%;
       object-fit: cover;
-      object-position: 50% 15%;
-      filter: drop-shadow(-20px 0 40px rgba(186, 84, 39, 0.8));
-    }
-    .content {
-      position: relative;
-      z-index: 10;
-      padding-left: 90px;
-      max-width: 580px;
-      display: flex;
-      flex-direction: column;
-    }
-    .name-white {
-      font-family: 'Inter', sans-serif;
-      font-size: 86px;
-      font-weight: 800;
-      line-height: 1.0;
-      color: #FFFFFF;
-      letter-spacing: -0.03em;
-    }
-    .name-dark {
-      font-family: 'Inter', sans-serif;
-      font-size: 86px;
-      font-weight: 800;
-      line-height: 1.05;
-      color: #141210;
-      letter-spacing: -0.03em;
-      margin-bottom: 38px;
-    }
-    .tags {
-      display: flex;
-      flex-direction: column;
-      gap: 8px;
-    }
-    .tag-line {
-      font-family: 'Inter', sans-serif;
-      font-size: 24px;
-      font-weight: 800;
-      letter-spacing: 0.05em;
-      text-transform: uppercase;
-      color: #FFFFFF;
-    }
-    .tag-sub {
-      font-family: 'Inter', sans-serif;
-      font-size: 22px;
-      font-weight: 700;
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
-      color: rgba(255, 255, 255, 0.92);
+      object-position: 50% 12%;
+      filter: contrast(1.04) brightness(1.02);
     }
   </style>
 </head>
 <body>
   <div class="card">
     <div class="content">
-      <h1 class="name-white">Igôr</h1>
-      <h1 class="name-dark">Nunes</h1>
-      <div class="tags">
-        <div class="tag-line">Full Stack Developer</div>
-        <div class="tag-sub">Java · C# · IA</div>
+      <div class="badge">
+        <span class="badge-dot"></span>
+        <span>Portfolio · 2026</span>
       </div>
+      
+      <div class="name-container">
+        <h1 class="name-white">Igôr</h1>
+        <h1 class="name-dark">Nunes</h1>
+      </div>
+
+      <div class="divider"></div>
+
+      <div class="role-title">Full Stack Developer</div>
+      <div class="role-sub">Java · C# · Inteligência Artificial</div>
+
+      <div class="footer-url">portfolio-jr-lilac.vercel.app</div>
     </div>
+
     <div class="photo-container">
       <img src="../public/joao-blend.webp" alt="Igôr Nunes">
     </div>
