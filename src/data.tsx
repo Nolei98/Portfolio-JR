@@ -600,13 +600,13 @@ export const statsData = {
     { num: "10+", label: "Years in tech" },
     { num: "7", label: "Years building for the web" },
     { num: "30+", label: "Tools & technologies" },
-    { num: "Founder", label: "PostPilot" }
+    { num: "Founder", label: "Nolei Creative", link: "https://noleicreative.com" }
   ],
   pt: [
     { num: "10+", label: "Anos em tecnologia" },
     { num: "7", label: "Anos criando para a web" },
     { num: "30+", label: "Ferramentas & tecnologias" },
-    { num: "Fundador", label: "Da PostPilot" }
+    { num: "Fundador", label: "Nolei Creative", link: "https://noleicreative.com" }
   ]
 };
 
